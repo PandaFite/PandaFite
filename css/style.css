@@ -63,9 +63,14 @@ TEXT SELECTION STYLES
  color:#fff;
 }
 a {
-	color: #E095B4;
+	color: #8B0000;
 	outline: none;
 }
+a.linksocials {
+    color: #454544;
+	text-decoration: none;
+}
+
 /******************************************************************
 General CSS
 ******************************************************************/
@@ -248,7 +253,7 @@ blockquote {
 	margin-top: 0px;
 }
 a:hover {
-	color: #E35A88;
+	color: #EE0000;
 }
 .spacer {
 	height: 1px;
