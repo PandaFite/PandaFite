@@ -63,7 +63,7 @@ TEXT SELECTION STYLES
  color:#fff;
 }
 a {
-	color: #8B0000;
+	color: #000099;
 	outline: none;
 }
 a.linksocials {
@@ -253,7 +253,7 @@ blockquote {
 	margin-top: 0px;
 }
 a:hover {
-	color: #EE0000;
+	color: #0000E6;
 }
 .spacer {
 	height: 1px;
