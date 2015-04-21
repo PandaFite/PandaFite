@@ -51,15 +51,15 @@ TEXT SELECTION STYLES
 ******************************************************************/
 /* Safari, Chrome, iPhones, iPads */
 ::selection {
- background:#E095B4;
+ background:#0000ff;
  color:#fff;
 }
 ::-moz-selection {
- background:#E095B4;
+ background:#0000ff;
  color:#fff;
 }
 ::-webkit-selection {
- background:#E095B4;
+ background:#0000ff;
  color:#fff;
 }
 a {
