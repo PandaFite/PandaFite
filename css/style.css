@@ -50,22 +50,7 @@ table {
 TEXT SELECTION STYLES
 ******************************************************************/
 /* Safari, Chrome, iPhones, iPads */
-::selection {
- background:#E095B4;
- color:#fff;
-}
-::-moz-selection {
- background:#E095B4;
- color:#fff;
-}
-::-webkit-selection {
- background:#E095B4;
- color:#fff;
-}
-a {
-	color: #000099;
-	outline: none;
-}
+
 a.linksocials {
     color: #454544;
 	text-decoration: none;
