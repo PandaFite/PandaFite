@@ -1,7 +1,7 @@
 var countDown = (function() {
   var startStream;
   var endStream;
-  var streamingText = 'Stream should be live right now (unless it is monday)';
+  var streamingText = 'Scheduled to currently be live.';
   var updateElement;
 
   // Pad single digit numbers
