@@ -1,2 +1,2 @@
-# panda.mattunderscore.co [gh-pages]
-This branch contains all of the html for panda.mattunderscore.co!
+# pandaplayshd.com [gh-pages]
+This branch contains all of the source code for [PandaPlaysHD.com](http://pandaplayshd.com)!
