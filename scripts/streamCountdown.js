@@ -65,7 +65,7 @@ var countDown = (function() {
 var myStart = new Date();
 myStart.setHours(16,0,0,0);
 var myEnd = new Date()
-myEnd.setHours(22,0,0,0);
+myEnd.setHours(19,0,0,0);
 
 // Create UNIX time values for same time as UTC
 var startUTCTimeValue = myStart/1000|0
