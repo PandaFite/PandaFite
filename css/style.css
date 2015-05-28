@@ -1,6 +1,5 @@
 /******************************************************************
 *******************************************************************
-
 Template Name: Effe
 Theme URI: http://www.92five.net
 Description: Personal Blog
@@ -71,6 +70,12 @@ p {
 	font-family: Verdana, Arial, sans-serif;
 	line-height: 1.6em;
 	color: #848484;
+	font-size: 8pt;
+}
+p.black {
+	font-family: Verdana, Arial, sans-serif;
+	line-height: 1.6em;
+	color: #000000;
 	font-size: 8pt;
 }
 h1 {
