@@ -50,7 +50,29 @@ TEXT SELECTION STYLES
 ******************************************************************/
 /* Safari, Chrome, iPhones, iPads */
 
-a.linksocials {
+a.linktwitch {
+    color: #454544;
+	text-decoration: none;
+	padding: 5px
+	transition: 1s ease;
+    -o-transition: 1s ease;
+    -webkit-transition: 0.5s ease;
+}
+a.linktwitter {
+    color: #454544;
+	text-decoration: none;
+	padding: 5px
+	transition: 1s ease;
+    -o-transition: 1s ease;
+    -webkit-transition: 0.5s ease;
+}a.linkgplus {
+    color: #454544;
+	text-decoration: none;
+	padding: 5px
+	transition: 1s ease;
+    -o-transition: 1s ease;
+    -webkit-transition: 0.5s ease;
+}a.linkyoutube {
     color: #454544;
 	text-decoration: none;
 	padding: 5px
