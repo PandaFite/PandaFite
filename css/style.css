@@ -54,8 +54,40 @@ a.linksocials {
     color: #454544;
 	text-decoration: none;
 	padding: 5px
-	transition: 0.5s ease;
-    -o-transition: 0.5s ease;
+	transition: 1s ease;
+    -o-transition: 1s ease;
+    -webkit-transition: 0.5s ease;
+}
+a.linktwitch:hover {
+    color: #6441A5;
+	text-decoration: none;
+	padding: 5px
+	transition: 1s ease;
+    -o-transition: 1s ease;
+    -webkit-transition: 0.5s ease;
+}
+a.linktwitter:hover {
+    color: #4099FF;
+	text-decoration: none;
+	padding: 5px
+	transition: 1s ease;
+    -o-transition: 1s ease;
+    -webkit-transition: 0.5s ease;
+}
+a.linkgplus:hover {
+    color: #dd4b39;
+	text-decoration: none;
+	padding: 5px
+	transition: 1s ease;
+    -o-transition: 1s ease;
+    -webkit-transition: 0.5s ease;
+}
+a.linkyoutube:hover {
+    color: #e52d27;
+	text-decoration: none;
+	padding: 5px
+	transition: 1s ease;
+    -o-transition: 1s ease;
     -webkit-transition: 0.5s ease;
 }
 
