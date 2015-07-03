@@ -50,29 +50,7 @@ TEXT SELECTION STYLES
 ******************************************************************/
 /* Safari, Chrome, iPhones, iPads */
 
-a.linktwitch {
-    color: #454544;
-	text-decoration: none;
-	padding: 5px
-	transition: 1s ease;
-    -o-transition: 1s ease;
-    -webkit-transition: 0.5s ease;
-}
-a.linktwitter {
-    color: #454544;
-	text-decoration: none;
-	padding: 5px
-	transition: 1s ease;
-    -o-transition: 1s ease;
-    -webkit-transition: 0.5s ease;
-}a.linkgplus {
-    color: #454544;
-	text-decoration: none;
-	padding: 5px
-	transition: 1s ease;
-    -o-transition: 1s ease;
-    -webkit-transition: 0.5s ease;
-}a.linkyoutube {
+a.linksocial {
     color: #454544;
 	text-decoration: none;
 	padding: 5px
@@ -106,6 +84,14 @@ a.linkgplus:hover {
 }
 a.linkyoutube:hover {
     color: #e52d27;
+	text-decoration: none;
+	padding: 5px
+	transition: 1s ease;
+    -o-transition: 1s ease;
+    -webkit-transition: 0.5s ease;
+}
+a.linkinsta:hover {
+    color: #517fa4;
 	text-decoration: none;
 	padding: 5px
 	transition: 1s ease;
