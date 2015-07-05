@@ -148,6 +148,12 @@ a:hover {
 	font-size: 40pt;
 	letter-spacing: 5px;
 }
+.status {
+	padding-top: 30px;
+	padding-left: 50px;
+	font-family: 'Droid Serif', Verdana, Arial, sans-serif;
+	color: #848484;
+}
 .spacer {
 	height: 1px;
 	clear: both;
