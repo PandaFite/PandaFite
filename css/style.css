@@ -1,21 +1,3 @@
-/******************************************************************
-*******************************************************************
-Template Name: Effe
-Theme URI: http://www.92five.net
-Description: Personal Blog
-Author: 92five
-Author URI: http://www.92five.net
-Version: 1.0
-							
-Designed & Handcrafted by 92five for 92five.net
-									
-*******************************************************************
-******************************************************************/
-									
-									
-/******************************************************************
-This is the CSS Reset
-******************************************************************/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
@@ -24,7 +6,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -45,10 +26,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/******************************************************************
-TEXT SELECTION STYLES
-******************************************************************/
-/* Safari, Chrome, iPhones, iPads */
 
 a.linksocial {
     color: #454544;
@@ -97,12 +74,7 @@ a.linkinsta:hover {
 	transition: 1s ease;
     -o-transition: 1s ease;
     -webkit-transition: 0.5s ease;
-}
-
-/******************************************************************
-General CSS
-******************************************************************/
-									
+}							
 #content {
 	width: 720px;
 	padding-top: 170px;
@@ -166,131 +138,15 @@ h6 {
 	text-decoration: none;
 	font-size: 10pt;
 }
-/***************************************************
-COLUMNS and FEATURES
-***************************************************/
-
-.one, .one-half, .two-third, .one-third, .one-fourth {
-	float: left;
-}
-.one-half, .two-third, .one-third, .one-fourth {
-	margin-right: 25px;
-}
-.one {
-	width: 720px;
-}
-.one-half {
-	width: 340px;
-}
-.two-third {
-	width: 460px;
-}
-.one-third {
-	width: 220px;
-}
-.one-fourth {
-	width: 160px;
-}
-.one-half-last {
-	width: 350px;
-	float: right;
-}
-.two-third-last {
-	width: 460px;
-	float: right;
-}
-.one-third-last {
-	width: 220px;
-	float: right;
-}
-.one-fourth-last {
-	width: 160px;
-	float: right;
-}
 .clear {
 	clear: both;
 }
-.dropcap {
-	font-family: Verdana, Arial, sans-serif;
-	font-size: 36px;
-	color: #333;
-	width:32px;
-	height:30px;
-	float:left;
-	padding:5px 5px 5px 5px;
-	text-align:center;
-	margin:5px 5px 5px 5px;
-}
-blockquote {
-	font-style:italic;
-	font-size:20px;
-	margin-right:20px;
-	padding-left:20px;
-	margin-left:20px;
-	margin-top: 60px;
-	margin-bottom: 60px;
-	font-family: 'Droid Serif', Verdana, Arial, sans-serif;
-	color:#333;
-	text-align: center;
-	background-image: url(../images/blockquote.png);
-	background-repeat: no-repeat;
-	background-position: left top;
-}
-.styled-list-check li {
-	font-family: Verdana, Arial, sans-serif;
-	line-height: 1.6em;
-	color: #666;
-	text-decoration: none;
-	font-size: 14px;
-	background-image: url(../images/check.png);
-	background-position: left center;
-	background-repeat: no-repeat;
-	padding-left: 16px;
-}
-.styled-list-check {
-	padding-bottom: 60px;
-}
-.styled-list-dot li {
-	font-family: 'Droid Sans', Verdana, Arial, sans-serif;
-	line-height: 1.6em;
-	text-decoration: none;
-	font-size: 14px;
-	color: #666;
-	background-image: url(../images/dot.png);
-	background-position: left center;
-	background-repeat: no-repeat;
-	padding-left: 20px;
-	padding-top: 2px;
-}
-.styled-list-dot {
-	padding-bottom: 60px;
-}
-.styled-list-star li {
-	font-family: 'Droid Sans', Verdana, Arial, sans-serif;
-	line-height: 1.6em;
-	text-decoration: none;
-	font-size: 14px;
-	color: #666;
-	background-image: url(../images/star.png);
-	background-position: left center;
-	background-repeat: no-repeat;
-	padding-left: 20px;
-	padding-top: 2px;
-}
-.styled-list-star {
-	padding-bottom: 60px;
-}
-.readmore {
-	font-family: 'Droid Sans', Verdana, Arial, sans-serif;
-	font-size: 11px;
-	text-decoration: none;
-	color: #E095B4;
-	float: right;
-	margin-right: 0px;
-	margin-top: 0px;
-}
 a:hover {
 	color: #0000E6;
+}
+.socials {
+	font-size: 40pt;
+	letter-spacing: 5px;
 }
 .spacer {
 	height: 1px;
@@ -333,24 +189,6 @@ a:hover {
 	margin-left: auto;
 	background-repeat: no-repeat;
 }
-#error {
-	display: block;
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 300px;
-}
-#sucess {
-	display: block;
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 300px;
-}
-/******************************************************************
-Header & Menu CSS
-******************************************************************/
-
 #header-wrapper {
 	position: fixed;
 	background-color: #FFF;
@@ -387,18 +225,6 @@ Header & Menu CSS
 	text-decoration: none;
 	font-size: 7pt;
 }
-#social-box {
-	width: 96px;
-	height: 22px;
-	position: fixed;
-	bottom: 40px;
-	left: 30px;
-}
-#social-box li {
-	float: left;
-	padding-left: 6px;
-	display: inline;
-}
 #menu-wrapper {
 	height: 100%;
 	padding-top: 120px;
@@ -431,241 +257,6 @@ Header & Menu CSS
 	bottom: 10px;
 	left: 20px;
 }
-.facebook a {
-	background-image: url(../images/facebook.png);
-	background-position: 0 0px;
-	display: block;
-	height: 22px;
-	padding-left: 24px;
-	background-repeat: no-repeat
-}
-.facebook a:hover {
-	background-position: 0 -26px;
-	color: #444444;
-}
-.twitter a {
-	background-image: url(../images/twitter.png);
-	background-position: 0 0px;
-	display: block;
-	height: 22px;
-	padding-left: 24px;
-	background-repeat: no-repeat
-}
-.twitter a:hover {
-	background-position: 0 -26px;
-	color: #444444;
-}
-.rss a {
-	background-image: url(../images/rss.png);
-	background-position: 0 0px;
-	display: block;
-	height: 22px;
-	padding-left: 24px;
-	background-repeat: no-repeat
-}
-.rss a:hover {
-	background-position: 0 -26px;
-	color: #444444;
-}
-#slide-panel {
-	position: fixed;
-	top: 120px;
-	left: 240px;
-	height: 420px;
-	width: 720px;
-	display: none;
-	border-width: 1px;
-	border-style: solid;
-	border-color: #e2e2e2;
-	background-color: #FFF;
-	margin: auto;
-	text-align: center;
-	margin-bottom: 5px;
-	z-index: 6000;
-}
-.slide {
-	background-image: url(../images/slide_button.png);
-	background-repeat: no-repeat;
-	position: fixed;
-	top: 33px;
-	left: 800px;
-	z-index: 5000;
-}
-.btn-slide {
-	text-align: center;
-	width: 120px;
-	height: 60px;
-	display: block;
-	color: #fff;
-	text-decoration: none;
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: bold;
-	font-size: 1em;
-	margin-right: auto;
-	margin-left: auto;
-	line-height: 22px;
-	z-index: 5000;
-}
-/******************************************************************
-Some Nivo Customization CSS
-For easy editing (the main Nivo CSS is in nivo-theme.css)
-******************************************************************/
-
-.theme-effe .nivo-caption {
-	font-family: Verdana, Arial, sans-serif;
-	font-size: 14px;
-}
-.theme-effe .nivo-caption h1 {
-	padding: 50px 10px 5px 10px;
-}
-.theme-effe .nivo-caption p {
-	padding: 5px 20px 20px 20px;
-	text-align: justify;
-}
-.theme-effe .nivo-caption .readmore {
-	position: absolute;
-	font-family: Verdana, Arial, sans-serif;
-	font-size: 16px;
-	color: #999;
-	text-decoration: none;
-	bottom: 20px;
-	left: 160px;
-}
-/******************************************************************
-IMG Hovers
-******************************************************************/
-
-.recent-summary img:hover {
-	-moz-box-shadow: 0px 0px 5px #999;
-	-webkit-box-shadow: 0px 0px 5px #999;
-	box-shadow: 0px 0px 5px #999;
-}
-.recent-gallery img:hover {
-	-moz-box-shadow: 0px 0px 5px #999;
-	-webkit-box-shadow: 0px 0px 5px #999;
-	box-shadow: 0px 0px 5px #999;
-}
-.about-item img:hover {
-	-moz-box-shadow: 0px 0px 5px #999;
-	-webkit-box-shadow: 0px 0px 5px #999;
-	box-shadow: 0px 0px 5px #999;
-}
-.blog-item img:hover {
-	-moz-box-shadow: 0px 0px 5px #999;
-	-webkit-box-shadow: 0px 0px 5px #999;
-	box-shadow: 0px 0px 5px #999;
-}
-.blog-item-single img:hover {
-	-moz-box-shadow: 0px 0px 5px #999;
-	-webkit-box-shadow: 0px 0px 5px #999;
-	box-shadow: 0px 0px 5px #999;
-}
-/******************************************************************
-Home Page CSS
-******************************************************************/
-
-#recent-posts-container {
-	width: 720px;
-	height: 200px;
-	margin-top: 60px;
-}
-#recent-projects-container {
-	width: 720px;
-	height: 200px;
-	margin-top: 60px;
-}
-.section-description {
-	float: left;
-	width: 110px;
-	height: 160px;
-	padding-right: 20px;
-	border-right: 1px;
-	border-style: solid;
-	border-color: #d8d8d8;
-}
-.recent-summary {
-	width: 600px;
-	display: inline;
-}
-.recent-item {
-	padding-left: 40px;
-	float: left;
-	width: 260px;
-}
-.recent-item-last {
-	float: right;
-	width: 250px;
-}
-.recent-summary p {
-	width: 250px;
-	text-align: left;
-	padding: 0px 0px 50px 0px;
-}
-.recent-summary h6 {
-	width: 250px;
-	font-weight: bold;
-	text-align: left;
-	padding: 5px 0px 0px 0px;
-}
-.item {
-	width:125px;
-	height:125px;
-	border:4px solid #222;
-	margin:5px 0px 5px 0px;
-	/* required to hide the image after resized */
-	overflow:hidden;
-	/* for child absolute position */
-	position:relative;
-	/* display div in line */
-	float:left;
-}
-#recent-text {
-	text-align: center;
-}
-#recent-text h5 {
-	padding-bottom: 0px;
-}
-.recent-gallery {
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	width: 720px;
-	margin-top: 40px;
-}
-#follow h1 {
-	text-align: center;
-	font-size: 22px;
-	padding-top: 100px;
-	clear: both;
-}
-#follow h3 {
-	text-align: center;
-	padding: 16px;
-}
-#follow p {
-	text-align: center;
-}
-#follow-twitter {
-	text-align: center;
-	width: 150px;
-	height: 80px;
-	display: block;
-	padding-top: 20px;
-	float: left;
-	padding-left: 170px;
-}
-#follow-mail {
-	text-align: center;
-	width: 150px;
-	height: 80px;
-	display: block;
-	padding-top: 20px;
-	float: right;
-	padding-right: 170px;
-}
-/******************************************************************
-About us CSS
-******************************************************************/
 
 .about {
 	padding-top: 25px;
@@ -677,52 +268,6 @@ About us CSS
 }
 .team-text {
 	text-align: center;
-}
-/******************************************************************
-Portfolio CSS
-******************************************************************/
-
-#filter {
-	display: block;
-	height: 20px;
-	margin-left: 20px;
-	position: relative;
-	text-align: center;
-	width: 700px;
-}
-#filter:before, #filter:after {
-	height: 43px;
-	position: absolute;
-	top: 0;
-	width: 78px;
-	content: '';
-}
-#filter:before {
-	background-position: 0 -47px;
-	left: -78px;
-}
-#filter:after {
-	background-position: 0 0;
-	right: -78px;
-}
-#filter a {
-	font-family: 'Droid Serif', Verdana, Arial, sans-serif;
-	font-size: 16px;
-	color: #666;
-	display: inline-block;
-	text-decoration: none;
-	height: 39px;
-	line-height: 37px;
-	padding: 0 15px;
-}
-#filter a:hover {
-	text-decoration:none;
-}
-#filter a.active {
-	color: #121212;
-}
-#stage {
-	width: 720px;
 }
 #container {
 	display:block;
@@ -755,485 +300,12 @@ Portfolio CSS
 #container ul.hidden {
 	display:none;
 }
-/******************************************************************
-This CSS is for the project page
-******************************************************************/
-#project-title {
-	display: block;
-	font-family: Verdana, Arial, sans-serif;
-	line-height: 1.6em;
-	color: #666;
-	text-decoration: none;
-	font-size: 18pt;
-	float: right;
-	padding-top: 10px;
-}
-.project {
-	padding-top: 50px;
-	width: 720px;
-}
-#description {
-	padding-bottom: 20px;
-	float: left;
-	width: 480px;
-}
-#work {
-	margin-top: 15px;
-	border-left: 1px;
-	border-style: solid;
-	border-color: #c9c9c9;
-	float: right;
-	padding-left: 40px;
-}
-#work h5 {
-	font-family: 'Droid Serif', Verdana, Arial, sans-serif;
-}
-#work li {
-	font-family: 'Droid Sans', Verdana, Arial, sans-serif;
-	line-height: 1.6em;
-	text-decoration: none;
-	font-size: 9pt;
-	color: #666;
-	background-image: url(../images/check.png);
-	background-position: left center;
-	background-repeat: no-repeat;
-	padding-left: 20px;
-	padding-top: 2px;
-}
-.project-summary {
-	clear: both;
-	width: 720px;
-	padding-right: 10px;
-	padding-top: 60px;
-	text-align: left;
-}
-.project-summary h5 {
-	font-family: 'Droid Serif', Verdana, Arial, sans-serif;
-}
-/******************************************************************
-Blog CSS
-******************************************************************/
-
-#blog {
-	display: block;
-	width: 720px;
-	margin-top: 10px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 100px;
-}
-.blog-item-info {
-	padding: 10px 0 15px 0;
-	height: 15px;
-	width: 400px;
-	float: right;
-}
-.blog-item {
-	clear: both;
-	width: 720px;
-	height: 270px;
-}
-.blog-item-content {
-	width: 400px;
-	margin-top: 0px;
-	margin-left: 15px;
-	margin-bottom: 50px;
-	float: right;
-}
-.blog-item img {
-	margin-bottom: 50px;
-	float: left;
-}
-.blog-item-content h5 {
-	font-weight: bold;
-}
-.blog-item-content p {
-	padding: 0px 5px 5px 0px;
-	text-align: justify;
-}
-#blog .readmore {
-	float: left;
-	padding-top: 20px;
-}
-.user {
-	background-image: url(../images/user.png);
-	background-position: 0 1px;
-	padding-bottom: 1px;
-	margin-right: 15px;
-	display: inline;
-	text-decoration: none;
-	font-size: 12px;
-	height: 15px;
-	color: #d6d6d6;
-	padding-left: 20px;
-	background-repeat: no-repeat
-}
-.user:hover {
-	background-position: 0 -17px;
-	color: #444444;
-}
-.comments {
-	background-image: url(../images/comments.png);
-	background-position: 0 1px;
-	padding-bottom: 1px;
-	margin-right: 15px;
-	display: inline;
-	text-decoration: none;
-	font-size: 12px;
-	height: 15px;
-	color: #d6d6d6;
-	padding-left: 20px;
-	background-repeat: no-repeat
-}
-.comments:hover {
-	background-position: 0 -17px;
-	color: #444444;
-}
-.tags {
-	background-image: url(../images/tags.png);
-	background-position: 0 1px;
-	padding-bottom: 1px;
-	margin-right: 15px;
-	display: inline;
-	text-decoration: none;
-	font-size: 12px;
-	height: 15px;
-	color: #d6d6d6;
-	padding-left: 20px;
-	background-repeat: no-repeat
-}
-.tags:hover {
-	background-position: 0 -17px;
-	color: #444444;
-}
-#pagination {
-	display: inline-block;
-	height: 8px;
-	text-align: center;
-	width: 720px;
-	font-size: 10pt;
-}
-#pagination a {
-	color: #707070;
-	text-decoration: none;
-}
-#pagination .active {
-	color: #444444;
-	text-decoration: underline;
-}
-.blog-item-single-info {
-	padding: 5px 0 20px 0;
-	height: 15px;
-	width: 720px;
-}
-.blog-item-single {
-	clear: both;
-	width: 720px;
-	height: 270px;
-}
-.blog-item-single-content {
-	width: 720px;
-	margin-top: 10px;
-	margin-bottom: 50px;
-}
-.blog-item-single img {
-	margin-bottom: 10px;
-}
-.blog-item-single-content h5 {
-	font-weight: bold;
-}
-.blog-item-single-content p {
-	text-align: left;
-	padding-bottom: 20px;
-}
-.social-blog-buttons {
-	display: inline;
-	float: left;
-	height: 20px;
-}
-.comments-block {
-	width: 720px;
-}
-.comments-title {
-	padding-top: 40px;
-}
-.comments-block a {
-	width: 720px;
-}
-.avatar {
-	padding-top: 6px;
-	float: left;
-	width: 40px;
-}
-.post-author {
-	font-family: 'Droid Serif', Verdana, Arial, sans-serif;
-	line-height: 1.6em;
-	color: #454544;
-	text-decoration: none;
-	font-size: 14pt;
-	cursor: pointer;
-}
-.comment-info {
-	width: 400px;
-	display: block;
-	padding-left: 60px;
-}
-.comment-body {
-	padding-top: 15px;
-}
-.reply {
-	font-family: 'Droid Serif', Verdana, Arial, sans-serif;
-	line-height: 1.6em;
-	color: #454544;
-	text-decoration: none;
-	font-size: 10pt;
-}
-.required-comment {
-	padding-bottom: 20px;
-}
-.short-label {
-	width: 40px;
-}
-.input-block {
-	width: 180px;
-	padding-right: 65px;
-	height: 50px;
-	display: inline-block;
-}
-.input-block-long {
-	width: 140px;
-	display: inline-block;
-}
-.short-field {
-	width: 170px;
-}
-.long-field {
-	width: 200px;
-}
-#comment {
-	width: 700px;
-}
-#comment-button {
-	height: 30px;
-	padding: 5px;
-}
-/***************************************************
-Contact CSS
-***************************************************/
-
-#contact {
-	display: inline;
-	position: relative;
-	width: 450px;
-	float: left;
-	margin: 0px;
-	margin-top: 20px;
-	margin-bottom: 40px;
-	padding: 20px 70px 20px 0px;
-	;
-	border-right: 1px;
-	border-style: solid;
-	border-color: #d6d6d6;
-}
-#contactform {
-	padding-top: 10px;
-}
-#contact p {
-	padding-top: 5px;
-}
-#contactform h6 {
-	font-size: 12px;
-	color: #848484;
-	float: left;
-}
-#contactform .boxes {
-	float: left;
-	display: block;
-	margin-bottom: 20px;
-	margin-top: 20px;
-}
-#contactform .box {
-	width: 390px;
-	margin-bottom: 18px;
-	margin-top: 2px;
-	margin-left: 60px;
-}
-#contactform .msgbox {
-	margin-bottom: 18px;
-	margin-top: 2px;
-	margin-left: 60px;
-	width: 400px;
-}
-#contactform .message {
-	text-align: left;
-	margin-top: 2px;
-	height: 135px;
-	width: 400px;
-	padding: 5px;
-}
-#contactform #sender_name {
-	width: 320px;
-}
-#contactform #sender_email {
-	width: 320px;
-}
-#contactform #sender_url {
-	width: 320px;
-}
-#contactform .submitbtn {
-	width: 120px;
-	padding-top: 15px;
-	margin-left: 60px;
-}
-.contactinformation .overline {
-	margin-bottom: 15px;
-}
-#contactinfo {
-	padding-right: 10px;
-	padding-top: 80px;
-	float: right;
-}
-/******************************************************************
-This is the buttons and inputs CSS
-******************************************************************/
-
-.button {
-	font-family: 'Droid Serif', Verdana, Arial, sans-serif;
-	font-size:12px;
-	text-align:center;
-	text-decoration:none;
-	padding-top: 5px;
-	height: 34px;
-	padding-right: 10px;
-	padding-bottom: 7px;
-	padding-left: 10px;
-}
-.btncolor, .btncolor:focus, .btncolor:hover {
-	background:#FFF;
-	color:#999;
-}
-.required {
-	color: #444444;
-}
-input, textarea {
-	background: #fff;
-	border: 1px solid #c9c9c9;
-}
-input, textarea {
-	padding: 5px;
-}
-input {
-	height: 20px;
-}
-input:focus, textarea:focus, button:hover {
-	background: #fff;
-	border: 1px solid #444444;
-	-webkit-box-shadow: 0 0 2px #444444;
-	-moz-box-shadow: 0 0 2px #444444;
-	box-shadow: 0 0 2px #444444;
-}
-input:focus, textarea:focus {
-	color: #c9c9c9;
-}
-/******************************************************************
-This is the CSS for the social links
-******************************************************************/
-
-#social {
-	display: inline;
-	float: right;
-}
-.dribbble a {
-	background-image: url(../images/dribbble.png);
-	background-position: 0 1px;
-	padding-bottom: 1px;
-	margin-bottom: 8px;
-	text-decoration: none;
-	font-size: 12px;
-	display: block;
-	height: 15px;
-	color: #727272;
-	padding-left: 20px;
-	background-repeat: no-repeat
-}
-.dribbble a:hover {
-	background-position: 0 -17px;
-	color: #444444;
-}
-.forrst a {
-	background-image: url(../images/forrst.png);
-	background-position: 0 1px;
-	padding-bottom: 1px;
-	margin-bottom: 8px;
-	text-decoration: none;
-	font-size: 12px;
-	display: block;
-	height: 15px;
-	color: #727272;
-	padding-left: 20px;
-	background-repeat: no-repeat
-}
-.forrst a:hover {
-	background-position: 0 -17px;
-	color: #444444;
-}
-.google a {
-	background-image: url(../images/google.png);
-	background-position: 0 1px;
-	padding-bottom: 1px;
-	margin-bottom: 8px;
-	text-decoration: none;
-	font-size: 12px;
-	display: block;
-	height: 15px;
-	color: #727272;
-	padding-left: 20px;
-	background-repeat: no-repeat
-}
-.google a:hover {
-	background-position: 0 -17px;
-	color: #444444;
-}
-.twitter_small a {
-	background-image: url(../images/twitter_small.png);
-	background-position: 0 1px;
-	padding-bottom: 1px;
-	margin-bottom: 8px;
-	text-decoration: none;
-	font-size: 12px;
-	display: block;
-	height: 15px;
-	color: #727272;
-	padding-left: 20px;
-	background-repeat: no-repeat
-}
-.twitter_small a:hover {
-	background-position: 0 -17px;
-	color: #444444;
-}
-.facebook_small a {
-	background-image: url(../images/facebook_small.png);
-	background-position: 0 1px;
-	padding-bottom: 1px;
-	margin-bottom: 8px;
-	text-decoration: none;
-	font-size: 12px;
-	display: block;
-	height: 15px;
-	color: #727272;
-	padding-left: 20px;
-	background-repeat: no-repeat
-}
-.facebook_small a:hover {
-	background-position: 0 -17px;
-	color: #444444;
-}
 /* latin */
 @font-face {
   font-family: 'Droid Serif';
   font-style: normal;
   font-weight: 400;
-  src: local('Droid Serif'), local('DroidSerif'), url(http://fonts.gstatic.com/s/droidserif/v6/0AKsP294HTD-nvJgucYTaI4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+  src: local('Droid Serif'), local('DroidSerif'), url(https://fonts.gstatic.com/s/droidserif/v6/0AKsP294HTD-nvJgucYTaI4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 /* latin */
@@ -1241,7 +313,7 @@ This is the CSS for the social links
   font-family: 'Droid Serif';
   font-style: normal;
   font-weight: 700;
-  src: local('Droid Serif Bold'), local('DroidSerif-Bold'), url(http://fonts.gstatic.com/s/droidserif/v6/QQt14e8dY39u-eYBZmppwYlIZu-HDpmDIZMigmsroc4.woff2) format('woff2');
+  src: local('Droid Serif Bold'), local('DroidSerif-Bold'), url(https://fonts.gstatic.com/s/droidserif/v6/QQt14e8dY39u-eYBZmppwYlIZu-HDpmDIZMigmsroc4.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 /* latin */
@@ -1249,7 +321,7 @@ This is the CSS for the social links
   font-family: 'Droid Serif';
   font-style: italic;
   font-weight: 400;
-  src: local('Droid Serif Italic'), local('DroidSerif-Italic'), url(http://fonts.gstatic.com/s/droidserif/v6/cj2hUnSRBhwmSPr9kS5898u2Q0OS-KeTAWjgkS85mDg.woff2) format('woff2');
+  src: local('Droid Serif Italic'), local('DroidSerif-Italic'), url(https://fonts.gstatic.com/s/droidserif/v6/cj2hUnSRBhwmSPr9kS5898u2Q0OS-KeTAWjgkS85mDg.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 /* latin */
@@ -1257,7 +329,7 @@ This is the CSS for the social links
   font-family: 'Droid Serif';
   font-style: italic;
   font-weight: 700;
-  src: local('Droid Serif Bold Italic'), local('DroidSerif-BoldItalic'), url(http://fonts.gstatic.com/s/droidserif/v6/c92rD_x0V1LslSFt3-QEpo9ObOXPY1wUIXqKtDjSdsY.woff2) format('woff2');
+  src: local('Droid Serif Bold Italic'), local('DroidSerif-BoldItalic'), url(https://fonts.gstatic.com/s/droidserif/v6/c92rD_x0V1LslSFt3-QEpo9ObOXPY1wUIXqKtDjSdsY.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 /* latin */
@@ -1265,7 +337,7 @@ This is the CSS for the social links
   font-family: 'Droid Sans';
   font-style: normal;
   font-weight: 400;
-  src: local('Droid Sans'), local('DroidSans'), url(http://fonts.gstatic.com/s/droidsans/v6/s-BiyweUPV0v-yRb-cjciPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  src: local('Droid Sans'), local('DroidSans'), url(https://fonts.gstatic.com/s/droidsans/v6/s-BiyweUPV0v-yRb-cjciPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 /* latin */
@@ -1273,6 +345,6 @@ This is the CSS for the social links
   font-family: 'Droid Sans';
   font-style: normal;
   font-weight: 700;
-  src: local('Droid Sans Bold'), local('DroidSans-Bold'), url(http://fonts.gstatic.com/s/droidsans/v6/EFpQQyG9GqCrobXxL-KRMYWiMMZ7xLd792ULpGE4W_Y.woff2) format('woff2');
+  src: local('Droid Sans Bold'), local('DroidSans-Bold'), url(https://fonts.gstatic.com/s/droidsans/v6/EFpQQyG9GqCrobXxL-KRMYWiMMZ7xLd792ULpGE4W_Y.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
