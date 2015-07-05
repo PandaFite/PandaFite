@@ -3,18 +3,23 @@
 <head>
 <title>Downloads - PandaPlaysHD</title>
 <link rel="shortcut icon" href="https://pandaplayshd.com/favicon.ico" />
-<link href="css/style.css?3" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="css/stylesheet1.css" type="text/css" />
-<link rel="stylesheet" href="css/stylesheet2.css" type="text/css" />
+<link href="css/style.css?11" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-<script type="text/javascript" src="scripts/custom.js"></script>
+<script>
+window.onload = function () {
+    if (window.innerHeight > 1000) {
+        var script = document.createElement('script');
+        script.src= '/scripts/twitterWidget.js';
+        document.body.appendChild(script);
+    }
+};
+</script>
 </head>
 <body>
-<div id="topcontrol" style="position: fixed; bottom: 5px; left: 960px; opacity: 1; cursor: pointer;" title="Go to Top"></div>
 <div id="header-wrapper">
 <div id="header">
-<div id="logo"><a href="http://twitch.tv/pandaplayshd" target="_blank"><img src="http://streambadge.com/twitch/custom/ffffff/0057ae/808080/PandaPlaysHD.png" style="user-drag: none; -moz-user-select: none; -webkit-user-drag: none;"></a></div>
-</div>
+<div id="logo"><a href="http://twitch.tv/pandaplayshd" target="_blank"><img src="images/logo.jpg" width="64" height="64" style="user-drag: none; -moz-user-select: none; -webkit-user-drag: none;"></a></div>
+ </div>
 </div>
 <div id="menu-wrapper">
 <div id="main-menu">
@@ -31,7 +36,6 @@
 <br />
 <br />
 <a class="twitter-timeline" width="150" href="https://twitter.com/PandaPlaysHD" data-widget-id="597902122345103360"></a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </div>
 <div id="footer">
 <h6>Copyright &copy 2015 PandaPlaysHD<br />Powered by MattUnderscore<br />mattunderscore.co</h6>
