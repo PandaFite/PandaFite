@@ -4,7 +4,7 @@
 <script src="scripts/https.js?2"></script>
 <title>PandaPlaysHD</title>
 <link rel="shortcut icon" href="https://pandaplayshd.com/favicon.ico" />
-<link href="css/style.css?12" rel="stylesheet" type="text/css" />
+<link href="css/style.css?13" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <script>
 window.onload = function () {
@@ -17,6 +17,7 @@ window.onload = function () {
 </script>
 <script src="scripts/jquery-1.8.0.min.js"></script>
 <script src="scripts/twitchTitle.js"></script>
+<script src="scripts/twitchGame.js"></script>
 <script src="scripts/streamStatus.js"></script>
 </head>
 <body>
@@ -69,7 +70,7 @@ window.onload = function () {
 </div>
 </div>
 <div name="title" style="text-align: center; padding-bottom:20px;" align="center">
-<p style="font-weight: bold;">Current Title: </p><p id="title">Loading...</p>
+<i id="title">Loading...</i><br><i>Playing </i><i id="game">Loading...</i>
 </div>
 <iframe src="https://www-cdn.jtvnw.net/swflibs/TwitchPlayer.r94bb0312865162bc8384ec5050df550dacd90e6f.swf?channel=pandaplayshd" frameborder="0" scrolling="no" height="378" width="620"></iframe>
 <div class="spacer"></div>

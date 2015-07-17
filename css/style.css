@@ -87,6 +87,12 @@ p {
 	color: #848484;
 	font-size: 8pt;
 }
+i {
+	font-family: Verdana, Arial, sans-serif;
+	line-height: 1.6em;
+	color: #848484;
+	font-size: 8pt;
+}
 b {
     font-weight: bold;
 }
