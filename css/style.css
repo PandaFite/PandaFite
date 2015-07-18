@@ -75,7 +75,19 @@ a.linkinsta:hover {
 	transition: 1s ease;
     -o-transition: 1s ease;
     -webkit-transition: 0.5s ease;
-}							
+}
+a.hyperlink {
+	color: #454544;
+	transition: 1s ease;
+    -o-transition: 1s ease;
+    -webkit-transition: 0.5s ease;
+}
+a.hyperlink:hover {
+	color: #0000E6;
+	transition: 1s ease;
+    -o-transition: 1s ease;
+    -webkit-transition: 0.5s ease;
+}					
 #content {
 	width: 720px;
 	padding-top: 170px;
