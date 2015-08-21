@@ -17,13 +17,14 @@ window.onload = function () {
 </script>
 <script src="scripts/jquery-1.8.0.min.js"></script>
 <script src="scripts/twitchTitle.js"></script>
+<script src="scripts/twitchFollowers.js"></script>
 <script src="scripts/twitchGame.js"></script>
 <script src="scripts/streamStatus.js"></script>
 </head>
 <body>
 <div id="header-wrapper">
 <div id="header">
-<div id="logo"><a href="http://twitch.tv/pandaplayshd" target="_blank"><img src="images/logo.jpg" width="64" height="64" style="user-drag: none; -moz-user-select: none; -webkit-user-drag: none;"></a></div>
+<div id="logo"><a href="http://twitch.tv/pandaplayshd" target="_blank"><img src="images/logo.png" width="64" height="64" style="user-drag: none; -moz-user-select: none; -webkit-user-drag: none;"></a></div>
 <div class="status">Status:<div id="streamWidget">Loading...</div></div>
  </div>
 </div>
@@ -38,7 +39,7 @@ window.onload = function () {
 <li><a href="specs">PC Specs</a></li>
 <li><a href="music">Music</a></li>
 <li><a href="hdpoints">HDPoints</a></li>
-<li><a href="https://unban.pandaplayshd.com">Chat Unban</a></li>
+<li><a href="https://unban.pandaplayshd.com" target="_blank">Chat Unban</a></li>
 <li><a href="business">Business</a></li>
 <li><a href="downloads">Downloads</a></li>
 </ul>
@@ -57,17 +58,16 @@ window.onload = function () {
 <h2>PandaPlaysHD</h2>
 <div class="star-divider"></div>
 <div class="spacer"></div>
-<div class="about" align="center">
 <h4>Welcome to PandaPlaysHD's website!</a></h4>
 <div class="container">
 <div class="star-divider"></div>
 </div>
-</div>
 <div name="title" style="text-align: center; padding-bottom:20px;" align="center">
-<i id="title">Loading...</i><br><i>Playing </i><i id="game">Loading...</i>
+<i id="title">Loading...</i><br/ ><i>Game: </i><i id="game">Loading...</i><br /><i>Current Followers: </i><i id="followers">Loading...</i>
 </div>
 <iframe src="https://www-cdn.jtvnw.net/swflibs/TwitchPlayer.r94bb0312865162bc8384ec5050df550dacd90e6f.swf?channel=pandaplayshd" frameborder="0" scrolling="no" height="378" width="620"></iframe>
-<br>
+<br />
+<br />
 <input type="button" value="Popout Chat" onClick="javascript:window.open('http://www.twitch.tv/pandaplayshd/chat', 'popoutChat', 'width=400,height=650');">
 <div class="spacer"></div>
 </div>
