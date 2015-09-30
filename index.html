@@ -1,7 +1,12 @@
 <!doctype html>
 <html>
 <head>
-<script src="scripts/https.js?2"></script>
+<script>
+var host = "pandaplayshd.com"
+if (window.location.host == host && window.location.protocol != "http:") {
+  window.location.protocol = "http:"
+}
+</script>
 <title>PandaPlaysHD</title>
 <link rel="shortcut icon" href="https://pandaplayshd.com/favicon.ico" />
 <link href="css/style.css?8_13_15" rel="stylesheet" type="text/css" />
@@ -65,7 +70,7 @@ window.onload = function () {
 <div name="title" style="text-align: center; padding-bottom:20px;" align="center">
 <i id="title">Loading... (Refresh if this takes longer than 5s)</i><br/ ><i>Game: </i><i id="game">Loading...</i><br /><i>Current Followers: </i><i id="followers">Loading...</i>
 </div>
-<iframe src="https://www-cdn.jtvnw.net/swflibs/TwitchPlayer.r7fbd593cc3b3c5ed3c1205c51ea31494e32f4aac.swf?channel=pandaplayshd" frameborder="0" scrolling="no" height="378" width="620"></iframe>
+<iframe src="http://player.twitch.tv/?channel=pandaplayshd" frameborder="0" scrolling="no" height="378" width="620"></iframe>
 <br />
 <br />
 <input type="button" value="Popout Chat" onClick="javascript:window.open('http://www.twitch.tv/pandaplayshd/chat', 'popoutChat', 'width=400,height=650');">
