@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<script src="scripts/https.js?2"></script>
+<script type="text/javascript">
+  if (screen.width <= 800) {
+    window.location = "http://mobile.pandaplayshd.com/unavailable";
+  }
+</script>
+<title> Moderator Application - PandaPlaysHD</title>
+<link rel="shortcut icon" href="https://pandaplayshd.com/favicon.ico" />
+<link href="css/style.css?8_13_15" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<script>
+window.onload = function () {
+    if (window.innerHeight > 750) {
+        var script = document.createElement('script');
+        script.src= '/scripts/twitterWidget.js';
+        document.body.appendChild(script);
+    }
+};
+</script>
+<script src="scripts/jquery-1.8.0.min.js"></script>
+<script src="scripts/streamStatus.js"></script>
+</head>
+<body>
+<div id="header-wrapper">
+<div id="header">
+<div id="logo"><a href="http://twitch.tv/pandaplayshd" target="_blank"><img src="images/logo.png" width="64" height="64" style="user-drag: none; -moz-user-select: none; -webkit-user-drag: none;"></a></div>
+<div class="status">Status:<div id="streamWidget">Loading...</div></div>
+ </div>
+</div>
+<div id="menu-wrapper">
+<div id="main-menu">
+<ul>
+<li><a href="https://pandaplayshd.com">Home</a></li>
+<li><a href="schedule">Schedule</a></li>
+<li><a href="about">About</a></li>
+<li><a href="social">Social</a></li>
+<li><a href="rules">Rules</a></li>
+<li><a href="specs">PC Specs</a></li>
+<li><a href="music">Music</a></li>
+<li><a href="hdpoints">HDPoints</a></li>
+<li><a href="https://unban.pandaplayshd.com" target="_blank">Chat Unban</a></li>
+<li><a href="business">Business</a></li>
+<li><a href="downloads">Downloads</a></li>
+</ul>
+<br />
+<br />
+<a class="twitter-timeline" width="150" href="https://twitter.com/PandaPlaysHD" data-widget-id="597902122345103360"></a>
+  </div>
+
+	<div id="footer">
+		<h6><a href="https://github.com/mattunderscore/PandaPlaysHD/issues" target="_blank"><u>Report an issue</u></a><br /><a href="https://github.com/mattunderscore/PandaPlaysHD" target="_blank"><u>View on GitHub</u></a><br />Copyright &copy 2015 PandaPlaysHD</h6>
+	</div>
+</div>
+<div name="home" id="home"></div>
+<center>
+<div id="content">
+<div class="spacer"></div>
+<h2>Moderator Application</h2>
+<div class="star-divider"></div>
+<div class="spacer"></div>
+<div class="about" align="center">
+<p style="font-size:14px;line-height:28px">If you would like to apply for moderator in this channel you must have over 40 hours in the stream and be active in chat. You may check your time in the stream by doing !time. Send a message with the subject "<u>Moderator Application</u>" to tell me <u>why</u> you want to be a channel moderator and your <u>time zone</u>. Then I will reply telling you if you were accepted within 7 days. Asking about your moderator application in stream chat will <u>disqualify</u> you (and probably a time-out, too!)</p>
+<br />
+<br />
+<script>
+/*<![CDATA[*/
+
+function Disable(cb,but){
+ var cbs=document.getElementsByName(cb.name);
+ but=cbs[0].form[but]
+ but.setAttribute('disabled','disabled');
+ for (var zxc0=0;zxc0<cbs.length;zxc0++){
+  if (cbs[zxc0].checked){
+   but.removeAttribute('disabled');
+   break;
+  }
+ }
+
+}
+/*]]>*/
+</script>
+<form>
+<div name="submitForm">
+<input type="checkbox" id="submitCheckbox" name="submitCheckbox" onclick="Disable(this,'submitButton')">
+<label style="font-size:16px; color:#848484;" for="submitCheckbox">I have read & understand the above requirements.</label>
+</div>
+<br />
+<a href="http://pandaplayshd.com/mod-application-submit"> <button type="button" id="submitButton" name="submitButton" value="Send Message" disabled="disabled"/>Send Message</button></a>
+</form>
+</div>
+</center>
+</div>
+</body>
+</html>
