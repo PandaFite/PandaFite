@@ -33,6 +33,9 @@ a {
     -o-transition: 1s ease;
     -webkit-transition: 0.5s ease;
 	text-decoration: none;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	
 }
 a:visited {
 	color: #454544;
