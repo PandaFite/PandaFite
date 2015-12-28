@@ -1,83 +1,181 @@
-<!doctype html>
+<!DOCTYPE html>
+<!--updated5 -->
 <html>
 <head>
-<script>
-if (window.location.protocol != "http:") {
-  window.location.protocol = "http:"
-}
-</script>
 <title>PandaPlaysHD</title>
-<link rel="shortcut icon" href="https://pandaplayshd.com/favicon.ico" />
-<link href="css/style.css?8_13_15" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-<script>
-window.onload = function () {
-    if (window.innerHeight > 750) {
-        var script = document.createElement('script');
-        script.src= '/scripts/twitterWidget.js';
-        document.body.appendChild(script);
-    }
-};
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap-responsive.css">
+<link rel="stylesheet" href="css/prettyPhoto.css" />
+<link rel="stylesheet" href="css/flexslider.css" />
+<link rel="stylesheet" href="css/custom-styles.css">
+<link rel="shortcut icon" href="img/favicon.ico">
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/jquery.custom.js"></script>
+<script src="js/twitchTitle.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function () {
+
+    $("#btn-blog-next").click(function () {
+      $('#blogCarousel').carousel('next')
+    });
+     $("#btn-blog-prev").click(function () {
+      $('#blogCarousel').carousel('prev')
+    });
+
+     $("#btn-client-next").click(function () {
+      $('#clientCarousel').carousel('next')
+    });
+     $("#btn-client-prev").click(function () {
+      $('#clientCarousel').carousel('prev')
+    });
+    
+});
+
+ $(window).load(function(){
+
+    $('.flexslider').flexslider({
+        animation: "slide",
+        slideshow: true,
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+    });  
+});
+
 </script>
-<script src="scripts/jquery-1.8.0.min.js"></script>
-<script src="scripts/twitchTitle.js"></script>
-<script src="scripts/twitchFollowers.js"></script>
-<script src="scripts/twitchGame.js"></script>
-<script src="scripts/streamStatus.js"></script>
 </head>
-<body>
-<div id="header-wrapper">
-<div id="header">
-<div id="logo"><a href="http://twitch.tv/pandaplayshd" target="_blank"><img src="https://pandaplayshd.com/images/logo.png?v=12_23_2015" width="49" height="64" style="user-drag: none; -moz-user-select: none; -webkit-user-drag: none;"></a></div>
-<div class="status">Status:<div id="streamWidget">Loading...</div></div>
-<div style="float:right;"><p style="font-size: 16px">Want to try out the new version of this website? <a href="http://dev.pandaplayshd.com"><u>Click here.</u></a></p></div>
- </div>
-</div>
-<div id="menu-wrapper">
-<div id="main-menu">
-<ul>
-<li><a class="selected">Home</a></li>
-<li><a href="schedule">Schedule</a></li>
-<li><a href="about">About</a></li>
-<li><a href="social">Social</a></li>
-<li><a href="rules">Rules</a></li>
-<li><a href="specs">PC Specs</a></li>
-<li><a href="music">Music</a></li>
-<li><a href="hdpoints">HDPoints</a></li>
-<li><a href="https://unban.pandaplayshd.com" target="_blank">Chat Unban</a></li>
-<li><a href="business">Business</a></li>
-<li><a href="downloads">Downloads</a></li>
-</ul>
-<br />
-<br />
-<a class="twitter-timeline" width="150" href="https://twitter.com/PandaPlaysHD" data-widget-id="597902122345103360"></a>
-</div>
-<div id="footer">
-<h6><a href="https://github.com/mattunderscore/PandaPlaysHD/issues" target="_blank"><u>Report an issue</u></a><br /><a href="https://github.com/mattunderscore/PandaPlaysHD" target="_blank"><u>View on GitHub</u></a><br />Copyright &copy 2015 PandaPlaysHD</h6>
-</div>
-</div>
-<center>
-<div id="content">
-<div class="spacer"></div>
-<div class="team-text">
-<h2>PandaPlaysHD</h2>
-<div class="star-divider"></div>
-<div class="spacer"></div>
-<h4>Welcome to PandaPlaysHD's website!</a></h4>
-<div class="container">
-<div class="star-divider"></div>
-</div>
-<div name="title" style="text-align: center; padding-bottom:20px;" align="center">
-<i id="title">Loading... (Refresh if this takes longer than 5s)</i><br/ ><i>Game: </i><i id="game">Loading...</i><br /><i>Current Followers: </i><i id="followers">Loading...</i>
-</div>
-<iframe id="video" class="twitch" src="http://player.twitch.tv/?channel=pandaplayshd" frameborder="0" scrolling="no" height="378" width="672"></iframe>
-<br />
-<br />
-<input type="button" value="Popout Chat" onClick="javascript:window.open('http://www.twitch.tv/pandaplayshd/chat', 'popoutChat', 'width=400,height=650');">
-<div class="spacer"></div>
-</div>
-</center>
-</div>
-</div>
+
+<body class="home">
+    <!-- Color Bars (above header)-->
+	<div style="width: 100%;">
+	<div class="color-bar-1"></div>
+    <div class="color-bar-2 color-bg"></div>
+	</div>
+    
+    <div class="container">
+    
+      <div class="row header"><!-- Begin Header -->
+		
+        <div class="span7 navigation">
+		
+		            <!-- Mobile Nav
+            ================================================== -->
+		
+		<form action="#" id="mobile-nav" class="visible-phone visible-tablet">
+                <div class="mobile-nav-select">
+                <select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
+                    <option value="">Menu...</option>
+                    <option value="index.html">Home</option>
+                    <option value="schedule.html">Schedule</option>
+                    <option value="about.html">About</option>
+                    <option value="social.html">Social</option>
+                    <option value="rules.html">Rules</option>
+                    <option value="specs.html">PC Specs</option>
+					<option value="hdpoints.html">HDPoints</option>
+					<option value="https://unban.pandaplayshd.com">Chat Unban</option>
+					<option value="business.html">Business</option>
+					<option value="downloads.html">Downloads</option>
+                </select>
+                </div>
+                </form>
+		
+		<div id="menu-logo" class="span5 logo hidden-phone">
+        	<img class="hidden-phone nodrag" src="https://pandaplayshd.com/images/logo.png?v=12_23_2015" width="49" height="64" alt="" />
+            <h3>PandaPlaysHD</h3>
+        </div>
+		<div id="menu-logo" class="span5 logo visible-phone" style="text-align: center">
+            <h3>PandaPlaysHD</h3>
+        </div>
+            <div id="menu-content" class="navbar hidden-phone hidden-tablet" style="display: inline-block; float: right;">
+            
+			<ul class="nav">
+           <li class="active"><a href="#">Home</a></li>
+           <li><a href="schedule.html">Schedule</a></li>
+           <li><a href="about.html">About</a></li>
+		   <li><a href="social.html">Social</a></li>
+		   <li><a href="rules.html">Rules</a></li>
+		   <li><a href="specs.html">PC Specs</a></li>
+		   <li><a href="hdpoints.html">HDPoints</a></li>
+		   <li><a href="https://unban.pandaplayshd.com" target="_blank">Chat Unban</a></li>
+		   <li><a href="business.html">Business</a></li>
+		   <li><a href="downloads.html">Downloads</a></li>
+            </ul>
+           
+            </div>
+
+
+            
+
+        </div>
+        
+      </div><!-- End Header -->
+	  
+     
+    <div class="row headline"><!-- Begin Headline -->
+        <div class="span8 hidden-phone hidden-tablet">
+        		<h5 class="title-bg" style="text-align: center">  
+                <small id="title"><img src="img/loader.gif" class="nodrag"></small>
+				</h5>
+            <iframe height="659" width="100%" frameborder="0" margin="0" src="http://player.twitch.tv/?channel=PandaPlaysHD"></iframe>
+			<iframe frameborder="0" margin="0" scrolling="no" align="left" src="http://twitch.tv/pandaplayshd/chat" height="430" width="650"></iframe>
+			<a class="twitter-timeline" width="520" align="right" data-widget-id="679854553429184512"></a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div>
+		
+		<div class="span8 visible-tablet hidden-phone left: 0; right: 0;" width="100%">
+		<h1 style="text-align: center;">Welcome to PandaPlaysHD's website!</h1>
+		<center>
+		<a class="twitter-timeline" width="450" align="right" data-widget-id="679854553429184512"></a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		</center>
+		</div>
+		
+		<div class="span8 hidden-tablet visible-phone left: 0; right: 0;" width="100%">
+		<h1 style="text-align: center;">Welcome to PandaPlaysHD's website!</h1>
+		<br>
+		<h4 style="text-align: center;">You have reached the mobile homepage. Use the above menu to navigate throughout the site.</h4>
+		</div>
+        
+        <!-- Headline Text
+        ================================================== -->
+    </div><!-- End Headline -->
+	</div> <!-- End Container -->
+
+    <!-- Footer Area
+        ================================================== -->
+
+	<div class="footer-container hidden-phone"><!-- Begin Footer -->
+    	<div class="container">
+        	<div class="row footer-row">
+            </div>
+
+            <div class="row"><!-- Begin Sub Footer -->
+                <div class="span12 footer-col footer-sub">
+                    <div class="row no-margin">
+                        <div class="span6"><span class="left">Copyright &copy 2015 PandaPlaysHD&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Programmed by <a href="https://twitter.com/matttunderscore" target="_blank">@matttunderscore</a></span></div>
+                        <div class="span6">
+                            <span class="right">
+                            <a href="https://github.com/mattunderscore/PandaPlaysHD/issues">Report an Issue</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- End Sub Footer -->
+
+        </div>
+    </div><!-- End Footer --> 
+    
+    <!-- Scroll to Top -->  
+    <div id="toTop" class="hidden-phone hidden-tablet">Back to Top</div>
+	<div class="visible-phone hidden-tablet" style="bottom: 0; position: fixed; width: 100%">
+	<div class="color-bar-2 color-bg"></div>
+	<div class="color-bar-1"></div>
+	</div>
 </body>
 </html>

@@ -1,60 +1,200 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-<script src="https://pandaplayshd.com/scripts/https.js?2"></script>
-<title>404 - PandaPlaysHD</title>
-<link rel="shortcut icon" href="https://pandaplayshd.com/favicon.ico" />
-<link href="https://pandaplayshd.com/css/style.css?8_13_15" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-<script>
-window.onload = function () {
-    if (window.innerHeight > 750) {
-        var script = document.createElement('script');
-        script.src= '/scripts/twitterWidget.js';
-        document.body.appendChild(script);
-    }
-};
+<title>Page not found - PandaPlaysHD</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap-responsive.css">
+<link rel="stylesheet" href="css/prettyPhoto.css" />
+<link rel="stylesheet" href="css/flexslider.css" />
+<link rel="stylesheet" href="css/custom-styles.css?1">
+<link rel="shortcut icon" href="img/favicon.ico">
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/jquery.custom.js"></script>
+<script src="js/twitchTitle.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function () {
+
+    $("#btn-blog-next").click(function () {
+      $('#blogCarousel').carousel('next')
+    });
+     $("#btn-blog-prev").click(function () {
+      $('#blogCarousel').carousel('prev')
+    });
+
+     $("#btn-client-next").click(function () {
+      $('#clientCarousel').carousel('next')
+    });
+     $("#btn-client-prev").click(function () {
+      $('#clientCarousel').carousel('prev')
+    });
+    
+});
+
+ $(window).load(function(){
+
+    $('.flexslider').flexslider({
+        animation: "slide",
+        slideshow: true,
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+    });  
+});
+
 </script>
-<meta http-equiv="refresh" content="3;URL=http://pandaplayshd.com">
-<script src="https://pandaplayshd.com/scripts/jquery-1.8.0.min.js"></script>
-<script src="https://pandaplayshd.com/scripts/streamStatus.js"></script>
+<style>
+* {
+	margin: 0;
+}
+html, body {
+	height: 100%;
+}
+.wrapper123 {
+	min-height: 100%;
+	height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
+	height: 100%;
+	margin: 0 auto 50px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer123, .push {
+	height: 155px; /* .push must be the same height as .footer */
+}
+</style>
+
+
+
+
 </head>
+
 <body>
-<div id="header-wrapper">
-<div id="header">
-<div id="logo"><a href="http://twitch.tv/pandaplayshd" target="_blank"><img src="https://pandaplayshd.com/images/logo.png?v=12_23_2015" width="49" height="64" style="user-drag: none; -moz-user-select: none; -webkit-user-drag: none;"></a></div>
-<div class="status">Status:<div id="streamWidget">Loading...</div></div>
-<div style="float:right;"><p style="font-size: 16px">Want to try out the new version of this website? <a href="http://dev.pandaplayshd.com"><u>Click here.</u></a></p></div>
- </div>
-</div>
-<div id="menu-wrapper">
-<div id="main-menu">
-<ul>
-<li><a href="https://pandaplayshd.com">Home</a></li>
-<li><a href="https://pandaplayshd.com/schedule">Schedule</a></li>
-<li><a href="https://pandaplayshd.com/about">About</a></li>
-<li><a href="https://pandaplayshd.com/social">Social</a></li>
-<li><a href="https://pandaplayshd.com/rules">Rules</a></li>
-<li><a href="https://pandaplayshd.com/specs">PC Specs</a></li>
-<li><a href="https://pandaplayshd.com/music">Music</a></li>
-<li><a href="https://pandaplayshd.com/hdpoints">HDPoints</a></li>
-<li><a href="https://unban.pandaplayshd.com" target="_blank">Chat Unban</a></li>
-<li><a href="https://pandaplayshd.com/business">Business</a></li>
-<li><a href="https://pandaplayshd.com/downloads">Downloads</a></li>
-</ul>
-<br />
-<br />
-<br />
-<a class="twitter-timeline" width="150" href="https://twitter.com/PandaPlaysHD" data-widget-id="597902122345103360"></a>
-</div>
-<div id="footer">
-<h6><a href="https://github.com/mattunderscore/PandaPlaysHD/issues" target="_blank"><u>Report an issue</u></a><br /><a href="https://github.com/mattunderscore/PandaPlaysHD" target="_blank"><u>View on GitHub</u></a><br />Copyright &copy 2015 PandaPlaysHD</h6>
-</div>
-</div>
-<center><div align="center" id="content">
-<h1>The page you are looking for can not be found. Redirecting to homepage...</h1>
-<br />
-<img src="https://pandaplayshd.com/images/404.gif">
-</div></center>
+	<div class="wrapper123">
+	<div class="color-bar-1"></div>
+    <div class="color-bar-2 color-bg"></div>
+    
+    <div class="container main-container">
+    
+      <div class="row header"><!-- Begin Header -->
+		
+        <div class="span7 navigation">
+		
+		            <!-- Mobile Nav
+            ================================================== -->
+		
+		<form action="#" id="mobile-nav" class="visible-phone visible-tablet">
+                <div class="mobile-nav-select">
+                <select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
+                    <option value="">Menu...</option>
+                    <option value="index.html">Home</option>
+                    <option value="schedule.html">Schedule</option>
+                    <option value="about.html">About</option>
+                    <option value="social.html">Social</option>
+                    <option value="rules.html">Rules</option>
+                    <option value="specs.html">PC Specs</option>
+					<option value="hdpoints.html">HDPoints</option>
+					<option value="https://unban.pandaplayshd.com">Chat Unban</option>
+					<option value="business.html">Business</option>
+					<option value="downloads.html">Downloads</option>
+                </select>
+                </div>
+                </form>
+		
+		<div id="menu-logo" class="span5 logo hidden-phone">
+        	<img class="hidden-phone nodrag" src="https://pandaplayshd.com/images/logo.png?v=12_23_2015" width="49" height="64" alt="" />
+            <h3>PandaPlaysHD</h3>
+        </div>
+		<div id="menu-logo" class="span5 logo visible-phone" style="text-align: center">
+            <h3>PandaPlaysHD</h3>
+        </div>
+            <div id="menu-content" class="navbar hidden-phone hidden-tablet" style="display: inline-block; float: right;">
+            
+			<ul class="nav">
+           <li><a href="index.html">Home</a></li>
+           <li><a href="schedule.html">Schedule</a></li>
+           <li><a href="about.html">About</a></li>
+		   <li><a href="social.html">Social</a></li>
+		   <li><a href="rules.html">Rules</a></li>
+		   <li><a href="specs.html">PC Specs</a></li>
+		   <li><a href="hdpoints.html">HDPoints</a></li>
+		   <li><a href="https://unban.pandaplayshd.com" target="_blank">Chat Unban</a></li>
+		   <li><a href="business.html">Business</a></li>
+		   <li><a href="downloads.html">Downloads</a></li>
+            </ul>
+           
+            </div>
+
+
+            
+
+        </div>
+        
+      </div><!-- End Header -->
+     
+    <!-- Page Content
+    ================================================== --> 
+	
+    <!-- Title Header -->
+    <div class="row">
+        <div class="span12" style="text-align: center;">
+			<div class="hidden-phone hidden-tablet">
+            <span style="display: inline-block;font-size: 256px;font-family: 'Oswald', sans-serif; font-weight: normal;text-transform:uppercase;position: relative;float: center;margin: 150px 10px 0 0;text-shadow: 4px 4px 0 #fdfdfd, 2px 2px 0 rgba(81, 81, 81, 0.5), 0 0 1px #fdfdfd;">404</span>
+			<style>
+			a:hover {text-decoration: none;}
+			</style>
+			<h3 style="padding-top: 50px;">We couldn't find the page that you requested.<br><a href="javascript:history.back()"><- Go Back</a></h3>
+			</div>
+			<div class="hidden-phone visible-tablet">
+			<span style="display: inline-block;font-size: 200px;font-family: 'Oswald', sans-serif; font-weight: normal;text-transform:uppercase;position: relative;float: center;margin: 100px 
+			10px 0 0;text-shadow: 1px 1px 0 #fdfdfd, 2px 2px 0 rgba(81, 81, 81, 0.5), 0 0 1px #fdfdfd;">404</span>
+			<h3 style="padding-top: 35px;">We couldn't find the page that you requested.<br><a href="javascript:history.back()"><- Go Back</a></h3>
+			</div>
+			<div class="visible-phone hidden-tablet">
+			<span style="display: inline-block;font-size: 112px;font-family: 'Oswald', sans-serif; font-weight: normal;text-transform:uppercase;position: relative;float: center;margin: 50px 10px 0 0;text-shadow: 1px 1px 0 #fdfdfd, 2px 2px 0 rgba(81, 81, 81, 0.5), 0 0 1px #fdfdfd;">404</span>
+			<h4 style="padding-top: 35px;">We couldn't find the page that you requested.<br><br><a href="javascript:history.back()"><- Go Back</a></h4>
+			</div>
+        </div> 	
+	</div> 
+    </div> <!-- End Container -->
+	
+	</div>
+
+    <!-- Footer Area
+        ================================================== -->
+		
+
+	<div class="footer-container hidden-phone footer123"><!-- Begin Footer -->
+    	<div class="container">
+        	<div class="row footer-row">
+            </div>
+
+            <div class="row"><!-- Begin Sub Footer -->
+                <div class="span12 footer-col footer-sub">
+                    <div class="row no-margin">
+                        <div class="span6"><span class="left">Copyright &copy 2015 PandaPlaysHD&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Programmed by <a href="https://twitter.com/matttunderscore" target="_blank">@matttunderscore</a></span></div>
+                        <div class="span6">
+                            <span class="right">
+                            <a href="https://github.com/mattunderscore/PandaPlaysHD/issues">Report an Issue</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- End Sub Footer -->
+
+        </div>
+    </div><!-- End Footer --> 
+	
+	
+	
+
+    <!-- Scroll to Top -->  
+    <div id="toTop" class="hidden-phone hidden-tablet">Back to Top</div>
+	<div class="visible-phone hidden-tablet" style="bottom: 0; position: fixed; width: 100%">
+	<div class="color-bar-2 color-bg"></div>
+	<div class="color-bar-1"></div>
+	</div>
 </body>
 </html>

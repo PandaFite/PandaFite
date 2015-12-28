@@ -1,87 +1,294 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-<script src="scripts/https.js?2"></script>
-<script type="text/javascript">
-  if (screen.width <= 800) {
-    window.location = "http://mobile.pandaplayshd.com/rules";
-  }
-</script>
 <title>Rules - PandaPlaysHD</title>
-<link rel="shortcut icon" href="https://pandaplayshd.com/favicon.ico" />
-<link href="css/style.css?8_13_15" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-<script>
-window.onload = function () {
-    if (window.innerHeight > 750) {
-        var script = document.createElement('script');
-        script.src= '/scripts/twitterWidget.js';
-        document.body.appendChild(script);
-    }
-};
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap-responsive.css">
+<link rel="stylesheet" href="css/prettyPhoto.css" />
+<link rel="stylesheet" href="css/flexslider.css" />
+<link rel="stylesheet" href="css/custom-styles.css?1">
+<link rel="shortcut icon" href="img/favicon.ico">
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/jquery.custom.js"></script>
+<script src="js/twitchTitle.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function () {
+
+    $("#btn-blog-next").click(function () {
+      $('#blogCarousel').carousel('next')
+    });
+     $("#btn-blog-prev").click(function () {
+      $('#blogCarousel').carousel('prev')
+    });
+
+     $("#btn-client-next").click(function () {
+      $('#clientCarousel').carousel('next')
+    });
+     $("#btn-client-prev").click(function () {
+      $('#clientCarousel').carousel('prev')
+    });
+    
+});
+
+ $(window).load(function(){
+
+    $('.flexslider').flexslider({
+        animation: "slide",
+        slideshow: true,
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+    });  
+});
+
 </script>
-<script src="scripts/jquery-1.8.0.min.js"></script>
-<script src="scripts/streamStatus.js"></script>
+<style>
+* {
+	margin: 0;
+}
+html, body {
+	height: 100%;
+}
+.wrapper123 {
+	min-height: 100%;
+	height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
+	height: 100%;
+	margin: 0 auto 50px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer123, .push {
+	height: 155px; /* .push must be the same height as .footer */
+}
+</style>
+
+
+
+
 </head>
+
 <body>
-<div id="header-wrapper">
-<div id="header">
-<div id="logo"><a href="http://twitch.tv/pandaplayshd" target="_blank"><img src="https://pandaplayshd.com/images/logo.png?v=12_23_2015" width="49" height="64" style="user-drag: none; -moz-user-select: none; -webkit-user-drag: none;"></a></div>
-<div class="status">Status:<div id="streamWidget">Loading...</div></div>
-<div style="float:right;"><p style="font-size: 16px">Want to try out the new version of this website? <a href="http://dev.pandaplayshd.com"><u>Click here.</u></a></p></div>
- </div>
-</div>
-<div id="menu-wrapper">
-<div id="main-menu">
-<ul>
-<li><a href="https://pandaplayshd.com">Home</a></li>
-<li><a href="schedule">Schedule</a></li>
-<li><a href="about">About</a></li>
-<li><a href="social">Social</a></li>
-<li><a class="selected">Rules</a></li>
-<li><a href="specs">PC Specs</a></li>
-<li><a href="music">Music</a></li>
-<li><a href="hdpoints">HDPoints</a></li>
-<li><a href="https://unban.pandaplayshd.com" target="_blank">Chat Unban</a></li>
-<li><a href="business">Business</a></li>
-<li><a href="downloads">Downloads</a></li>
-</ul>
-<br />
-<br />
-<a class="twitter-timeline" width="150" href="https://twitter.com/PandaPlaysHD" data-widget-id="597902122345103360"></a>
-</div>
-<div id="footer">
-<h6><a href="https://github.com/mattunderscore/PandaPlaysHD/issues" target="_blank"><u>Report an issue</u></a><br /><a href="https://github.com/mattunderscore/PandaPlaysHD" target="_blank"><u>View on GitHub</u></a><br />Copyright &copy 2015 PandaPlaysHD</h6>
-</div>
-</div>
-<div name="home" id="home"></div>
-<center>
-<div id="content">
-<div class="spacer"></div>
-<div class="team-text">
-<h2>Rules</h2>
-<div class="star-divider"></div>
-</div>
-<div class="spacer"></div>
-<div class="about">
-<p style="font-size:16px"><b>#1:</b> Respect everyone watching the stream.</p>
-<br />
-<p style="font-size:16px"><b>#2:</b> Refrain from talking about age.</p>
-<br />
-<p style="font-size:16px"><b>#3:</b> Don't spam/advertise/post links without permission. (This includes mentioning other streamers!)</p>
-<br />
-<p style="font-size:16px"><b>#4:</b> You may not post any links without permission.</p>
-<br />
-<p style="font-size:16px"><b>#5:</b> You may not ask for mod. If you would like to apply for mod, click <u><a href="http://pandaplayshd.com/mod-application">here.</a></u></p>
-<br />
-<p style="font-size:16px"><b>#6:</b> No math! <img src="https://static-cdn.jtvnw.net/emoticons/v1/25/1.0" style="user-drag: none; -moz-user-select: none; -webkit-user-drag: none;"></p>
-<br />
-<p style="font-size:16px"><b>#7:</b> Speak in English only.</p>
-</div>
-<div class="spacer"></div>
-</div>
-</center>
-</div>
-</div>
+	<div class="wrapper123">
+	<div class="color-bar-1"></div>
+    <div class="color-bar-2 color-bg"></div>
+    
+    <div class="container main-container">
+    
+      <div class="row header"><!-- Begin Header -->
+		
+        <div class="span7 navigation">
+		
+		            <!-- Mobile Nav
+            ================================================== -->
+		
+		<form action="#" id="mobile-nav" class="visible-phone visible-tablet">
+                <div class="mobile-nav-select">
+                <select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
+                    <option value="">Menu...</option>
+                    <option value="index.html">Home</option>
+                    <option value="schedule.html">Schedule</option>
+                    <option value="about.html">About</option>
+                    <option value="social.html">Social</option>
+                    <option value="rules.html">Rules</option>
+                    <option value="specs.html">PC Specs</option>
+					<option value="hdpoints.html">HDPoints</option>
+					<option value="https://unban.pandaplayshd.com">Chat Unban</option>
+					<option value="business.html">Business</option>
+					<option value="downloads.html">Downloads</option>
+                </select>
+                </div>
+                </form>
+		
+		<div id="menu-logo" class="span5 logo hidden-phone">
+        	<img class="hidden-phone nodrag" src="https://pandaplayshd.com/images/logo.png?v=12_23_2015" width="49" height="64" alt="" />
+            <h3>PandaPlaysHD</h3>
+        </div>
+		<div id="menu-logo" class="span5 logo visible-phone" style="text-align: center">
+            <h3>PandaPlaysHD</h3>
+        </div>
+            <div id="menu-content" class="navbar hidden-phone hidden-tablet" style="display: inline-block; float: right;">
+            
+			<ul class="nav">
+           <li><a href="index.html">Home</a></li>
+           <li><a href="schedule.html">Schedule</a></li>
+           <li><a href="about.html">About</a></li>
+		   <li><a href="social.html">Social</a></li>
+		   <li class="active"><a href="#">Rules</a></li>
+		   <li><a href="specs.html">PC Specs</a></li>
+		   <li><a href="hdpoints.html">HDPoints</a></li>
+		   <li><a href="https://unban.pandaplayshd.com" target="_blank">Chat Unban</a></li>
+		   <li><a href="business.html">Business</a></li>
+		   <li><a href="downloads.html">Downloads</a></li>
+            </ul>
+           
+            </div>
+		</div>
+        
+      </div><!-- End Header -->
+     
+    <!-- Page Content
+    ================================================== --> 
+	
+    <!-- Title Header -->
+    <div class="row">
+        <div class="span12">
+            <h2 style="text-align: center;">Rules</h2>
+        </div> 
+		
+			<style>
+			#expand-box {padding-bottom: 30px}
+			</style>
+			<!-- DESKTOP VERSION -->
+			<div class="hidden-phone hidden-tablet" style="width: 800px; position: relative; top: 0; bottom: 0; left: 0; right: 0; margin: auto; margin-top: 150px">
+			<div id="expand-box">
+			<div id="expand-box-header">
+			<span class="fontleftl"><b>#1: </b>Respect everyone watching the stream.</span> 
+			</div>
+			</div>
+			<div id="expand-box">
+			<div id="expand-box-header">
+			<span class="fontleftl"><b>#2: </b>Refrain from talking about age.</b></span> 
+			</div>
+			</div>
+			<div id="expand-box">
+			<div id="expand-box-header">
+			<span class="fontleftl"><b>#3: </b>Don't spam/advertise/post links without permission.</span> 
+			</div>
+			</div>
+			<div id="expand-box">
+			<div id="expand-box-header">
+			<span class="fontleftl"><b>#4: </b>You may not post any links without permission.</span> 
+			</div>
+			</div>
+			<div id="expand-box">
+			<div id="expand-box-header">
+			<span class="fontleftl"><b>#5: </b>You may not ask for mod. If you would like to apply for mod, click <a href="mod-application.html">here.</a></span> 
+			</div>
+			</div>
+			<div id="expand-box">
+			<div id="expand-box-header">
+			<span class="fontleftl"><b>#6: </b>No math! <img src="https://static-cdn.jtvnw.net/emoticons/v1/25/1.0" class="nodrag"></span>
+			</div>
+			</div>
+		</div>
+		
+		<!-- TABLET VERSION -->
+		<div class="hidden-phone visible-tablet" style="width: 550px; position: relative; top: 0; bottom: 0; left: 0; right: 0; margin: auto; margin-top: 150px">
+			<div id="expand-box">
+			<div id="expand-box-header">
+			<span class="fontleftl"><b>#1: </b>Respect everyone watching the stream.</span> 
+			</div>
+			</div>
+			<div id="expand-box">
+			<div id="expand-box-header">
+			<span class="fontleftl"><b>#2: </b>Refrain from talking about age.</b></span> 
+			</div>
+			</div>
+			<div id="expand-box">
+			<div id="expand-box-header">
+			<span class="fontleftl"><b>#3: </b>Don't spam/advertise/post links without permission.</span> 
+			</div>
+			</div>
+			<div id="expand-box">
+			<div id="expand-box-header">
+			<span class="fontleftl"><b>#4: </b>You may not post any links without permission.</span> 
+			</div>
+			</div>
+			<div id="expand-box">
+			<div id="expand-box-header">
+			<span class="fontleftl"><b>#5: </b>You may not ask for mod. If you would like to apply for mod, click <a href="mod-application.html">here.</a></span> 
+			</div>
+			</div>
+			<div id="expand-box">
+			<div id="expand-box-header">
+			<span class="fontleftl"><b>#6: </b>No math! <img src="https://static-cdn.jtvnw.net/emoticons/v1/25/1.0" class="nodrag"></span>
+			</div>
+			</div>
+		</div>
+		
+		<!-- MOBILE VERSION -->
+		<div class="visible-phone hidden-tablet" style="width: 200px; position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; margin-top: 375px">
+			<div id="expand-box">
+			<div id="expand-box-header">
+			<span class="fontcenterl"><b>#1: </b><br><br>Respect everyone watching the stream.</span> 
+			</div>
+			</div>
+			<div id="expand-box">
+			<div id="expand-box-header">
+			<span class="fontcenterl"><b>#2: </b><br><br>Refrain from talking about age.</b></span> 
+			</div>
+			</div>
+			<div id="expand-box">
+			<div id="expand-box-header">
+			<span class="fontcenterl"><b>#3: </b><br><br>Don't spam/advertise/post links without permission.</span> 
+			</div>
+			</div>
+			<div id="expand-box">
+			<div id="expand-box-header">
+			<span class="fontcenterl"><b>#4: </b><br><br>You may not post any links without permission.</span> 
+			</div>
+			</div>
+			<div id="expand-box">
+			<div id="expand-box-header">
+			<span class="fontcenterl"><b>#5: </b><br><br>You may not ask for mod. If you would like to apply for mod, click <a href="mod-application.html">here.</a></span> 
+			</div>
+			</div>
+			<div id="expand-box">
+			<div id="expand-box-header">
+			<span class="fontcenterl"><b>#6: </b><br><br>No math! <img src="https://static-cdn.jtvnw.net/emoticons/v1/25/1.0" class="nodrag"></span>
+			</div>
+			</div>
+		</div>
+		
+		
+		
+	</div> 
+	
+	
+	
+
+    
+    </div> <!-- End Container -->
+	
+	</div>
+
+    <!-- Footer Area
+        ================================================== -->
+		
+
+	<div class="footer-container hidden-phone footer123"><!-- Begin Footer -->
+    	<div class="container">
+        	<div class="row footer-row">
+            </div>
+
+            <div class="row"><!-- Begin Sub Footer -->
+                <div class="span12 footer-col footer-sub">
+                    <div class="row no-margin">
+                        <div class="span6"><span class="left">Copyright &copy 2015 PandaPlaysHD&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Programmed by <a href="https://twitter.com/matttunderscore" target="_blank">@matttunderscore</a></span></div>
+                        <div class="span6">
+                            <span class="right">
+                            <a href="https://github.com/mattunderscore/PandaPlaysHD/issues">Report an Issue</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- End Sub Footer -->
+
+        </div>
+    </div><!-- End Footer --> 
+	
+	
+	
+
+    <!-- Scroll to Top -->  
+    <div id="toTop" class="hidden-phone hidden-tablet">Back to Top</div>
+	<div class="visible-phone hidden-tablet" style="bottom: 0; position: fixed; width: 100%">
+	<div class="color-bar-2 color-bg"></div>
+	<div class="color-bar-1"></div>
+	</div>
 </body>
 </html>
