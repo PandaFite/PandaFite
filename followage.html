@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<title>Panda Followage Tool</title>
+<link rel="shortcut icon" href="https://pandaplayshd.com/img/favicon.ico">
+</head>
+<body>
+<style type="text/css">
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+	height: 40px;
+	width: 100px;
+	text-align: center;
+	vertical-align: middle;
+
+    text-decoration: none;
+    color: initial;
+}
+</style>
+<input id="searchterm" placeholder="Twitch Username">
+<br>
+<br>
+<br>
+<a id="submitButton" href="https://apis.rtainc.co/twitchbot/following.php" class="button">Check Followage</a>
+<a id="reflectedlink" href="https://apis.rtainc.co/twitchbot/following.php" target="_blank" style="visibility: hidden;">https://apis.rtainc.co/twitchbot/following.php</a>
+<script type="text/javascript">
+
+	var btn= document.getElementById('submitButton');
+    var link= document.getElementById('reflectedlink');
+    var input= document.getElementById('searchterm');
+    input.onchange=input.onkeyup= function() {
+        link.search= '?user='+encodeURIComponent(input.value)+"&channel=pandaplayshd";
+		btn.search= '?user='+encodeURIComponent(input.value)+"&channel=pandaplayshd";
+		
+        link.firstChild.data= link.href;
+    };
+	</script>
+</body>
+</html>
