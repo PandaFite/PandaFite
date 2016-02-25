@@ -17,13 +17,25 @@ body {background: #f9f9f9 url(../img/page-bg-1.jpg);}
 	clear: both;
 	height: 16px;
 	width: 650px;
-	margin-top: 10px;
+	margin-top: 0px;
 	margin-right: auto;
-	margin-bottom: 10px;
+	margin-bottom: 30px;
 	margin-left: auto;
 	background-repeat: no-repeat;
 }
-
+.line-divider-tablet {
+	background-image:url(../img/line_divider-tablet.png);
+	text-align: center;
+	display: block;
+	clear: both;
+	height: 16px;
+	width: 650px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 30px;
+	margin-left: auto;
+	background-repeat: no-repeat;
+}
 @media (max-width: 767px) {
   body { padding-right: 0px; padding-left: 0px; }
   .container {margin-right: 20px; margin-left: 20px;}
