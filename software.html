@@ -2,14 +2,14 @@
 <html>
 <head>
 <script src="js/http.js"></script>
-<title>Schedule - PandaPlaysHD</title>
+<title>Streaming Software - PandaPlaysHD</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/bootstrap-responsive.css">
 <link rel="stylesheet" href="css/prettyPhoto.css" />
 <link rel="stylesheet" href="css/flexslider.css" />
-<link rel="stylesheet" href="css/custom-styles.css">
+<link rel="stylesheet" href="css/custom-styles.css?1">
 <link rel="shortcut icon" href="https://mattunderscore.co/PandaPlaysHD/img/favicon.ico?v=1_10_16">
 <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
 <script src="js/bootstrap.js"></script>
@@ -60,7 +60,7 @@ html, body {
 	min-height: 100%;
 	height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
 	height: 100%;
-	margin: 0 auto 0px; /* the bottom margin is the negative value of the footer's height */
+	margin: 0 auto 50px; /* the bottom margin is the negative value of the footer's height */
 }
 .footer123, .push {
 	height: 155px; /* .push must be the same height as .footer */
@@ -97,6 +97,7 @@ html, body {
                     <option value="rules">Rules</option>
                     <option value="specs">PC Specs</option>
 					<option value="bamboo">Bamboo</option>
+					<option value="software">Software</option>
 					<option value="https://unban.pandaplayshd.com">Chat Unban</option>
 					<option value="business">Business</option>
 					<option value="downloads">Downloads</option>
@@ -115,12 +116,13 @@ html, body {
             
 			<ul class="nav">
            <li><a href="http://pandaplayshd.com">Home</a></li>
-           <li class="active"><a href="#">Schedule</a></li>
+           <li><a href="schedule">Schedule</a></li>
            <li><a href="about">About</a></li>
 		   <li><a href="social">Social</a></li>
 		   <li><a href="rules">Rules</a></li>
 		   <li><a href="specs">PC Specs</a></li>
 		   <li><a href="bamboo">Bamboo</a></li>
+		   <li class="active"><a href="#">Software</a></li>
 		   <li><a href="https://unban.pandaplayshd.com" target="_blank">Chat Unban</a></li>
 		   <li><a href="business">Business</a></li>
 		   <li><a href="downloads">Downloads</a></li>
@@ -137,22 +139,42 @@ html, body {
      
     <!-- Page Content
     ================================================== --> 
-    
+	
     <!-- Title Header -->
     <div class="row">
         <div style="text-align: center">
-            <h2>Streaming Schedule</h2>
-			<h4>The dates and times that you can expect Panda to be live.</h4>
-			<br />
-			<h4>Note that all times listed are based in Pacific Standard Time (PST).</h4>
+            <h2 style="padding-bottom: 20px">Streaming Software</h2>
+			<h4>The various software that Panda uses in his stream.</h4>
         </div> 
-
-		<img src="img/schedule_1200x172.png" class="nodrag hidden-phone" style="margin-top: 45px" height="172" width="1200">
-		<center>
-		<img src="img/mobile-schedule.png" class="nodrag visible-phone" style="margin-top: 25px; text-align: center">
-		</center>
+			<!-- DESKTOP VERSION -->
+			<style>
+			#expand-box {padding-bottom: 30px}
+			</style>
+			<div class="hidden-phone hidden-tablet" style="width: 800px; position: relative; top: 0; bottom: 0; left: 0; right: 0; margin: auto; margin-top: 75px">
+			<h3 style="text-align: center">Currently under construction. Please check back later! <img src="https://static-cdn.jtvnw.net/emoticons/v1/499/1.0" class="nodrag"></h3>
+			</div>
 		
-    </div> 
+		<!-- TABLET VERSION -->
+			<style>
+			a:hover {color: #6441A5; text-decoration: none}
+			#expand-box {padding-bottom: 30px}
+			</style>
+			<div class="hidden-phone visible-tablet" style="width: 550px; position: relative; top: 0; bottom: 0; left: 0; right: 0; margin: auto; margin-top: 75px">
+			<h4 style="text-align: center">Currently under construction. Please check back later! <img src="https://static-cdn.jtvnw.net/emoticons/v1/499/1.0" class="nodrag"></h4>
+			</div>
+		
+		<!-- MOBILE VERSION -->
+			<style>
+			a:hover {color: #6441A5; text-decoration: none}
+			#expand-box {padding-bottom: 30px}
+			</style>
+			<div class="visible-phone hidden-tablet" style="text-align: center;width: 200px; position: relative; top: 0; bottom: 0; left: 0; right: 0; margin: auto; margin-top: 75px">
+			<h4 style="text-align: center">Currently under construction. Please check back later! <img src="https://static-cdn.jtvnw.net/emoticons/v1/499/1.0" class="nodrag"></h4>
+			</div>
+		
+		
+		
+	</div> 
 	
 	
 	
@@ -186,6 +208,9 @@ html, body {
 
         </div>
     </div><!-- End Footer --> 
+	
+	
+	
 
     <!-- Scroll to Top -->  
     <div id="toTop" class="hidden-phone hidden-tablet">Back to Top</div>
