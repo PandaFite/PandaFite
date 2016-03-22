@@ -153,7 +153,7 @@ html, body {
 			<br>
 			<br>
 			<br>
-			<center><u><a id="submitButton" href="https://apis.rtainc.co/twitchbot/following.php" style="padding-left: 10px; padding-right: 10px; padding-top: 4px"><button type="button">Check Followage</button></a></u></center>
+			<center><u><a id="submitButton" href="https://apis.rtainc.co/twitchbot/following.php" target="followageFrame" style="padding-left: 10px; padding-right: 10px; padding-top: 4px"><button type="button">Check Followage</button></a></u></center>
 			<a id="reflectedlink" href="https://apis.rtainc.co/twitchbot/following.php" target="_blank" style="visibility: hidden;">https://apis.rtainc.co/twitchbot/following.php</a>
 			<script type="text/javascript">
 
@@ -167,7 +167,12 @@ html, body {
 					link.firstChild.data= link.href;
 				};
 				</script>
+				
+			
 				</div>
+			<div style="text-align: center;">
+			<iframe src="" name="followageFrame" frameborder="0" width="150"></iframe>
+			</div>
 	</div> 
 	
 	
