@@ -164,6 +164,8 @@ a:visited {
 	font-weight: normal;
 	font-size: 22px;
 	text-transform:uppercase;
+	line-height: 25px;
+	
 }
 .fontlefts {
 	float: left;
