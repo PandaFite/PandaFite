@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="js/https.js"></script>
+<script src="js/https.js?420"></script>
 <title>Rules - PandaPlaysHD</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
@@ -17,38 +17,8 @@
 <script src="js/jquery.flexslider.js"></script>
 <script src="js/jquery.custom.js"></script>
 <script src="js/twitchTitle.js"></script>
-<script type="text/javascript">
-
-$(document).ready(function () {
-
-    $("#btn-blog-next").click(function () {
-      $('#blogCarousel').carousel('next')
-    });
-     $("#btn-blog-prev").click(function () {
-      $('#blogCarousel').carousel('prev')
-    });
-
-     $("#btn-client-next").click(function () {
-      $('#clientCarousel').carousel('next')
-    });
-     $("#btn-client-prev").click(function () {
-      $('#clientCarousel').carousel('prev')
-    });
-    
-});
-
- $(window).load(function(){
-
-    $('.flexslider').flexslider({
-        animation: "slide",
-        slideshow: true,
-        start: function(slider){
-          $('body').removeClass('loading');
-        }
-    });  
-});
-
-</script>
+<script src='js/nprogress.js'></script>
+<link rel='stylesheet' href='css/nprogress.css'/>
 <style>
 * {
 	margin: 0;
@@ -72,7 +42,11 @@ html, body {
 
 </head>
 
-<body>
+<body class="home">
+	<script>
+	NProgress.start();
+	NProgress.done();
+	</script>
 	<div class="wrapper123">
 	<div class="color-bar-1"></div>
     <div class="color-bar-2 color-bg"></div>

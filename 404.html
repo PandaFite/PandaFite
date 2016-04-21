@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="js/https.js"></script>
+<script src="js/https.js?420"></script>
 <title>Page not found - PandaPlaysHD</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
@@ -17,38 +17,8 @@
 <script src="https://pandaplayshd.com/js/jquery.flexslider.js"></script>
 <script src="https://pandaplayshd.com/js/jquery.custom.js"></script>
 <script src="https://pandaplayshd.com/js/twitchTitle.js"></script>
-<script type="text/javascript">
-
-$(document).ready(function () {
-
-    $("#btn-blog-next").click(function () {
-      $('#blogCarousel').carousel('next')
-    });
-     $("#btn-blog-prev").click(function () {
-      $('#blogCarousel').carousel('prev')
-    });
-
-     $("#btn-client-next").click(function () {
-      $('#clientCarousel').carousel('next')
-    });
-     $("#btn-client-prev").click(function () {
-      $('#clientCarousel').carousel('prev')
-    });
-    
-});
-
- $(window).load(function(){
-
-    $('.flexslider').flexslider({
-        animation: "slide",
-        slideshow: true,
-        start: function(slider){
-          $('body').removeClass('loading');
-        }
-    });  
-});
-
-</script>
+<script src='js/nprogress.js'></script>
+<link rel='stylesheet' href='css/nprogress.css'/>
 <style>
 * {
 	margin: 0;
@@ -72,7 +42,11 @@ html, body {
 
 </head>
 
-<body>
+<body class="home">
+	<script>
+	NProgress.start();
+	NProgress.done();
+	</script>
 	<div class="wrapper123">
 	<div class="color-bar-1"></div>
     <div class="color-bar-2 color-bg"></div>
@@ -144,7 +118,7 @@ html, body {
     <div class="row">
         <div class="span12" style="text-align: center;">
 			<div class="hidden-phone hidden-tablet">
-            <span style="display: inline-block;font-size: 256px;font-family: 'Oswald', sans-serif; font-weight: normal;text-transform:uppercase;position: relative;float: center;margin: 150px 10px 0 0;text-shadow: 4px 4px 0 #017eff, 2px 2px 0 rgba(81, 81, 81, 0.5), 0 0 1px #017eff;">404</span>
+            <span style="display: inline-block;font-size: 256px;font-family: 'Oswald', sans-serif; font-weight: normal;text-transform:uppercase;position: relative;float: center;margin: 150px 10px 0 0;text-shadow: 4px 4px 0 #970097, 2px 2px 0 rgba(81, 81, 81, 0.5), 0 0 1px #970097;">404</span>
 			<style>
 			a:hover {text-decoration: none;}
 			</style>
@@ -152,11 +126,11 @@ html, body {
 			</div>
 			<div class="hidden-phone visible-tablet">
 			<span style="display: inline-block;font-size: 200px;font-family: 'Oswald', sans-serif; font-weight: normal;text-transform:uppercase;position: relative;float: center;margin: 100px 
-			10px 0 0;text-shadow: 1px 1px 0 #017eff, 2px 2px 0 rgba(81, 81, 81, 0.5), 0 0 1px #017eff;">404</span>
+			10px 0 0;text-shadow: 1px 1px 0 #970097, 2px 2px 0 rgba(81, 81, 81, 0.5), 0 0 1px #970097;">404</span>
 			<h3 style="padding-top: 35px;">We couldn't find the page that you requested.<br><a href="javascript:history.back()"><- Go Back</a></h3>
 			</div>
 			<div class="visible-phone hidden-tablet">
-			<span style="display: inline-block;font-size: 112px;font-family: 'Oswald', sans-serif; font-weight: normal;text-transform:uppercase;position: relative;float: center;margin: 50px 10px 0 0;text-shadow: 1px 1px 0 #017eff, 2px 2px 0 rgba(81, 81, 81, 0.5), 0 0 1px #017eff;">404</span>
+			<span style="display: inline-block;font-size: 112px;font-family: 'Oswald', sans-serif; font-weight: normal;text-transform:uppercase;position: relative;float: center;margin: 50px 10px 0 0;text-shadow: 1px 1px 0 #970097, 2px 2px 0 rgba(81, 81, 81, 0.5), 0 0 1px #970097;">404</span>
 			<h4 style="padding-top: 35px;">We couldn't find the page that you requested.<br><br><a href="javascript:history.back()"><- Go Back</a></h4>
 			</div>
         </div> 	
