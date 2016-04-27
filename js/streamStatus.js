@@ -1,10 +1,17 @@
-$(document).ready(function() {    
-   $.getJSON("https://api.twitch.tv/kraken/streams/PandaPlaysHD?callback=?",function(streamData) {
+$(document).ready(function() {   
+
+	var twitchName = "pandaplayshd";
+	var youtubeName = "pandaplaysmchd";
+   $.getJSON("https://api.twitch.tv/kraken/streams/" + twitchName + "?callback=?",function(streamData) {
       console.log('Stream Data:', streamData)
       if(streamData && streamData.stream) {
-         $('#streamWidget').html("<b>[LIVE]</b>")
+         $.getJSON('https://api.twitch.tv/kraken/channels/' + twitchName + '?callback=?', function(data) {
+			document.getElementById('title').textContent = data.status;
+			document.getElementById('player').src = "https://player.twitch.tv/?channel=" + twitchName;
+});
       } else {
-         $('#streamWidget').html("")
+         document.getElementById('title').textContent = "Most Recent YouTube Video";
+		 document.getElementById('player').src = "https://www.youtube.com/embed?listType=user_uploads&list=" + youtubeName;
       }
    })
 })

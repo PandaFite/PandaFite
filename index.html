@@ -16,7 +16,8 @@
 <script src="js/jquery.prettyPhoto.js"></script>
 <script src="js/jquery.flexslider.js"></script>
 <script src="js/jquery.custom.js"></script>
-<script src="js/twitchTitle.js"></script>
+<script src="js/streamStatus.js?revision=04-27-2016"></script>
+
 <script src='js/nprogress.js'></script>
 <link rel='stylesheet' href='css/nprogress.css'/>
 </head>
@@ -99,7 +100,7 @@
         		<h5 class="title-bg" style="text-align: center">  
                 <small id="title"><img src="img/loader.gif" class="nodrag"></small>
 				</h5>
-            <iframe height="659" width="100%" frameborder="0" margin="0" src="https://player.twitch.tv/?channel=PandaPlaysHD" allowfullscreen></iframe>
+            <iframe id="player" height="659" width="100%" frameborder="0" margin="0" src="" allowfullscreen></iframe>
 			<iframe frameborder="0" margin="0" scrolling="no" align="left" src="https://twitch.tv/pandaplayshd/chat" height="430" width="650"></iframe>
 			<a class="twitter-timeline" width="520" align="right" data-widget-id="679854553429184512"></a>
 		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
