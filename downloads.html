@@ -116,9 +116,15 @@ html, body {
 	
     <!-- Title Header -->
     <div class="row">
-            <h2 style="text-align: center;">Downloads</h2>
+            <h2 style="text-align: center;" class="hidden-phone">Downloads</h2>
+			<div style="text-align: center;" class="hidden-tablet">
+			<span style="text-align: center; padding-top: 10px;" class="fontcenterl hidden-phone">Looking for the programs Panda uses to stream? Try the <a href="software">Software</a> page.</span>
+			</div>
 			
-			<h4 style="text-align: center; padding-top: 10px;">Looking for the programs Panda uses to stream? Try the <a href="software">Software</a> page.</h4>
+			<div style="text-align: center;" class="hidden-desktop">
+			<span style="text-align: center; padding-top: 10px;" class="fontcenter hidden-phone">Looking for the programs Panda uses to stream? Try the <a href="software">Software</a> page.</span>
+			</div>
+			
 			<!-- DESKTOP VERSION -->
 			<style>
 			#expand-box {padding-bottom: 30px}
@@ -320,7 +326,9 @@ html, body {
 			#expand-box {padding-bottom: 30px}
 			</style>
 			<div class="visible-phone hidden-tablet" style="text-align: center;width: 200px; position: relative; top: 0; bottom: 0; left: 0; right: 0; margin: auto; margin-top: 75px">
-			<h4>Unfortunately, this page is not available on mobile devices.</h4>
+			<div style="text-align: center;">
+				<span class="fontcenterl">Unfortunately, this page is not available on mobile devices.<br /><br /><a href="javascript:history.back()"><- Go Back</a><br /><a href="https://pandaplayshd.com"><- Go Home</a></span>
+			</div>
 		</div>
 		
 		
