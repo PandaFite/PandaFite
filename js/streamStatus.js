@@ -10,8 +10,8 @@ $(document).ready(function() {
 			document.getElementById('player').src = "https://player.twitch.tv/?channel=" + twitchName;
 });
       } else {
-         document.getElementById('title').textContent = "Stream is offline - Most Recent YouTube Video:";
-		 document.getElementById('player').src = "https://www.youtube.com/embed?listType=user_uploads&list=" + youtubeName;
+         document.getElementById('title').textContent = "Stream is offline";
+		 document.getElementById('player').src = "https://player.twitch.tv/?channel=" + twitchName;
       }
    })
 })
