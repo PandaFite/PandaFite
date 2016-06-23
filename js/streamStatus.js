@@ -11,7 +11,7 @@ $(document).ready(function() {
 });
       } else {
          document.getElementById('title').textContent = "Stream is offline";
-		 document.getElementById('player').src = "https://pandaplayshd.com/offline" + twitchName;
+		 document.getElementById('player').src = "https://pandaplayshd.com/offline";
       }
    })
 })
