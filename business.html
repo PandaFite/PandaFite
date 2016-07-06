@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="css/bootstrap-responsive.css">
 <link rel="stylesheet" href="css/prettyPhoto.css" />
 <link rel="stylesheet" href="css/flexslider.css" />
-<link rel="stylesheet" href="css/custom-styles.css?revision=07-06-2016">
+<link rel="stylesheet" href="css/custom-styles.css?revision=07-06-2016-rev2">
 <link rel="stylesheet" href="css/menu.css">
 <link rel="shortcut icon" href="https://pandaplayshd.com/img/favicon.ico?v=3_24_16">
 <script src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
@@ -30,10 +30,11 @@
 	NProgress.start();
 	NProgress.done();
 	</script>
-	<div class="wrapper123">
 	<div class="color-bar-1"></div>
     <div class="color-bar-2 color-bg"></div>
     
+	<div id="wrapper">
+	
     <div class="container main-container">
     
       <div class="row header"><!-- Begin Header -->
@@ -87,8 +88,7 @@
         
       </div>
      
-    <!-- Page Content
-    ================================================== --> 
+    <div id="content"> 
 	
     <!-- Title Header -->
 	<div class="hidden-tablet hidden-phone" style="margin-bottom:100px;"></div>
@@ -153,19 +153,12 @@
 			<div style="text-align: center;">
 				<span class="fontcenterl">Unfortunately, this page is not available on mobile devices.<br /><br /><a href="javascript:history.back()"><- Go Back</a><br /><a href="https://pandaplayshd.com"><- Go Home</a></span>
 			</div>
-			</div>
-		
-		
-		
+			</div>	
 	</div> 
 	
+	</div> <!-- end content -->
 	
-	
-
-    
     </div> <!-- End Container -->
-	
-	</div>
 
     <!-- Footer Area
         ================================================== -->
@@ -175,7 +168,7 @@
 	<script type="text/javascript" src="http://counter8.01counter.com/private/counter.js?c=d7fa1f1847083e2cdef708666cd3d8a1"></script>
 	</div>	
 
-	<div class="footer-container hidden-phone"><!-- Begin Footer -->
+	<div class="footer-container hidden-phone" style="margin-top: 174px"><!-- Begin Footer -->
     	<div class="container">
         	<div class="row footer-row">
             </div>
@@ -201,6 +194,8 @@
 
         </div>
     </div><!-- End Footer --> 
+	
+	</div> <!-- end wrapper -->
 
 	<div class="visible-phone hidden-tablet" style="bottom: 0; position: fixed; width: 100%">
 	<div class="color-bar-2 color-bg"></div>
