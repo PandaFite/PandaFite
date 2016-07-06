@@ -762,15 +762,16 @@ p.side {margin-bottom: 20px;}
 	width:100%;
 	background:#333;
 	clear: both;
- 	position: static;
+ 	position: fixed;
     bottom: 0px;
     left: 0px;
     width: 100%;
+	height: 120px;
  	z-index: 10;
 	padding-bottom: 0px;
 	margin-bottom: 0px;
 }
-.footer-row { margin-top: 20px;}
+.footer-row { margin-top: 0px;}
 .footer-col {color:#ababab; font-size: 11px;}
 .footer-col a {color:#dcdcdc; font-weight: bold;}
 .footer-col a:hover {color:#017eff; text-decoration: none;}
@@ -780,7 +781,7 @@ p.side {margin-bottom: 20px;}
 .footer-col ul li {list-style: none; padding-bottom: 10px;}
 .footer-col ul.post-list li {
 	border-bottom: 1px dashed #504f4f;
-	padding: 10px 0px;
+	padding: 0px 0px;
 }
 /* All Mobile Sizes */
 @media only screen and (max-width: 767px) {
@@ -802,33 +803,12 @@ ul.img-feed li {
 	ul.img-feed li:nth-last-child(-n+4) {display: none;}
 }
 
-/**** Social Icons ****/
-.social-icons {padding-top: 10px;}
-.social-icons li {
-	list-style: none; 
-	float: left;
-	margin-right: 6px;
+/**** FontAwesome ****/
+.fa{
+	font-size: 16px;
+	padding-left: 10px;
 }
-/* Small Monitor */
-@media (min-width: 980px) and (max-width: 1199px) {
-	.social-icons li:last-child {display:none;}
-}
-a.social-icon { 
-	background: url(../img/social-icons.png);
-	display: block; 
-	width: 46px; 
-	height: 46px;
-}
-a.facebook {background-position: 0px 0px;}
-a.facebook:hover {background-position: 0px -47px;}
-a.twitter{background-position: -52px 0px;}
-a.twitter:hover {background-position: -52px -47px;}
-a.dribble{background-position: -104px 0px;}
-a.dribble:hover {background-position: -104px -47px;}
-a.rss{background-position: -156px 0px;}
-a.rss:hover {background-position: -156px -47px;}
-a.forrst{background-position: -208px 0px;}
-a.forrst:hover {background-position: -208px -47px;}
+
 
 /**** Sub Footer ****/
 .footer-sub {background: #1f1f1f; padding: 10px 0px;}
