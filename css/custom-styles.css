@@ -770,7 +770,7 @@ p.side {margin-bottom: 20px;}
 	padding-bottom: 0px;
 	margin-bottom: 0px;
 }
-.footer-row { margin-top: 20px;}
+.footer-row { margin-top: 0px;}
 .footer-col {color:#ababab; font-size: 11px;}
 .footer-col a {color:#dcdcdc; font-weight: bold;}
 .footer-col a:hover {color:#017eff; text-decoration: none;}
@@ -780,7 +780,7 @@ p.side {margin-bottom: 20px;}
 .footer-col ul li {list-style: none; padding-bottom: 10px;}
 .footer-col ul.post-list li {
 	border-bottom: 1px dashed #504f4f;
-	padding: 10px 0px;
+	padding: 0px 0px;
 }
 /* All Mobile Sizes */
 @media only screen and (max-width: 767px) {
