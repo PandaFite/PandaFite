@@ -757,19 +757,28 @@ p.side {margin-bottom: 20px;}
 /**************************************
 / Footer
 **************************************/
+	#wrapper {
+	min-height:100%;
+	position:relative;
+}
+ #content {
+	 padding-bottom:120px;
+}
+
+
+
+
 .footer-container {
 	
 	width:100%;
 	background:#333;
 	clear: both;
- 	position: fixed;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
+ 	position: absolute;
+    bottom: 0;
+    left: 0;
 	height: 120px;
  	z-index: 10;
-	padding-bottom: 0px;
-	margin-bottom: 0px;
+	margin-top: 50px;
 }
 .footer-row { margin-top: 0px;}
 .footer-col {color:#ababab; font-size: 11px;}
