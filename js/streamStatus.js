@@ -6,6 +6,6 @@ $.ajax({
  },
  success: function(data) {
    console.log(data);
-   document.getElementById('title').textContent = data.status;
+   document.getElementById('title').textContent = 'Playing ' + data.game + ' - ' + data.status;
  }
 });
