@@ -6,7 +6,7 @@ header {
     top: 0;
     left: 0;
     z-index: 999;
-    background-color: #017eff;
+    background-color: #333;
     -webkit-transition: height 0.3s;
     -moz-transition: height 0.3s;
     -ms-transition: height 0.3s;
@@ -16,7 +16,7 @@ header {
 header h1#logo {
     display: inline-block;
     height: 70px;
-    line-height: 70px;
+    line-height: 71px;
     float: left;
     font-family: "Oswald", sans-serif;
     font-size: 35px;
@@ -35,7 +35,7 @@ header nav {
 header nav a {
     line-height: 85px;
     margin-left: 14px;
-    color: #9fdbfc;
+    color: white;
     font-weight: 700;
     font-size: 16px;
     -webkit-transition: all 0.3s;
@@ -45,19 +45,19 @@ header nav a {
     transition: all 0.3s;
 }
 header nav a:hover {
-    color: white;
+    color: #017eff;
 }
 header.smaller {
     height: 50px;
 }
 .selected  {
-	color: white;
+	color: #017eff;
 }
 .twitchLink{
 	color: white;
 }
 .twitchLink:hover{
-	color: #6441A5;
+	color: #017eff;
 }
 header.smaller h1#logo {
     width: 15 0px;
