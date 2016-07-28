@@ -13,7 +13,7 @@ $.ajax({
    }
    else 
    {
-	   document.getElementById('title').textContent = "Stream Offline - Panda usually goes live at 4pm PST";
+	   displayOffline();
 	   offlineFrame();
    }
  }
