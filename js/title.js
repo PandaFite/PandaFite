@@ -8,6 +8,6 @@ $.ajax({
  },
  success: function(data) {
    console.log(data);
-   document.getElementById('title').textContent = data.status + " | Game: " + data.game + " | Followers: " + data.followers;
+   document.getElementById('title').textContent = data.status + " | Game: " + data.game + " | Followers: " + data.followers.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
  }
 });}
