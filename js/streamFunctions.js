@@ -17,7 +17,7 @@ $.ajax({
 
 function displayOffline()
 {
-	document.getElementById('title').textContent = "Stream Offline - Panda usually goes live at 4pm PST";
+	document.getElementById('title').textContent = "Stream Offline - Most Recent VOD:";
 }
 
 function onlineFrame()
@@ -26,5 +26,15 @@ function onlineFrame()
 }
 function offlineFrame()
 {
-	document.getElementById('player').src = "https://pandaplayshd.com/offline";
+	$.ajax({
+	 type: 'GET',
+	 url: 'https://api.twitch.tv/kraken/channels/' + username + '/videos?broadcasts=true',
+	 headers: {
+	   'Client-ID': 'axjhfp777tflhy0yjb5sftsil'
+	 },
+	 success: function(data) {
+	   console.log(data);
+	   document.getElementById('player').src = "https://player.twitch.tv/?video=" + data.videos[0]._id + "&autoplay=false"
+	 }
+	});
 }
