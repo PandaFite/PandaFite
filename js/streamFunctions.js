@@ -17,7 +17,7 @@ $.ajax({
 
 function displayOffline()
 {
-	document.getElementById('title').textContent = "Stream Offline - Most Recent VOD:";
+	document.getElementById('title').textContent = "Stream Offline - Most Recent Broadcast:";
 }
 
 function onlineFrame()
