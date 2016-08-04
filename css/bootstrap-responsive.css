@@ -902,6 +902,10 @@
     right: 10px;
     left: 10px;
   }
+  .modal-header .close {
+    padding: 10px;
+    margin: -10px;
+  }
   .carousel-caption {
     position: static;
   }
