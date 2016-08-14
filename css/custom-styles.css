@@ -354,114 +354,10 @@ ul.nav li.dropdown:hover ul.dropdown-menu{ display: block; }
 }
 
 
-/**************************************
-/ Slider
-**************************************/
-.carousel-caption h4 { font-size: 14px; text-shadow:none; }
-.carousel-caption {background: url(../img/post-item-hover.png);}
-.carousel-control {border: none; top: 177px;}
-
-
-/**************************************
-/ Gallery
-**************************************/
-.gallery-title { margin-bottom:15px; }
-.gallery-item { margin-bottom:15px; margin-top:15px; }
-
-.gallery-hover-6col,
-.gallery-hover-4col,
-.gallery-hover-3col,
-.gallery-hover-4col-cir { 
-	display:none; 
-	background:url(../img/gallery-item-hover.png);
-	position:absolute; 
-	z-index: 10;
-}
-.gallery-hover-4col-cir{
-	-webkit-border-radius: 500px;
-     -moz-border-radius: 500px;
-          border-radius: 500px;
+select:active, select:hover {
+  outline-color: #017eff;
 }
 
-/* Large Desktop Size */
-@media (min-width: 1200px) {
-	.gallery-hover-6col {width:170px; height:139px;}
-	.gallery-hover-4col {width:270px; height:220px;}
-	.gallery-hover-3col {width:370px; height:300px;}
-	.gallery-hover-4col-cir {width:270px; height:270px;}
-	.gallery-hover-4col-cir .gallery-icons {top: 45%; left:34%;}
-}
-
-/* Small Desktop Size */
-@media (min-width: 980px) and (max-width: 1199px) {
-	.gallery-hover-6col {width:140px; height:114px;}
-	.gallery-hover-4col {width:220px; height:180px;}
-	.gallery-hover-3col {width:300px; height:243px;}
-	.gallery-hover-4col-cir {width:220px; height:220px;}
-	.gallery-hover-4col-cir .gallery-icons {top: 42%; left:29%;}
-
-	/* Clip descriptions */
-	li.span4 .project-details {
-	    -o-text-overflow: ellipsis;
-	    text-overflow:    ellipsis;
-	    overflow:hidden;
-	    white-space:nowrap;
-	    width: 280px;
-	}
-	li.span3 .project-details {
-	    -o-text-overflow: ellipsis;
-	    text-overflow:    ellipsis;
-	    overflow:hidden;
-	    white-space:nowrap;
-	    width: 200px;
-	}
-	li.span2 .project-details {
-	    -o-text-overflow: ellipsis;
-	    text-overflow:    ellipsis;
-	    overflow:hidden;
-	    white-space:nowrap;
-	    width: 120px;
-	}
-}
-
-
-
-
-/* Portrait tablet to landscape */
-@media (min-width: 768px) and (max-width: 979px) {
-
-	/* Clip descriptions */
-	li.span2 .project-details {display:none;}
-	li.span3 .project-details {
-	    -o-text-overflow: ellipsis;
-	    text-overflow:    ellipsis;
-	    overflow:hidden;
-	    white-space:nowrap;
-	    width: 146px;
-	}
-	li.span4 .project-details {
-	    -o-text-overflow: ellipsis;
-	    text-overflow:    ellipsis;
-	    overflow:hidden;
-	    white-space:nowrap;
-	    width: 208px;
-	}
-}
-/* Landscape phones and down */
-@media (max-width: 480px) {
-	.project-details {width: 250px; text-align: center}
-	.gallery-post-grid {text-align: center}
-	.project-details {margin-left:auto; margin-right: auto;}
-	.gallery {text-align: center; }
-	.gallery-cats { display: none;}
-	li.span2 .project-details {
-	    -o-text-overflow: ellipsis;
-	    text-overflow:    ellipsis;
-	    overflow:hidden;
-	    white-space:nowrap;
-	    width: 150px;
-		}
-}
 /* Mobile Landscape Size */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 	li.span4 .project-details {width:350px;}
@@ -470,80 +366,6 @@ ul.nav li.dropdown:hover ul.dropdown-menu{ display: block; }
 @media only screen and (max-width: 479px) {
 	li.span4 .project-details {width:260px;}
 }
-
-.project-details {
-	background:#f8f8f8;
-	display: block;
-	padding:10px;
-	border-bottom: 1px dotted #a9a9a9;
-	font-family: Georgia;
-	font-style: italic;
-
-	width: auto\9;
-    height: auto;
-    max-width: 100%;
-}
-.project-details a {
-	margin: 0px; 
-	font-size: 12px; 
-	font-style: normal;
-	text-shadow:none;
-	display: block;
-	font-family: "Oswald", sans-serif; 
-	font-weight: normal;
-	text-transform:uppercase; 
-}
-.project-details {color: #6f6f6f;}
-.project-details a {color: #333333;}
-.project-details a:hover {color:#017eff; text-decoration: none;}
-
-.project-info {margin: 0px 0px 40px 0px;}
-.project-info li { 
-	list-style: none; 
-	border-bottom: 1px dashed #a9a9a9;;
-	padding: 10px; }
-.project-info li h6 {display: inline; margin-right: 5px;}
-
-.gallery-icons {
-	z-index: 9;
-	position:absolute;
-	bottom: 0px; 
-	right: 0px;
-	width: 89px;
-	height: 42px;
-	display: block;
-}
-a.item-zoom-link { 
-	height: 42px;
-	width: 42px;
-	background: #ffffff url(../img/gallery-item-icons.png) no-repeat;
-	background-position: 0px 0px;
-	position:absolute;
-	display: block;
-}
-a.item-details-link { 
-	height: 42px;
-	width: 42px;
-	background: #ffffff url(../img/gallery-item-icons.png) no-repeat;
-	background-position: -42px 0px;
-	position:absolute; 
-	left: 47px;
-	display: block;
-}
-a.item-zoom-link:hover {background: #017eff url(../img/gallery-item-icons.png) no-repeat;}
-a.item-details-link:hover {background: #017eff url(../img/gallery-item-icons.png) no-repeat; background-position: -42px 0px;}
-
-.gallery-post-grid {margin:0px;}
-.gallery-post-grid li {list-style: none; float: left; margin-bottom: 30px;}
-
-.gallery-cats {margin: 0px 0px 20px 0px;}
-.gallery-cats li{
-	list-style: none; 
-	float: left; 
-	padding: 0px 10px;
-	border-left: 1px dotted #a9a9a9;
-}
-.gallery-cats li:first-child{border-left:0px;}
 
 /* Mobile Portrait and Landscape Size */
 @media only screen and (max-width: 479px) {
@@ -657,78 +479,6 @@ a.accordion-toggle{background: #f5f5f5;}
 .page-header { margin:0px }
 .lead {line-height:28px; margin: 20px 0px 30px 0px; }
 
-#toTop {
-	width:47px;
-	height:47px;
-	background:url(../img/back-top-btn.png) no-repeat;
-	text-align:center;
-	position:fixed;
-	bottom:25px;
-	right:20px;
-	cursor:pointer;
-	display:none;
-	text-indent:-9999px;
-	z-index:12; 
-}
-
-/***** Lightbox *****/
-#lightbox-image-details-caption {
-	font-family: "Oswald", sans-serif; 
-	font-weight: normal;
-	text-transform:uppercase;
-	font-size: 14px;
-}
-#lightbox-secNav-btnClose {width: 30px; padding-bottom: 0;}
-#lightbox-image-details-currentNumber {display: none; visibility: hidden;}
-
-/***** Testimonials *****/
-.quote-text { 
-	font-size:16px; 
-	line-height:24px; 
-	font-family:Georgia, "Times New Roman", Times, serif; 
-	font-style:italic;
-	margin:0px 20px; }
-.quote-text cite { 
-	font-size:12px; 
-	color:#999;
-	display:block;
-	margin-top:5px; }
-
-#clientCarousel.carousel .item {
-	background: #f9f9f9;
-	padding:20px 0px;
-    -webkit-transition: opacity 1s ease-in-out;
-	-moz-transition: opacity 1s ease-in-out;
-	-o-transition: opacity 1s ease-in-out;
-	transition: opacity 1s ease-in-out;
-    left: 0 !important;
-  }
-#clientCarousel.carousel .next.left, .carousel .prev.right {
-    opacity: 1;
-    z-index: 1;
-  }
-#clientCarousel.carousel .active.left, .carousel .active.right {
-    opacity: 0;
-    z-index: 2;
-  }
-
-/***** Client Logos *****/
-.client-link { 
-	display: block; 
-	width: 100px; 
-	height: 100px;
-	position: relative;
-}
-.client-mask {
-	display: block;
-	width: 100px; 
-	height: 100px;
-	position: absolute;
-	background: url(../img/rnd-client-mask.png);
-}
-		#menu-row {
-    overflow: auto;
-}
 #menu-logo {
 	margin-top: 0px;
     width: 10%;
@@ -777,16 +527,6 @@ a.accordion-toggle{background: #f5f5f5;}
 @media (min-width: 768px) and (max-width: 979px) {
 	.client-logos li:nth-last-child(-n+2) {display: none;}
 }
-
-/***** Features Page (these can be deleted)*****/
-.the-grid div {
-	background: #e4e4e4; 
-	padding:10px 0px; 
-	text-align: center;
-}
-.form-examples input { margin-bottom: 10px;}
-.the-icons {list-style: none; margin-left: 0;}
-.the-icons li {float: left; width: 25%; line-height: 25px;}
 
 /* Mobile Portrait Size to Tablet Portrait Size */
 @media only screen and  (max-width: 767px) {
