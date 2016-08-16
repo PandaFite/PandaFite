@@ -121,97 +121,79 @@ a:visited {
     overflow: auto;}
 
 #expand_box_sub_header { clear: both; }
-.fontleft {
-	float: left;
-	font-family: Oswald, sans-serif;
-	font-weight: normal;
-	text-transform:uppercase;
-	font-size: 16px;
-	
-}
-.fontright {
-	float: right;
-	font-family: Oswald, sans-serif;
-	text-transform:uppercase;
-	font-weight: normal;
-	font-size: 16px;
-}
-.fontcenter {
-	font-family: Oswald, sans-serif;
-	font-weight: normal;
-	text-transform:uppercase;
-	font-size: 16px;
-	
-}
 .fontleftl {
 	float: left;
 	font-family: Oswald, sans-serif;
 	font-weight: normal;
-	text-transform:uppercase;
-	font-size: 22px;
-	line-height: 25px;
+	font-size: 26px;
+	line-height: 28px;
 	
 }
 .fontrightl {
 	float: right;
 	font-family: Oswald, sans-serif;
 	font-weight: normal;
-	font-size: 22px;
-	text-transform:uppercase;	
+	font-size: 26px;
+	line-height: 28px;
 }
 .fontcenterl {
 	float: center;
 	font-family: Oswald, sans-serif;
 	font-weight: normal;
-	font-size: 22px;
-	text-transform:uppercase;
-	line-height: 25px;
+	font-size: 26px;
+	line-height: 28px;
+	
+}
+.fontleft {
+	float: left;
+	font-family: Oswald, sans-serif;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 26px;
+	
+}
+.fontright {
+	float: right;
+	font-family: Oswald, sans-serif;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 26px;
+}
+.fontcenter {
+	font-family: Oswald, sans-serif;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 26px;
 	
 }
 .fontlefts {
 	float: left;
 	font-family: Oswald, sans-serif;
 	font-weight: normal;
-	text-transform:uppercase;
-	font-size: 18px;
-	line-height: 25px;
+	font-size: 20px;
+	line-height: 22px;
 	
 }
 .fontrights {
 	float: right;
 	font-family: Oswald, sans-serif;
 	font-weight: normal;
-	font-size: 18px;
-	text-transform:uppercase;	
+	font-size: 20px;
+	line-height: 22px;
 }
 .fontcenters {
 	float: center;
 	font-family: Oswald, sans-serif;
 	font-weight: normal;
-	font-size: 18px;
-	text-transform:uppercase;
+	font-size: 20px;
+	line-height: 22px;
 }
-.fontleftm {
-	float: left;
-	font-family: Oswald, sans-serif;
-	font-weight: normal;
-	text-transform:uppercase;
-	font-size: 14px;
-	
+b {
+	font-weight: bold;
 }
-.fontrightm {
-	float: right;
-	font-family: Oswald, sans-serif;
-	font-weight: normal;
-	font-size: 14px;
-}
-.fontcenterm {
-	font-family: Oswald, sans-serif;
-	font-weight: normal;
-	text-transform:uppercase;
-	font-size: 14px;
-	
-}
+
+
+
 
 /***** Misc *****/
 i {margin-right: 3px;}
@@ -504,15 +486,6 @@ a.accordion-toggle{background: #f5f5f5;}
 
 	* {
 	margin: 0;
-}
-.wrapper123 {
-	min-height: 100%;
-	height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
-	height: 100%;
-	margin: 0 auto 50px; /* the bottom margin is the negative value of the footer's height */
-}
-.footer123, .push {
-	height: 155px; /* .push must be the same height as .footer */
 }
 
 
