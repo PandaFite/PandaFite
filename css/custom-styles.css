@@ -126,7 +126,7 @@ a:visited {
 	font-family: Oswald, sans-serif;
 	font-weight: normal;
 	font-size: 26px;
-	line-height: 28px;
+	line-height: 30px;
 	
 }
 .fontrightl {
@@ -134,14 +134,14 @@ a:visited {
 	font-family: Oswald, sans-serif;
 	font-weight: normal;
 	font-size: 26px;
-	line-height: 28px;
+	line-height: 30px;
 }
 .fontcenterl {
 	float: center;
 	font-family: Oswald, sans-serif;
 	font-weight: normal;
 	font-size: 26px;
-	line-height: 28px;
+	line-height: 30px;
 	
 }
 .fontleft {
@@ -149,7 +149,7 @@ a:visited {
 	font-family: Oswald, sans-serif;
 	font-weight: normal;
 	font-size: 24px;
-	line-height: 26px;
+	line-height: 28px;
 	
 }
 .fontright {
@@ -157,13 +157,13 @@ a:visited {
 	font-family: Oswald, sans-serif;
 	font-weight: normal;
 	font-size: 24px;
-	line-height: 26px;
+	line-height: 28px;
 }
 .fontcenter {
 	font-family: Oswald, sans-serif;
 	font-weight: normal;
 	font-size: 24px;
-	line-height: 26px;
+	line-height: 28px;
 	
 }
 .fontlefts {
@@ -171,7 +171,7 @@ a:visited {
 	font-family: Oswald, sans-serif;
 	font-weight: normal;
 	font-size: 20px;
-	line-height: 22px;
+	line-height: 24px;
 	
 }
 .fontrights {
@@ -179,14 +179,14 @@ a:visited {
 	font-family: Oswald, sans-serif;
 	font-weight: normal;
 	font-size: 20px;
-	line-height: 22px;
+	line-height: 24px;
 }
 .fontcenters {
 	float: center;
 	font-family: Oswald, sans-serif;
 	font-weight: normal;
 	font-size: 20px;
-	line-height: 22px;
+	line-height: 24px;
 }
 b {
 	font-weight: bold;
