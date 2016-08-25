@@ -13,8 +13,7 @@ $.ajax({
    }
    else 
    {
-	   displayOffline();
-	   offlineFrame();
+	   streamOffline();
    }
  }
 });

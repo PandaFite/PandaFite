@@ -15,16 +15,11 @@ $.ajax({
  }
 });}
 
-function displayOffline()
-{
-	document.getElementById('title').textContent = "Stream Offline - Most Recent Broadcast:";
-}
-
 function onlineFrame()
 {
 	document.getElementById('player').src = "https://player.twitch.tv/?channel=" + username +"&muted";
 }
-function offlineFrame()
+function streamOffline()
 {
 	$.ajax({
 	 type: 'GET',
@@ -34,7 +29,13 @@ function offlineFrame()
 	 },
 	 success: function(data) {
 	   console.log(data);
-	   document.getElementById('player').src = "https://player.twitch.tv/?video=" + data.videos[0]._id + "&autoplay=false"
+	   document.getElementById('player').src = "https://player.twitch.tv/?video=" + data.videos[0]._id + "&autoplay=false";
+	   
+		var str = data.videos[0].created_at;
+		var res = str.split("-");
+		var day = res[2].split("T");
+		var fullDate = res[1] + "/" + day[0] + "/" + res[0];
+		document.getElementById('title').textContent = "Stream offline - Most recent broadcast on " + fullDate + ":";
 	 }
 	});
 }
