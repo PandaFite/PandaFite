@@ -35,7 +35,28 @@ function streamOffline()
 		var res = str.split("-");
 		var day = res[2].split("T");
 		var fullDate = res[1] + "/" + day[0] + "/" + res[0];
-		document.getElementById('title').textContent = "Stream offline - Most recent broadcast on " + fullDate + ":";
+		
+		var timeFull = day[1].split("Z");
+		var time = timeFull[0].split(":");
+		var hour = time[0] - 19;
+		var minute = time[1];
+		var timeOfDay = "AM"
+		
+		if (time[0] >= 8 && time[0] <= 19)
+		{
+			timeOfDay = " AM PST";
+		}	
+		else
+		{
+			timeOfDay = " PM PST";
+		}	
+
+		document.getElementById('title').textContent = "Stream offline - Panda's most recent stream was on " + fullDate + " at " + hour + ":" + minute + timeOfDay;
+		document.getElementById('streaminfo').textContent = " | " + data.videos[0].title;
+		
+		
+		
+		
 	 }
 	});
 }
