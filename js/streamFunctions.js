@@ -1,4 +1,4 @@
-var username = "pandaplayshd";
+var username = "hotted89";
 
 function displayTitle()
 {
@@ -38,7 +38,23 @@ function streamOffline()
 		
 		var timeFull = day[1].split("Z");
 		var time = timeFull[0].split(":");
-		var hour = time[0] - 19;
+		var hour = time[0];
+		
+		if (time[0] >= 1 && time[0] <= 7)
+		{
+			hour = time[0] + 5;
+		}
+		else if (time[0] >= 8 && time[0] <= 19)
+		{
+			hour = time[0] - 7
+		}
+		else if (time[0] >= 20 && time [0] <= 24)
+		{
+			hour = time[0] - 19;
+		}
+		
+		
+		
 		var minute = time[1];
 		var timeOfDay = "AM"
 		
