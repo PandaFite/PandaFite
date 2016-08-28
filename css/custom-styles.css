@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5 {text-shadow: 1px 1px 0 #fdfdfd, 2px 2px 0 rgba(81, 81, 81, 0
 h1.title-bg, h2.title-bg, h3.title-bg, h4.title-bg , h5.title-bg, h6.title-bg {
 	background:#f8f8f8; 
 	padding:10px 5px;
-	margin: 0px 0px 20px 0px;
+	margin: 0px 0px 10px 0px;
 	border-bottom: 1px dotted #a9a9a9;
 	border-top: 1px dotted #a9a9a9;
 }

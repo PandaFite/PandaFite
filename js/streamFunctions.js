@@ -67,8 +67,8 @@ function streamOffline()
 			timeOfDay = " PM PST";
 		}	
 
-		document.getElementById('title').textContent = "Stream offline - Panda's most recent stream was on " + fullDate + " at " + hour + ":" + minute + timeOfDay;
-		document.getElementById('streaminfo').textContent = " | " + data.videos[0].title;
+		document.getElementById('title').textContent = "Most recent broadcast (" + fullDate + " at " + hour + ":" + minute + timeOfDay + "):";
+		document.getElementById('streaminfo').textContent = " " + data.videos[0].title;
 		
 		
 		
