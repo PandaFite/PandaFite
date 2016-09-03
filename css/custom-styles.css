@@ -88,6 +88,7 @@ a, a.hyperlink {
     -o-transition: 1s ease;
     -webkit-transition: 0.5s ease;
 }
+
 a:hover {
 text-decoration: none;
 }
@@ -392,7 +393,26 @@ select:active, select:hover {
 .footer-row { margin-top: 0px;}
 .footer-col {color:#ababab; font-size: 11px;}
 .footer-col a {color:#dcdcdc; font-weight: bold;}
-.footer-col a:hover {color:#017eff; text-decoration: none;}
+.footer-col a.hyperlink:hover {color:#017eff; text-decoration: none;}
+
+.footer-col a.twitch:hover {
+	color: #6441a5
+}
+.footer-col a.twitter:hover {
+	color: #1da1f2
+}
+.footer-col a.youtube:hover {
+	color: #cd201f
+}
+.footer-col a.instagram:hover {
+	color: #e1306c
+}
+.footer-col a.snapchat:hover {
+	color: #fffc00
+}
+
+
+
 .footer-col h5, .footer-col strong {color:#f9f9f9; text-shadow:none;}
 .footer-col h5 {margin-bottom: 25px;}
 .footer-col ul {margin: 0px;}
