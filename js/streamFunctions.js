@@ -2,6 +2,7 @@ var username = "pandaplayshd";
 
 function displayTitle()
 {
+	function getInfo(){
 $.ajax({
  type: 'GET',
  url: 'https://api.twitch.tv/kraken/streams/' + username,
@@ -13,7 +14,11 @@ $.ajax({
    document.getElementById('title').textContent = data.stream.channel.status;
    document.getElementById('streaminfo').textContent = " | Playing " + data.stream.game + " for " + data.stream.viewers.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " viewers and " + data.stream.channel.followers.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " followers";
  }
-});}
+});
+	}
+	getInfo();
+	setInterval(getInfo,10000);
+	}
 
 function onlineFrame()
 {
