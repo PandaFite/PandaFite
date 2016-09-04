@@ -1,5 +1,3 @@
-function getStatus()
-{
 $.ajax({
  type: 'GET',
  url: 'https://api.twitch.tv/kraken/streams/' + username,
@@ -19,6 +17,3 @@ $.ajax({
    }
  }
 });
-}
-getStatus();
-setInterval(getStatus,60000);
