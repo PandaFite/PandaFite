@@ -1,5 +1,7 @@
 var username = "pandaplayshd";
 
+var pressPlay;
+
 function displayTitle()
 {
 	function getInfo(){
@@ -11,7 +13,7 @@ $.ajax({
  },
  success: function(data) {
    console.log(data);
-   document.getElementById('title').textContent = data.stream.channel.status;
+   document.getElementById('title').textContent = "\u2022 LIVE: " + data.stream.channel.status;
    document.getElementById('streaminfo').textContent = " | Playing " + data.stream.game + " for " + data.stream.viewers.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " viewers and " + data.stream.channel.followers.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " followers";
  }
 });
@@ -22,8 +24,15 @@ $.ajax({
 
 function onlineFrame()
 {
-	document.getElementById('player').src = "https://player.twitch.tv/?channel=" + username +"&muted";
+	document.getElementById('vod-thumbnail').src = "https://static-cdn.jtvnw.net/previews-ttv/live_user_pandaplayshd-1280x720.jpg";
+	pressPlay = function() {
+		document.getElementById('button-play-link').style.visibility = "hidden";
+		document.getElementById('vod-thumbnail').style.visibility = "hidden";
+		document.getElementById('player').src = "https://player.twitch.tv/?channel=" + username +"&muted";
+		}
 }
+
+
 function streamOffline()
 {
 	$.ajax({
@@ -34,7 +43,23 @@ function streamOffline()
 	 },
 	 success: function(data) {
 	   console.log(data);
-	   document.getElementById('player').src = "https://player.twitch.tv/?video=" + data.videos[0]._id + "&autoplay=false";
+	   // document.getElementById('player').src = "https://player.twitch.tv/?video=" + data.videos[0]._id + "&autoplay=false";
+	   
+	   	if (data._total == 0)
+		{
+			document.getElementById('title').textContent = "Error 404 - no stream data found";
+			document.getElementById('vod-thumbnail').src = "https://static-cdn.jtvnw.net/ttv-static/404_preview-1280x720.jpg";
+			document.getElementById('button-play-link').style.visibility = "hidden";
+		}
+	   	   
+	   var thumbRaw = data.videos[0].thumbnails[2].url;
+	   
+		var str2 = thumbRaw.split("-");
+		var noRes = str2[0] + "-" + str2[1];
+		var thumbHD = noRes + "-1280x720.jpg"
+	   document.getElementById('vod-thumbnail').src = thumbHD;
+	   
+	   
 	   
 		var str = data.videos[0].created_at;
 		var res = str.split("-");
@@ -74,6 +99,13 @@ function streamOffline()
 
 		document.getElementById('title').textContent = "Most recent broadcast (" + fullDate + " at " + hour + ":" + minute + timeOfDay + "):";
 		document.getElementById('streaminfo').textContent = " " + data.videos[0].title;
+		
+		pressPlay = function() {
+		document.getElementById('button-play-link').style.visibility = "hidden";
+		document.getElementById('vod-thumbnail').style.visibility = "hidden";
+		document.getElementById('player').src = "https://player.twitch.tv/?video=" + data.videos[0]._id;
+		}
+
 		
 		
 		

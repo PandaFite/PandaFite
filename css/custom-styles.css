@@ -3,7 +3,7 @@ html, body {
 	line-height:18px;
 	height: 100%;
  }
-body {background: #f9f9f9 url(../img/page-bg-1.jpg);}
+body {background: #eaeaea;}
 
 .main-container {
 	height:auto; 
@@ -52,8 +52,6 @@ h1.title-bg, h2.title-bg, h3.title-bg, h4.title-bg , h5.title-bg, h6.title-bg {
 	background:#f8f8f8; 
 	padding:10px 5px;
 	margin: 0px 0px 10px 0px;
-	border-bottom: 1px dotted #a9a9a9;
-	border-top: 1px dotted #a9a9a9;
 }
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {color:#7f7f7f;}
 h2 small {font-size: 30px;}
