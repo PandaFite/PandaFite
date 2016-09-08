@@ -14,7 +14,14 @@ $.ajax({
  success: function(data) {
    console.log(data);
    document.getElementById('title').textContent = "\u2022 LIVE: " + data.stream.channel.status;
+   if (data.stream.game == "Creative")
+   {
+	   document.getElementById('streaminfo').textContent = " | Being " + data.stream.game + " for " + data.stream.viewers.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " viewers and " + data.stream.channel.followers.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " followers";
+   }
+   else{
+   
    document.getElementById('streaminfo').textContent = " | Playing " + data.stream.game + " for " + data.stream.viewers.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " viewers and " + data.stream.channel.followers.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " followers";
+   }
  }
 });
 	}
@@ -24,7 +31,7 @@ $.ajax({
 
 function onlineFrame()
 {
-	document.getElementById('vod-thumbnail').src = "https://static-cdn.jtvnw.net/previews-ttv/live_user_pandaplayshd-1280x720.jpg";
+	document.getElementById('vod-thumbnail').src = "https://static-cdn.jtvnw.net/previews-ttv/live_user_" + username + "-1280x720.jpg";
 	pressPlay = function() {
 		document.getElementById('button-play-link').style.visibility = "hidden";
 		document.getElementById('vod-thumbnail').style.visibility = "hidden";
