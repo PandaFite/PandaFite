@@ -10,31 +10,11 @@ body {background: #eaeaea;}
 	height: 100%;
 	min-height: 100%;
 }
-.line-divider {
-	background-image:url(../img/line_divider.png);
-	text-align: center;
-	display: block;
-	clear: both;
-	height: 16px;
-	width: 650px;
-	margin-top: 0px;
-	margin-right: auto;
-	margin-bottom: 30px;
-	margin-left: auto;
-	background-repeat: no-repeat;
-}
-.line-divider-tablet {
-	background-image:url(../img/line_divider-tablet.png);
-	text-align: center;
-	display: block;
-	clear: both;
-	height: 16px;
-	width: 650px;
-	margin-top: 0px;
-	margin-right: auto;
-	margin-bottom: 30px;
-	margin-left: auto;
-	background-repeat: no-repeat;
+hr {
+height: 1px;
+color: #123455;
+background-color: #123455;
+border: none;
 }
 @media (max-width: 767px) {
   body { padding-right: 0px; padding-left: 0px; }
