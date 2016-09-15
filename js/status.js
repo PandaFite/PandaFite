@@ -2,7 +2,7 @@ $.ajax({
  type: 'GET',
  url: 'https://api.twitch.tv/kraken/streams/' + username,
  headers: {
-   'Client-ID': 'axjhfp777tflhy0yjb5sftsil'
+   'Client-ID': 'f2cmg4s30fnzmq7zbcx8rcsfxdc1san'
  },
  success: function(data) {
    console.log(data);
