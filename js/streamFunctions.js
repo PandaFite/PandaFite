@@ -2,9 +2,12 @@ var username = "pandaplayshd";
 
 var pressPlay;
 
+var uptime;
+
 function displayTitle()
 {
 	function getInfo(){
+			
 $.ajax({
  type: 'GET',
  url: 'https://api.twitch.tv/kraken/streams/' + username,
@@ -23,8 +26,16 @@ $.ajax({
    document.getElementById('streaminfo').textContent = " | Playing " + data.stream.game + " for " + data.stream.viewers.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " viewers and " + data.stream.channel.followers.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " followers";
    }
  }
-});
+});	
+		$.ajax({
+		url: "https://api.rtainc.co/twitch/uptime?channel=pandaplayshd",
+		success: function (data) {
+			document.getElementById('uptime').textContent = "(" + data + " uptime)";
+		},
+		dataType: "html"
+		});
 	}
+	
 	getInfo();
 	setInterval(getInfo,10000);
 	}
