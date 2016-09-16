@@ -119,5 +119,5 @@ function streamOffline()
 		
 	 }
 	});
-	document.getElementById('chatframe').src = "https://discordapp.com/widget?id=221059861457141770&theme=light" + username + "chat";
+	document.getElementById('chatframe').src = "https://discordapp.com/widget?id=221059861457141770&theme=light";
 }
