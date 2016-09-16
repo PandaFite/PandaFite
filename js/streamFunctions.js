@@ -37,6 +37,8 @@ function onlineFrame()
 		document.getElementById('vod-thumbnail').style.visibility = "hidden";
 		document.getElementById('player').src = "https://player.twitch.tv/?channel=" + username +"&muted";
 		}
+		
+	document.getElementById('chatframe').src = "https://twitch.tv/" + username + "chat";
 }
 
 function streamOffline()
@@ -117,4 +119,5 @@ function streamOffline()
 		
 	 }
 	});
+	document.getElementById('chatframe').src = "https://discordapp.com/widget?id=221059861457141770&theme=light" + username + "chat";
 }
