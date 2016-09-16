@@ -24,7 +24,6 @@ $.ajax({
 	   }
 	   else
 	   {
-		function getHostInfo() {
 		document.getElementById('vod-thumbnail').src = "https://static-cdn.jtvnw.net/previews-ttv/live_user_" + data.hosts[0].target_login + "-1280x720.jpg";
 		
 		pressPlay = function() {
@@ -32,6 +31,7 @@ $.ajax({
 		document.getElementById('vod-thumbnail').style.visibility = "hidden";
 		document.getElementById('player').src = "https://player.twitch.tv/?channel=" + data.hosts[0].target_login +"&muted";
 		}
+		function getHostInfo() {
 		$.ajax({
 		 type: 'GET',
 		 url: 'https://api.twitch.tv/kraken/streams/' + data.hosts[0].target_login,
