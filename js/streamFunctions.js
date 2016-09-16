@@ -38,7 +38,7 @@ function onlineFrame()
 		document.getElementById('player').src = "https://player.twitch.tv/?channel=" + username +"&muted";
 		}
 		
-	document.getElementById('chatframe').src = "https://twitch.tv/" + username + "chat";
+	document.getElementById('chatframe').src = "https://twitch.tv/" + username + "/chat";
 }
 
 function streamOffline()
