@@ -39,7 +39,6 @@ function onlineFrame()
 		}
 }
 
-
 function streamOffline()
 {
 	$.ajax({
@@ -50,7 +49,6 @@ function streamOffline()
 	 },
 	 success: function(data) {
 	   console.log(data);
-	   // document.getElementById('player').src = "https://player.twitch.tv/?video=" + data.videos[0]._id + "&autoplay=false";
 	   
 	   	if (data._total == 0)
 		{
