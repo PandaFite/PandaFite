@@ -83,34 +83,39 @@
     <div id="content">
 	
     <!-- Title Header -->
+	<div>
 	<div class="hidden-tablet hidden-phone" style="margin-bottom:100px;"></div>
     <div class="row"  style="text-align: center; zoom:120%;">
 
             <h2 style="text-align: center;">Followage</h2>
-			<div style="text-align: center;">
-			<br>
-			<br>
-			<br>
-			<br>
-			<center><input id="searchterm" placeholder="Twitch Username"></center>
-			<br>
-			<br>
-			<br>
-			<center><u><a id="submitButton" href="https://apis.rtainc.co/twitchbot/following.php" target="followageFrame" style="padding-left: 10px; padding-right: 10px; padding-top: 4px"><button type="button">Check Followage</button></a></u></center>
-			<a id="reflectedlink" href="https://apis.rtainc.co/twitchbot/following.php" target="_blank" style="visibility: hidden;">https://apis.rtainc.co/twitchbot/following.php</a>
+			<input id="username1" placeholder="Twitch Username"></input>
+			<a class="btn" onclick="getFollowage()">Go</a>
+			
 			<script type="text/javascript">
-
-				var btn= document.getElementById('submitButton');
-				var link= document.getElementById('reflectedlink');
-				var input= document.getElementById('searchterm');
-				input.onchange=input.onkeyup= function() {
-					link.search= '?user='+encodeURIComponent(input.value)+"&channel=pandaplayshd";
-					btn.search= '?user='+encodeURIComponent(input.value)+"&channel=pandaplayshd";
-					
-					link.firstChild.data= link.href;
-				};
-				</script>
-				
+			function getFollowage(){
+			
+			username = document.getElementById('username1').value;
+			var apiURL = "https://api.rtainc.co/twitch/followers/length?channel=pandaplayshd&name=" + username;
+			
+			$.ajax({
+			url: "https://api.rtainc.co/twitch/followers/length?channel=pandaplayshd&name="+username,
+			success: function (data) {
+			document.getElementById('result').innerHTML = "<img src='img/loading-bar.gif' />";
+			
+			setTimeout(function() {
+			document.getElementById('result').textContent = data;
+			}, 2000);
+			
+			
+			
+			},
+			dataType: "html"
+			});
+			}
+			</script>
+			<section style="margin-top:40px;">
+			<h1 id="result" style="text-transform: none;"></h1>
+			</section>
 			
 				</div>
 			<div style="text-align: center;">
@@ -121,7 +126,6 @@
 	</div> <!-- end content -->
 	
     </div> <!-- End Container -->
-		<!--hitcounter -->
 	
 
 	<div class="footer-container hidden-phone" style="margin-top: 200px"><!-- Begin Footer -->
