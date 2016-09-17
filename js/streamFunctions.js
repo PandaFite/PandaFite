@@ -28,7 +28,7 @@ $.ajax({
  }
 });	
 		$.ajax({
-		url: "https://api.rtainc.co/twitch/uptime?channel=twitch",
+		url: "https://api.rtainc.co/twitch/uptime?channel=pandaplayshd",
 		success: function (data) {
 			var name = data.split(' ');
 			if (name[1] == "is" && name[2] == "not")
