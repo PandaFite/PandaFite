@@ -79,7 +79,7 @@ function streamOffline()
 		}
 	   	 
 		 var thumbRaw;
-		if (data.videos[0].thumbnails[2].url == null)
+		if (data.videos[0].thumbnails[2] == null)
 		{
 		thumbRaw = data.videos[0].thumbnails[0].url;
 		}
