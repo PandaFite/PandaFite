@@ -101,7 +101,12 @@ function streamOffline()
 		var time = timeFull[0].split(":");
 		var hour = time[0];
 		
-		if (time[0] >= 0 && time[0] <= 7)
+		
+		if (time[0] == 0)
+		{
+			hour = 5;
+		}
+		else if (time[0] >= 1 && time[0] <= 7)
 		{
 			hour = time[0] + 5;
 		}
