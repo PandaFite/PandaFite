@@ -77,8 +77,13 @@ function streamOffline()
 			document.getElementById('vod-thumbnail').src = "https://static-cdn.jtvnw.net/ttv-static/404_preview-1280x720.jpg";
 			document.getElementById('button-play-link').style.visibility = "hidden";
 		}
-	   	   
-	   var thumbRaw = data.videos[0].thumbnails[2].url;
+	   	 
+		 var thumbRaw;
+		if (data.videos[0].thumbnails[2].url == null)
+		{
+		thumbRaw = data.videos[0].thumbnails[0].url;
+		}
+		else {thumbRaw = data.videos[0].thumbnails[2].url;}
 	   
 		var str2 = thumbRaw.split("-");
 		var noRes = str2[0] + "-" + str2[1];
