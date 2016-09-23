@@ -31,9 +31,14 @@ $.ajax({
 		url: "https://api.rtainc.co/twitch/uptime?channel=pandaplayshd",
 		success: function (data) {
 			var name = data.split(' ');
+			var noComma = name[1].split(',');
 			if (name[1] == "is" && name[2] == "not")
 			{
 				document.getElementById('uptime').textContent = "(uptime api error)";
+			}
+			else if (name[3] == "seconds")
+			{
+				document.getElementById('uptime').textContent = "(" + name[0] + " " + noComma[0] + " uptime)";
 			}
 			else
 			{
