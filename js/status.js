@@ -24,6 +24,7 @@ $.ajax({
 	   }
 	   else
 	   {
+		document.getElementById('chatframe').src = "https://discordapp.com/widget?id=221059861457141770&theme=light";
 		document.getElementById('vod-thumbnail').src = "https://static-cdn.jtvnw.net/previews-ttv/live_user_" + data.hosts[0].target_login + "-1280x720.jpg";
 		
 		pressPlay = function() {
