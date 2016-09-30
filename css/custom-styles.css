@@ -3,7 +3,11 @@ html, body {
 	line-height:18px;
 	height: 100%;
  }
-body {background: #FFFFFF;}
+<<<<<<< HEAD
+body {background: #FFFF00;}
+=======
+body {background: #FFF00;}
+>>>>>>> origin/gh-pages
 
 .main-container {
 	height:auto; 
