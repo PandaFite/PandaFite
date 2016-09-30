@@ -32,7 +32,7 @@ h1, h2, h3, h4 , h5, h6 {
 	text-transform:uppercase; 
 }	
 h1.title-bg, h2.title-bg, h3.title-bg, h4.title-bg , h5.title-bg, h6.title-bg {
-	background:#f8f8f8; 
+	background:#dddddd; 
 	padding:10px 5px;
 	margin: 0px 0px 10px 0px;
 }
