@@ -88,24 +88,67 @@
     <div class="row"  style="text-align: center; zoom:120%;">
 
             <h2 style="text-align: center;">Followage</h2>
-			<input id="username1" placeholder="Twitch Username"></input>
+			<input id="username" placeholder="Twitch Username"></input>
 			<a class="btn" onclick="getFollowage()">Go</a>
 			
 			<script type="text/javascript">
 			function getFollowage(){
 			
-			username = document.getElementById('username1').value;
-			var apiURL = "https://api.rtainc.co/twitch/followers/length?channel=pandaplayshd&name=" + username;
+			username = document.getElementById('username').value;
 			
 			$.ajax({
-			url: "https://api.rtainc.co/twitch/followers/length?channel=pandaplayshd&name="+username,
+			url: "https://api.rtainc.co/twitch/channels/pandaplayshd/followers/" + username + "?format=[2]",
 			success: function (data) {
+			
+			var displayUsername;
+			var userLogo;
+			
+			$.ajax({
+			 type: 'GET',
+			 url: 'https://api.twitch.tv/kraken/channels/' + username,
+			 headers: {
+			   'Client-ID': 'ml1jq1dzn8ryxrt595ep8hpn8dnpez6'
+			 },
+			 success: function(data) {
+			   console.log(data);
+					displayUsername = data.display_name;
+					document.getElementById('username').value = data.display_name;
+					if (data.logo == null) {
+					userLogo = "https://static-cdn.jtvnw.net/jtv_user_pictures/xarth/404_user_70x70.png";
+					}
+					else {
+					userLogo = data.logo;
+					}
+					 }
+					});
+			
+			
+			
+			setTimeout(function() {
+			if (username != "")
+			{
+
+			
+			
+			document.getElementById('prefix').innerHTML = "<a href='https://www.twitch.tv/" + displayUsername + "' target='_blank'><img src='" + userLogo + "' height='30' width='30' class='nodrag' style='vertical-align: middle;' title='" + displayUsername + "' /></a> has been following Panda for";
 			document.getElementById('result').innerHTML = "<img src='img/loading-bar.gif' />";
 			
 			setTimeout(function() {
 			document.getElementById('result').textContent = data;
 			}, 2000);
+			}
 			
+			
+			else
+			{
+			document.getElementById('prefix').textContent = "";
+			document.getElementById('result').innerHTML = "<img src='img/loading-bar.gif' class='nodrag' />";
+			
+			setTimeout(function() {
+			document.getElementById('result').textContent = "(error)";
+			}, 2000);
+			}
+			}, 500);
 			
 			
 			},
@@ -114,6 +157,7 @@
 			}
 			</script>
 			<section style="margin-top:40px;">
+			<h4 id="prefix"></h4>
 			<h1 id="result" style="text-transform: none;"></h1>
 			</section>
 			
