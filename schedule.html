@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head> <!-- Last updated 07/06/2016 at 1:15 PM PDT -->
+<head>
 <script src="js/https.js"></script>
 <title>Schedule - PandaPlaysHD</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,10 +10,11 @@
 <link rel="stylesheet" href="css/bootstrap-responsive.css">
 <link rel="stylesheet" href="css/prettyPhoto.css" />
 <link rel="stylesheet" href="css/flexslider.css" />
-<link rel="stylesheet" href="css/custom-styles.css?revision=09-25-2016">
+<link rel="stylesheet" href="css/custom-styles.css?revision=10-13-16">
 <link rel="stylesheet" href="css/menu.css?revision=07-23-2016">
+<link rel="stylesheet" href="css/hybrid.css" />
 <link rel="shortcut icon" href="https://pandaplayshd.com/img/favicon.ico?v=3_24_16">
-<script src="https://code.jquery.com/jquery-1.8.3.min.js"></script
+<script src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/classie/1.0.1/classie.min.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/jquery.prettyPhoto.js"></script>
@@ -36,46 +37,46 @@
 		
 		    <!-- mobile nav -->
 		
-		<form action="#" id="mobile-nav" class="visible-phone visible-tablet">
-                <div class="mobile-nav-select">
-                <select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
-                    <option value="">Menu...</option>
-                    <option value="https://pandaplayshd.com">Home</option>
-                    <option value="about">About</option>
-					<option value="specs">PC Specs</option>
-					<option value="points">Points</option>
-					<option value="rules">Rules</option>
-                    <option value="schedule">Schedule</option>
-					<option value="social">Social</option>
-					<option value="software">Software</option>
-					<option value="tips">Tips</option>
-                </select>
-                </div>
-                </form>
+			<form action="#" id="mobile-nav" class="visible-phone visible-tablet">
+					<div class="mobile-nav-select">
+					<select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
+						<option value="">Menu...</option>
+						<option value="https://pandaplayshd.com">Home</option>
+						<option value="about">About</option>
+						<option value="specs">PC Specs</option>
+						<option value="points">Points</option>
+						<option value="rules">Rules</option>
+						<option value="schedule">Schedule</option>
+						<option value="social">Social</option>
+						<option value="software">Software</option>
+						<option value="tips">Tips</option>
+					</select>
+					</div>
+			</form>
 
-    <header class="hidden-phone hidden-tablet">
-		<div class="container clearfix">
-			<h1 id="logo">
-				<a href="https://www.twitch.tv/PandaPlaysHD" target="_blank"><img class="headerlogo nodrag" src="img/logo-j_skulloz.png"></a>
-				<a href="https://www.twitch.tv/PandaPlaysHD" target="_blank" class="twitchLink">PandaPlaysHD</a>
-			</h1>
-			<nav>
-				<a href="//pandaplayshd.com">Home</a>
-				<a href="about">About</a>
-				<a href="business">Business</a>
-				<a href="downloads">Downloads</a>
-				<a href="specs">PC Specs</a>
-				<a href="points">Points</a>
-				<a href="rules">Rules</a>
-				<a class="selected">Schedule</a>
-				<a href="social">Social</a>
-				<a href="software">Software</a>
-				<a href="tips">Tips</a>
-				
-				
-			</nav>
-		</div>
-	</header><!-- /header -->
+			<header class="hidden-phone hidden-tablet">
+				<div class="container clearfix">
+					<h1 id="logo">
+						<a href="https://www.twitch.tv/PandaPlaysHD" target="_blank"><img class="headerlogo nodrag" src="img/logo-j_skulloz.png"></a>
+						<a href="https://www.twitch.tv/PandaPlaysHD" target="_blank" class="twitchLink">PandaPlaysHD</a>
+					</h1>
+					<nav>
+						<a href="//pandaplayshd.com">Home</a>
+						<a href="about">About</a>
+						<a href="business">Business</a>
+						<a href="downloads">Downloads</a>
+						<a href="specs">PC Specs</a>
+						<a href="points">Points</a>
+						<a href="rules">Rules</a>
+						<a class="selected">Schedule</a>
+						<a href="social">Social</a>
+						<a href="software">Software</a>
+						<a href="tips">Tips</a>
+						
+						
+					</nav>
+				</div>
+			</header><!-- /header -->
         </div>
         
       </div>
@@ -88,33 +89,59 @@
     <div class="row">
         <div style="text-align: center">
             <h2>Streaming Schedule</h2>
-			<span style="text-align: center; padding-top: 10px;" class="fontcenterl hidden-tablet hidden-phone">The dates and times that you can expect Panda to be live.</span><br />
-			<span style="text-align: center; padding-top: 20px;" class="fontcenterl hidden-tablet hidden-phone">Note that all times listed are based in Pacific Standard Time (PST).</span>
-			<span style="text-align: center; padding-top: 10px;" class="fontcenter visible-tablet hidden-phone">The dates and times that you can expect Panda to be live.</span><br />
-			<span style="text-align: center; padding-top: 10px;" class="fontcenter visible-tablet hidden-phone">Note that all times listed are based in Pacific Standard Time (PST).</span>
-			<span style="text-align: center; padding-top: 10px;" class="fontcenters visible-phone">The dates and times that you can expect Panda to be live.</span><br />
-			<span style="text-align: center; padding-top: 10px;" class="fontcenters visible-phone">Note that all times listed are based in Pacific Standard Time (PST).</span>
-
+			<span style="text-align: center; padding-top: 10px;" class="hybridCenter">The dates and times that you can expect Panda to be live.</span>
+			<br />
+			<span style="text-align: center; padding-top: 20px;" class="hybridCenter">Note that all times listed are based in Pacific Standard Time (PST).</span>
         </div> 
-
-		<img src="img/schedule_1200x172.png" class="nodrag hidden-phone" style="margin-top: 45px" height="172" width="1200">
-		<center>
-		<img src="img/mobile-schedule.png" class="nodrag visible-phone" style="margin-top: 25px; text-align: center">
-		</center>
-		<div class="hidden-phone" style="margin-top: 50px;margin-bottom:10px;text-align: center;">
-		<span style="text-align: center; padding-top: 10px;" class="fontcenters hidden-phone">Check Twitter for up-to-date information:</span>
-		</div>
-		<div class="hidden-phone" style="text-align:center;">
-		<a class="twitter-timeline" data-width="585" data-height="430" data-link-color="#017eff" href="https://twitter.com/PandaPlaysHD"></a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+		
+		<div class="table-wrapper">
+			<table class="alt scheduleTable" summary="PandaPlaysHD's Streaming Schedule">
+				<caption>Schedule is subject to change at any time. There may be unscheduled morning streams some days.</caption>
+				<thead>
+					<tr>
+						<th style="text-align: center">Day</th>
+						<th style="text-align: center">Time</th>
+					</tr>
+				</thead>
+				<tbody>
+					<colgroup>
+						<col class="dayColumn" />
+						<col class="timesColumn" />
+					</colgroup>
+					<tr>
+						<td>Sunday</td>
+						<td>4:00 PM - 7:00 PM PST</td>
+					</tr>
+					<tr>
+						<td>Monday</td>
+						<td>4:00 PM - 7:00 PM PST</td>
+					</tr>
+					<tr>
+						<td>Tuesday</td>
+						<td>4:00 PM - 7:00 PM PST</td>
+					</tr>
+					<tr>
+						<td>Wednesday</td>
+						<td>4:00 PM - 7:00 PM PST</td>
+					</tr>
+					<tr>
+						<td>Thursday</td>
+						<td>4:00 PM - 7:00 PM PST</td>
+					</tr>
+					<tr>
+						<td>Friday</td>
+						<td>4:00 PM - 7:00 PM PST</td>
+					</tr>
+					<tr>
+						<td>Saturday</td>
+						<td>4:00 PM - 7:00 PM PST</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
     </div> 
 	</div>
     </div> <!-- End Container -->
-
-
-
-
-
 
 	<div class="footer-container hidden-phone"><!-- Begin Footer -->
     	<div class="container">

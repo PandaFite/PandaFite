@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head> <!-- Last updated 08/17/2016 at 5:20 PM PDT -->
+<head>
 <script src="js/https.js"></script>
 <title>PC Specs - PandaPlaysHD</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="css/flexslider.css" />
 <link rel="stylesheet" href="css/custom-styles.css?revision=09-25-2016">
 <link rel="stylesheet" href="css/menu.css?revision=07-23-2016">
+<link rel="stylesheet" href="css/hybrid.css" />
 <link rel="shortcut icon" href="https://pandaplayshd.com/img/favicon.ico?v=3_24_16">
 <script src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/classie/1.0.1/classie.min.js"></script>
@@ -36,46 +37,46 @@
 		
 		    <!-- mobile nav -->
 		
-		<form action="#" id="mobile-nav" class="visible-phone visible-tablet">
-                <div class="mobile-nav-select">
-                <select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
-                    <option value="">Menu...</option>
-                    <option value="https://pandaplayshd.com">Home</option>
-                    <option value="about">About</option>
-					<option value="specs">PC Specs</option>
-					<option value="points">Points</option>
-					<option value="rules">Rules</option>
-                    <option value="schedule">Schedule</option>
-					<option value="social">Social</option>
-					<option value="software">Software</option>
-					<option value="tips">Tips</option>
-                </select>
-                </div>
-                </form>
+			<form action="#" id="mobile-nav" class="visible-phone visible-tablet">
+					<div class="mobile-nav-select">
+					<select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
+						<option value="">Menu...</option>
+						<option value="https://pandaplayshd.com">Home</option>
+						<option value="about">About</option>
+						<option value="specs">PC Specs</option>
+						<option value="points">Points</option>
+						<option value="rules">Rules</option>
+						<option value="schedule">Schedule</option>
+						<option value="social">Social</option>
+						<option value="software">Software</option>
+						<option value="tips">Tips</option>
+					</select>
+					</div>
+			</form>
 
-    <header class="hidden-phone hidden-tablet">
-		<div class="container clearfix">
-			<h1 id="logo">
-				<a href="https://www.twitch.tv/PandaPlaysHD" target="_blank"><img class="headerlogo nodrag" src="img/logo-j_skulloz.png"></a>
-				<a href="https://www.twitch.tv/PandaPlaysHD" target="_blank" class="twitchLink">PandaPlaysHD</a>
-			</h1>
-			<nav>
-				<a href="//pandaplayshd.com">Home</a>
-				<a href="about">About</a>
-				<a href="business">Business</a>
-				<a href="downloads">Downloads</a>
-				<a class="selected">PC Specs</a>
-				<a href="points">Points</a>
-				<a href="rules">Rules</a>
-				<a href="schedule">Schedule</a>
-				<a href="social">Social</a>
-				<a href="software">Software</a>
-				<a href="tips">Tips</a>
-				
-				
-			</nav>
-		</div>
-	</header><!-- /header -->
+			<header class="hidden-phone hidden-tablet">
+				<div class="container clearfix">
+					<h1 id="logo">
+						<a href="https://www.twitch.tv/PandaPlaysHD" target="_blank"><img class="headerlogo nodrag" src="img/logo-j_skulloz.png"></a>
+						<a href="https://www.twitch.tv/PandaPlaysHD" target="_blank" class="twitchLink">PandaPlaysHD</a>
+					</h1>
+					<nav>
+						<a href="//pandaplayshd.com">Home</a>
+						<a href="about">About</a>
+						<a href="business">Business</a>
+						<a href="downloads">Downloads</a>
+						<a class="selected">PC Specs</a>
+						<a href="points">Points</a>
+						<a href="rules">Rules</a>
+						<a href="schedule">Schedule</a>
+						<a href="social">Social</a>
+						<a href="software">Software</a>
+						<a href="tips">Tips</a>
+						
+						
+					</nav>
+				</div>
+			</header><!-- /header -->
         </div>
         
       </div>
@@ -86,181 +87,65 @@
 	<div class="hidden-tablet hidden-phone" style="margin-bottom:100px;"></div>
     <div class="row">
             <h2 style="text-align: center;">PC Specs</h2>
-		
-			<style>
-			a:hover {color: #6441A5; text-decoration: none}
-			#expand-box {padding-bottom: 30px}
-			</style>
 			<!-- DESKTOP VERSION -->
-			<img class="nodrag hidden-phone hidden-tablet" style="position: relative;float: right;margin: 150px 0px 0px 20px;-moz-box-shadow: 5px 5px 10px rgba(0,0,0,.5);-webkit-box-shadow: 5px 5px 10px rgba(0,0,0,.5);box-shadow: 5px 5px 10px rgba(0,0,0,.5);" src="img/pc.jpg" height="502" width="375">
-			<div class="hidden-phone hidden-tablet" style="width: 800px; position: relative; top: 0; bottom: 0; left: 0; right: 0; margin: auto; margin-top: 75px">
+			<img class="nodrag hidden-phone hidden-tablet" style="position: relative;float: right;margin: 150px 0px 0px 20px;-moz-box-shadow: 5px 5px 10px rgba(0,0,0,.5);" src="img/pc.jpg" height="502" width="375">
+			<div class="aboutPage">
 			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleftl"><b>Processor: </b>Intel Core i7 4790k</span> 
-			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleftl"><b>Cooling: </b>Corsair H80i GT</span> 
-			</div>
+				<div id="expand-box-header">
+					<span class="hybridLeft"><b>Processor: </b>Intel Core i7 4790k</span> 
+				</div>
 			</div>
 			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleftl"><b>Graphics Card: </b>Gigabyte GeForce GTX 970</span> 
-			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleftl"><b>Motherboard: </b>Asus Z97-A</span> 
-			</div>
+				<div id="expand-box-header">
+					<span class="hybridLeft"><b>Cooling: </b>Corsair H80i GT</span> 
+				</div>
 			</div>
 			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleftl"><b>Memory: </b>8GB Kingston HyperX 1600MHz</span> 
-			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleftl"><b>Hard Drive: </b>500GB Western Digital Caviar Blue</span>
-			</div>
+				<div id="expand-box-header">
+					<span class="hybridLeft"><b>Graphics Card: </b>Gigabyte GeForce GTX 970</span> 
+				</div>
 			</div>
 			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleftl"><b>Power Supply: </b>Corsair RM850</span>
-			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleftl"><b>Case: </b>Corsair Carbide Series 230T Black</span>
-			</div>
+				<div id="expand-box-header">
+					<span class="hybridLeft"><b>Motherboard: </b>Asus Z97-A</span> 
+				</div>
 			</div>
 			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleftl"><b>Microphone: </b>Audio-Technica AT-2020 USB</span>
-			</div>
+				<div id="expand-box-header">
+					<span class="hybridLeft"><b>Memory: </b>8GB Kingston HyperX 1600MHz</span> 
+				</div>
 			</div>
 			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleftl"><b>Headphones: </b>idk <img src="https://static-cdn.jtvnw.net/emoticons/v1/354/1.0" title="4Head" class="nodrag"></span>
+				<div id="expand-box-header">
+					<span class="hybridLeft"><b>Hard Drive: </b>500GB Western Digital Caviar Blue</span>
+				</div>
 			</div>
+			<div id="expand-box">
+				<div id="expand-box-header">
+					<span class="hybridLeft"><b>Power Supply: </b>Corsair RM850</span>
+				</div>
+			</div>
+			<div id="expand-box">
+				<div id="expand-box-header">
+					<span class="hybridLeft"><b>Case: </b>Corsair Carbide Series 230T Black</span>
+				</div>
+			</div>
+			<div id="expand-box">
+				<div id="expand-box-header">
+					<span class="hybridLeft"><b>Microphone: </b>Audio-Technica AT-2020 USB</span>
+				</div>
+			</div>
+			<div id="expand-box">
+				<div id="expand-box-header">
+					<span class="hybridLeft"><b>Headphones: </b>idk <img src="https://static-cdn.jtvnw.net/emoticons/v1/354/1.0" title="4Head" class="nodrag"></span>
+				</div>
 			</div>
 		</div>
-		
-		<!-- TABLET VERSION -->
-		<div class="hidden-phone visible-tablet" style="width: 550px; position: relative; top: 0; bottom: 0; left: 0; right: 0; margin: auto; margin-top: 75px">
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleft"><b>Processor: </b>Intel Core i7 4790k</span> 
-			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleft"><b>Cooling: </b>Corsair H80i GT</span> 
-			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleft"><b>Graphics Card: </b>Gigabyte GeForce GTX 970</span> 
-			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleft"><b>Motherboard: </b>Asus Z97-A</span> 
-			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleft"><b>Memory: </b>8GB Kingston HyperX 1600MHz</span> 
-			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleft"><b>Hard Drive: </b>500GB Western Digital Caviar Blue</span>
-			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleft"><b>Power Supply: </b>Corsair RM850</span>
-			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleft"><b>Case: </b>Corsair Carbide Series 230T Black</span>
-			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleft"><b>Microphone: </b>Audio-Technica AT-2020 USB</span>
-			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleft"><b>Headphones: </b>idk <img src="https://static-cdn.jtvnw.net/emoticons/v1/354/1.0" title="4Head" class="nodrag"></span>
-			</div>
-			</div>
-		</div>
-		
-		<!-- MOBILE VERSION -->
-		<div class="visible-phone hidden-tablet" style="width: 200px; position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; margin-top: 300px">
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontcenter"><b>Processor: </b><br><br>Intel Core i7 4790k</span> 
-			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontcenters"><b>Cooling: </b><br><br>Corsair H80i GT</span> 
-			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontcenters"><b>Graphics Card: </b><br><br>Gigabyte GeForce GTX 970</span> 
-			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontcenters"><b>Motherboard: </b><br><br>Asus Z97-A</span> 
-			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontcenters"><b>Memory: </b><br><br>8GB Kingston HyperX 1600MHz</span> 
-			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontcenters"><b>Hard Drive: </b><br><br>500GB Western Digital Caviar Blue</span>
-			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontcenters"><b>Power Supply: </b><br><br>Corsair RM850</span>
-			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontcenters"><b>Case: </b><br><br>Corsair Carbide Series 230T Black</span>
-			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontcenters"><b>Microphone: </b><br><br>Audio-Technica AT-2020 USB</span>
-			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontcenters"><b>Headphones: </b><br><br>idk <img src="https://static-cdn.jtvnw.net/emoticons/v1/354/1.0" title="4Head" class="nodrag"></span>
-			</div>
-			</div>
-		</div>	
 	</div> 
 
 	</div> <!-- end content -->
 	
     </div> <!-- End Container -->
-
-
-
 
 	<div class="footer-container hidden-phone"><!-- Begin Footer -->
     	<div class="container">

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head> <!-- Last updated 07/06/2016 at 1:15 PM PDT -->
+<head>
 <script src="js/https.js"></script>
 <title>Business - PandaPlaysHD</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="css/flexslider.css" />
 <link rel="stylesheet" href="css/custom-styles.css?revision=09-25-2016">
 <link rel="stylesheet" href="css/menu.css?revision=07-23-2016">
+<link rel="stylesheet" href="css/hybrid.css" />
 <link rel="shortcut icon" href="https://pandaplayshd.com/img/favicon.ico?v=3_24_16">
 <script src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/classie/1.0.1/classie.min.js"></script>
@@ -35,46 +36,46 @@
 		
 		   <!-- mobile nav -->
 		
-		<form action="#" id="mobile-nav" class="visible-phone visible-tablet">
-                <div class="mobile-nav-select">
-                <select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
-                    <option value="">Menu...</option>
-                    <option value="https://pandaplayshd.com">Home</option>
-                    <option value="about">About</option>
-					<option value="specs">PC Specs</option>
-					<option value="points">Points</option>
-					<option value="rules">Rules</option>
-                    <option value="schedule">Schedule</option>
-					<option value="social">Social</option>
-					<option value="software">Software</option>
-					<option value="tips">Tips</option>
-                </select>
-                </div>
-                </form>
+			<form action="#" id="mobile-nav" class="visible-phone visible-tablet">
+					<div class="mobile-nav-select">
+					<select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
+						<option value="">Menu...</option>
+						<option value="https://pandaplayshd.com">Home</option>
+						<option value="about">About</option>
+						<option value="specs">PC Specs</option>
+						<option value="points">Points</option>
+						<option value="rules">Rules</option>
+						<option value="schedule">Schedule</option>
+						<option value="social">Social</option>
+						<option value="software">Software</option>
+						<option value="tips">Tips</option>
+					</select>
+					</div>
+			</form>
 
-    <header class="hidden-phone hidden-tablet">
-		<div class="container clearfix">
-			<h1 id="logo">
-				<a href="https://www.twitch.tv/PandaPlaysHD" target="_blank"><img class="headerlogo nodrag" src="img/logo-j_skulloz.png"></a>
-				<a href="https://www.twitch.tv/PandaPlaysHD" target="_blank" class="twitchLink">PandaPlaysHD</a>
-			</h1>
-			<nav>
-				<a href="//pandaplayshd.com">Home</a>
-				<a href="about">About</a>
-				<a class="selected">Business</a>
-				<a href="downloads">Downloads</a>
-				<a href="specs">PC Specs</a>
-				<a href="points">Points</a>
-				<a href="rules">Rules</a>
-				<a href="schedule">Schedule</a>
-				<a href="social">Social</a>
-				<a href="software">Software</a>
-				<a href="tips">Tips</a>
-				
-				
-			</nav>
-		</div>
-	</header><!-- /header -->
+			<header class="hidden-phone hidden-tablet">
+				<div class="container clearfix">
+					<h1 id="logo">
+						<a href="https://www.twitch.tv/PandaPlaysHD" target="_blank"><img class="headerlogo nodrag" src="img/logo-j_skulloz.png"></a>
+						<a href="https://www.twitch.tv/PandaPlaysHD" target="_blank" class="twitchLink">PandaPlaysHD</a>
+					</h1>
+					<nav>
+						<a href="//pandaplayshd.com">Home</a>
+						<a href="about">About</a>
+						<a class="selected">Business</a>
+						<a href="downloads">Downloads</a>
+						<a href="specs">PC Specs</a>
+						<a href="points">Points</a>
+						<a href="rules">Rules</a>
+						<a href="schedule">Schedule</a>
+						<a href="social">Social</a>
+						<a href="software">Software</a>
+						<a href="tips">Tips</a>
+						
+						
+					</nav>
+				</div>
+			</header><!-- /header -->
         </div>
         
       </div>
@@ -86,15 +87,15 @@
     <div class="row">
             <h2 style="text-align: center;">Business Inquiries</h2>
 
-			<!-- DESKTOP VERSION -->
-			<div class="hidden-phone hidden-tablet" style="text-align: center; width: 800px; position: relative; top: 0; bottom: 0; left: 0; right: 0; margin: auto; margin-top: 75px">
-			<span style="text-align: center; padding-top: 10px;" class="fontcenterl">Please select your inquiry:</span>
+			<!-- DESKTOP/TABLET HYBRID VERSION -->
+			<div class="businessPage hidden-phone">
+			<span class="hybridCenter tacenter">Please select your inquiry:</span>
 			<div style="padding-top:25px;padding-bottom:25px;">
-			<span class="fontcenterl" style="text-align: center; line-height: 40px"><a href="sponsor-server">I would like Panda to play on a Minecraft server that I represent.</a></span>
+			<span class="hybridCenter tacenter"><a href="sponsor-server">I would like Panda to play on a Minecraft server that I represent.</a></span>
 			</div>
 			
 			<div style="padding-top:10px;padding-bottom:25px;">
-			<span class="fontcenterl" style="text-align: center; line-height: 40px"><a href="sponsor-partner">I represent a company/service that would like to partner with/sponsor Panda.</a></span>
+			<span class="hybridCenter tacenter"><a href="sponsor-partner">I represent a company/service that would like to partner with/sponsor Panda.</a></span>
 			</div>
 			
 			<script>
@@ -104,46 +105,16 @@
 			</script>
 			
 			<div style="padding-top:10px;padding-bottom:25px;">
-			<span class="fontcenterl" style="text-align: center; line-height: 40px"><a id="tooltip-1" title="Panda is currently not interested in dual streaming. Inquiries will be ignored.">I would like to dual-stream/multi-stream with Panda.</a></span>
+			<span class="hybridCenter tacenter"><a id="tooltip-1" title="Panda is currently not interested in dual streaming. Inquiries will be ignored.">I would like to dual-stream/multi-stream with Panda.</a></span>
 			</div>
 			
 			<div style="padding-top:10px;padding-bottom:25px;">
-			<span class="fontcenterl" style="text-align: center; line-height: 40px">For other business related discussion, please email:</span><br />
-			<span class="fontcenterl" style="text-align: center; line-height: 40px"><a href="mailto:pandaplaysbusiness@gmail.com">PandaPlaysBusiness@gmail.com</a></span>
+			<span class="hybridCenter tacenter">For other business related discussion, please email:</span><br />
+			<span class="hybridCenter tacenter"><a href="mailto:pandaplaysbusiness@gmail.com">PandaPlaysBusiness@gmail.com</a></span>
 			</div>
 			</div>
-		
-		<!-- TABLET VERSION -->
-		<div class="hidden-phone visible-tablet" style="text-align: center; width: 550px; position: relative; top: 0; bottom: 0; left: 0; right: 0; margin: auto; margin-top: 75px">
-		<span style="text-align: center; padding-top: 10px;" class="fontcenter">Please select your inquiry:</span>
-			<div style="padding-top:25px;padding-bottom:25px;">
-			<span class="fontcenter" style="text-align: center; line-height: 40px"><a href="sponsor-server">I would like Panda to play on a Minecraft server that I represent.</a></span>
-			</div>
-			
-			<div style="padding-top:10px;padding-bottom:25px;">
-			<span class="fontcenter" style="text-align: center; line-height: 40px"><a href="sponsor-partner">I represent a company/service that would like to partner with/sponsor Panda.</a></span>
-			</div>
-			
-			<script>
-			$(function() {
-            $("#tooltip-2").tooltip();
-			});
-			</script>
-			
-			<div style="padding-top:10px;padding-bottom:25px;">
-			<span class="fontcenter" style="text-align: center; line-height: 40px"><a id="tooltip-2" title="Panda is currently not interested in dual streaming. Inquiries will be ignored.">I would like to dual-stream/multi-stream with Panda.</a></span>
-			</div>
-			
-			<div style="padding-top:10px;padding-bottom:25px;">
-			<span class="fontcenter" style="text-align: center; line-height: 40px">For other business related discussion, please email:</span><br />
-			<span class="fontcenter" style="text-align: center; line-height: 40px"><a href="mailto:pandaplaysbusiness@gmail.com">PandaPlaysBusiness@gmail.com</a></span>
-			</div>
-		</div>
 		
 		<!-- MOBILE VERSION -->
-		<style>
-			#expand-box {padding-bottom: 30px}
-			</style>
 			<div class="visible-phone hidden-tablet" style="text-align: center;width: 250px; position: relative; top: 0; bottom: 0; left: 0; right: 0; margin: auto; margin-top: 75px">
 			<div style="text-align: center;">
 				<div style="padding-bottom:10px;">
@@ -160,12 +131,7 @@
 	</div> <!-- end content -->
 	
     </div> <!-- End Container -->
-
-    <!-- Footer Area
-        ================================================== -->
-		<!--hitcounter -->
 	
-
 	<div class="footer-container hidden-phone" style="margin-top: 174px"><!-- Begin Footer -->
     	<div class="container">
         	<div class="row footer-row">

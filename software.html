@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head> <!-- Last updated 08/17/2016 at 5:20 PM PDT -->
+<head>
 <script src="js/https.js"></script>
 <title>Streaming Software - PandaPlaysHD</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="css/flexslider.css" />
 <link rel="stylesheet" href="css/custom-styles.css?revision=09-25-2016">
 <link rel="stylesheet" href="css/menu.css?revision=07-23-2016">
+<link rel="stylesheet" href="css/hybrid.css" />
 <link rel="shortcut icon" href="https://pandaplayshd.com/img/favicon.ico?v=3_24_16">
 <script src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/classie/1.0.1/classie.min.js"></script>
@@ -36,46 +37,46 @@
 		
 		    <!-- mobile nav -->
 		
-		<form action="#" id="mobile-nav" class="visible-phone visible-tablet">
-                <div class="mobile-nav-select">
-                <select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
-                    <option value="">Menu...</option>
-                    <option value="https://pandaplayshd.com">Home</option>
-                    <option value="about">About</option>
-					<option value="specs">PC Specs</option>
-					<option value="points">Points</option>
-					<option value="rules">Rules</option>
-                    <option value="schedule">Schedule</option>
-					<option value="social">Social</option>
-					<option value="software">Software</option>
-					<option value="tips">Tips</option>
-                </select>
-                </div>
-                </form>
+			<form action="#" id="mobile-nav" class="visible-phone visible-tablet">
+					<div class="mobile-nav-select">
+					<select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
+						<option value="">Menu...</option>
+						<option value="https://pandaplayshd.com">Home</option>
+						<option value="about">About</option>
+						<option value="specs">PC Specs</option>
+						<option value="points">Points</option>
+						<option value="rules">Rules</option>
+						<option value="schedule">Schedule</option>
+						<option value="social">Social</option>
+						<option value="software">Software</option>
+						<option value="tips">Tips</option>
+					</select>
+					</div>
+			</form>
 
-    <header class="hidden-phone hidden-tablet">
-		<div class="container clearfix">
-			<h1 id="logo">
-				<a href="https://www.twitch.tv/PandaPlaysHD" target="_blank"><img class="headerlogo nodrag" src="img/logo-j_skulloz.png"></a>
-				<a href="https://www.twitch.tv/PandaPlaysHD" target="_blank" class="twitchLink">PandaPlaysHD</a>
-			</h1>
-			<nav>
-				<a href="//pandaplayshd.com">Home</a>
-				<a href="about">About</a>
-				<a href="business">Business</a>
-				<a href="downloads">Downloads</a>
-				<a href="specs">PC Specs</a>
-				<a href="points">Points</a>
-				<a href="rules">Rules</a>
-				<a href="schedule">Schedule</a>
-				<a href="social">Social</a>
-				<a class="selected">Software</a>
-				<a href="tips">Tips</a>
-				
-				
-			</nav>
-		</div>
-	</header><!-- /header -->
+			<header class="hidden-phone hidden-tablet">
+				<div class="container clearfix">
+					<h1 id="logo">
+						<a href="https://www.twitch.tv/PandaPlaysHD" target="_blank"><img class="headerlogo nodrag" src="img/logo-j_skulloz.png"></a>
+						<a href="https://www.twitch.tv/PandaPlaysHD" target="_blank" class="twitchLink">PandaPlaysHD</a>
+					</h1>
+					<nav>
+						<a href="//pandaplayshd.com">Home</a>
+						<a href="about">About</a>
+						<a href="business">Business</a>
+						<a href="downloads">Downloads</a>
+						<a href="specs">PC Specs</a>
+						<a href="points">Points</a>
+						<a href="rules">Rules</a>
+						<a href="schedule">Schedule</a>
+						<a href="social">Social</a>
+						<a class="selected">Software</a>
+						<a href="tips">Tips</a>
+						
+						
+					</nav>
+				</div>
+			</header><!-- /header -->
         </div>
         
       </div>
@@ -90,146 +91,91 @@
 			<span class="fontcenter hidden-phone">The various software that Panda uses in his stream.</span>
 			<span class="fontcenters hidden-desktop hidden-tablet">The various software that Panda uses in his stream.</span>
         </div> 
-			<!-- DESKTOP VERSION -->
-			<style>
-			#expand-box {padding-bottom: 30px}
-			</style>
-			<div class="hidden-phone hidden-tablet" style="width: 800px; position: relative; top: 0; bottom: 0; left: 0; right: 0; margin: auto; margin-top: 75px">
-			
+			<!-- DESKTOP/TABLET HYBRID VERSION -->
+			<div class="downloadsList">		
 			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleftl">Open Broadcaster Software (Streaming Software):</span> 
-			<span class="fontrightl"><a href="https://obsproject.com" target="_blank">Download</a></span>
-			</div>
+				<div id="expand-box-header">
+					<span class="dlName">Open Broadcaster Software (Streaming Software):</span> 
+					<span class="dlLink"><a href="https://obsproject.com" target="_blank">Download</a></span>
+				</div>
 			</div>
 			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleftl">Snaz (Timer):</span> 
-			<span class="fontrightl"><a href="http://jimmyappelt.be/preview/snaz/" target="_blank">Download</a></span>
-			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleftl">Snip (Song name tracker):</span> 
-			<span class="fontrightl"><a href="https://github.com/dlrudie/Snip/releases/tag/v5.3.0" target="_blank">Download</a></span>
-			</div>
+				<div id="expand-box-header">
+					<span class="dlName">Snaz (Timer):</span> 
+					<span class="dlLink"><a href="http://jimmyappelt.be/preview/snaz/" target="_blank">Download</a></span>
+				</div>
 			</div>
 			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleftl">Foobar2000 (Music player):</span> 
-			<span class="fontrightl"><a href="https://www.foobar2000.org/download" target="_blank">Download</a></span>
-			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleftl">Streamlabs (Alerts):</span> 
-			<span class="fontrightl"><a href="https://streamlabs.com/" target="_blank">streamlabs.com</a></span>
-			</div>
+				<div id="expand-box-header">
+					<span class="dlName">Snip (Song name tracker):</span> 
+					<span class="dlLink"><a href="https://github.com/dlrudie/Snip/releases/tag/v5.3.0" target="_blank">Download</a></span>
+				</div>
 			</div>
 			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleftl">ModBot (Custom chat bot):</span> 
-			<span class="fontrightl"><a href="https://modbot.wordpress.com/" target="_blank">Download</a></span>
-			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleftl">RevloBot (Currency chat bot):</span> 
-			<span class="fontrightl"><a href="https://www.revlo.co/" target="_blank">revlo.co</a></span>
-			</div>
-			</div>
-			
-			</div>
-		
-		<!-- TABLET VERSION -->
-			<style>
-			#expand-box {padding-bottom: 30px}
-			</style>
-			<div class="hidden-phone visible-tablet" style="width: 550px; position: relative; top: 0; bottom: 0; left: 0; right: 0; margin: auto; margin-top: 75px">
-			
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleft">Open Broadcaster Software (Streaming Software):</span> 
-			<span class="fontright"><a href="https://obsproject.com" target="_blank">Download</a></span>
-			</div>
+				<div id="expand-box-header">
+					<span class="dlName">Foobar2000 (Music player):</span> 
+					<span class="dlLink"><a href="https://www.foobar2000.org/download" target="_blank">Download</a></span>
+				</div>
 			</div>
 			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleft">Snaz (Timer):</span> 
-			<span class="fontright"><a href="http://jimmyappelt.be/preview/snaz/" target="_blank">Download</a></span>
-			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleft">Snip (Song name tracker):</span> 
-			<span class="fontright"><a href="https://github.com/dlrudie/Snip/releases/tag/v5.3.0" target="_blank">Download</a></span>
-			</div>
+				<div id="expand-box-header">
+					<span class="dlName">Streamlabs (Alerts):</span> 
+					<span class="dlLink"><a href="https://streamlabs.com/" target="_blank">streamlabs.com</a></span>
+				</div>
 			</div>
 			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleft">Foobar2000 (Music player):</span> 
-			<span class="fontright"><a href="https://www.foobar2000.org/download" target="_blank">Download</a></span>
-			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleft">Streamlabs (Alerts):</span> 
-			<span class="fontright"><a href="https://streamlabs.com/" target="_blank">Download</a></span>
-			</div>
+				<div id="expand-box-header">
+					<span class="dlName">ModBot (Custom chat bot):</span> 
+					<span class="dlLink"><a href="https://modbot.wordpress.com/" target="_blank">Download</a></span>
+				</div>
 			</div>
 			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleft">RevloBot (Currency chat bot):</span> 
-			<span class="fontright"><a href="https://www.revlo.co/" target="_blank">Download</a></span>
+				<div id="expand-box-header">
+					<span class="dlName">RevloBot (Currency chat bot):</span> 
+					<span class="dlLink"><a href="https://www.revlo.co/" target="_blank">revlo.co</a></span>
+				</div>
 			</div>
-			</div>
-			
-			</div>
+		</div>
 		
 		<!-- MOBILE VERSION -->
 			<style>
-			#expand-box {padding-bottom: 30px}
+			.mobileDL {margin-top: 40px;}
 			</style>
-			<div class="visible-phone hidden-tablet" style="text-align: center;width: 250px; position: relative; top: 0; bottom: 0; left: 0; right: 0; margin: auto; margin-top: 75px">
-			<span class="fontcenters" style="text-align: center">Downloads aren't supported on the mobile version, but you can still view the list below.</span>
-			<br>
-			<br>
+			<div class="visible-phone hidden-tablet mobileList" style="text-align: center;width: 250px; position: relative; top: 0; bottom: 0; left: 0; right: 0; margin: auto; margin-top: 75px">
+			<span class="fontcenters" style="text-align: center"><i>Downloads are disabled on mobile</i></span>
+
+			<div class="mobileDL">
+				<span class="fontcenters">Open Broadcaster Software<br />(Streaming Software)</span>
+			</div>
 			
-			<span class="fontcenters">Open Broadcaster Software<br>(Streaming Software)</span>
-			<br>
-			<br>
-			<br>
-			<span class="fontcenters">Snaz<br>(Timer)</span> 
-			<br>
-			<br>
-			<br>
-			<span class="fontcenters">Snip<br>(Song name tracker)</span> 
-			<br>
-			<br>
-			<br>
-			<span class="fontcenters">Foobar2000<br>(Music player)</span> 
-			<br>
-			<br>
-			<br>
-			<span class="fontcenters">Streamlabs<br>(Alerts)</span> 
-			<br>
-			<br>
-			<br>
-			<span class="fontcenters">ModBot<br>(Custom chat bot)</span> 
-			<br>
-			<br>
-			<br>
-			<span class="fontcenters">RevloBot<br>(Currency chat bot)</span> 
+			<div class="mobileDL">
+				<span class="fontcenters">Snaz<br />(Timer)</span> 
+			</div>
+			
+			<div class="mobileDL">
+				<span class="fontcenters">Snip<br />(Song name tracker)</span> 
+			</div>
+			
+			<div class="mobileDL">
+				<span class="fontcenters">Foobar2000<br />(Music player)</span> 
+			</div>
+			
+			<div class="mobileDL">
+				<span class="fontcenters">Streamlabs<br />(Alerts)</span> 
+			</div>
+			
+			<div class="mobileDL">
+				<span class="fontcenters">ModBot<br />(Custom chat bot)</span> 
+			</div>
+			
+			<div class="mobileDL">
+				<span class="fontcenters">RevloBot<br />(Currency chat bot)</span> 
 			</div>	
 	</div> 
 	
 	</div> <!-- end content -->
 	
     </div> <!-- End Container -->
-	
-		<!--hitcounter -->
-	
-
 	<div class="footer-container hidden-phone"><!-- Begin Footer -->
     	<div class="container">
         	<div class="row footer-row">

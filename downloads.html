@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head> <!-- Last updated 08/17/2016 at 5:20 PM PDT -->
+<head>
 <script src="js/https.js"></script>
 <title>Downloads - PandaPlaysHD</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +10,10 @@
 <link rel="stylesheet" href="css/bootstrap-responsive.css">
 <link rel="stylesheet" href="css/prettyPhoto.css" />
 <link rel="stylesheet" href="css/flexslider.css" />
-<link rel="stylesheet" href="css/custom-styles.css?revision=09-25-2016">
-<link rel="stylesheet" href="css/menu.css?revision=07-23-2016">
-<link rel="shortcut icon" href="https://pandaplayshd.com/img/favicon.ico?v=3_24_16">
+<link rel="stylesheet" href="css/custom-styles.css?revision=09-25-2016" />
+<link rel="stylesheet" href="css/menu.css?revision=07-23-2016" />
+<link rel="stylesheet" href="css/hybrid.css" />
+<link rel="shortcut icon" href="https://pandaplayshd.com/img/favicon.ico?v=3_24_16" />
 <script src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/classie/1.0.1/classie.min.js"></script>
 <script src="js/bootstrap.js"></script>
@@ -36,46 +37,44 @@
 		
 		     <!-- mobile nav -->
 		
-		<form action="#" id="mobile-nav" class="visible-phone visible-tablet">
-                <div class="mobile-nav-select">
-                <select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
-                    <option value="">Menu...</option>
-                    <option value="https://pandaplayshd.com">Home</option>
-                    <option value="about">About</option>
-					<option value="specs">PC Specs</option>
-					<option value="points">Points</option>
-					<option value="rules">Rules</option>
-                    <option value="schedule">Schedule</option>
-					<option value="social">Social</option>
-					<option value="software">Software</option>
-					<option value="tips">Tips</option>
-                </select>
-                </div>
-                </form>
+			<form action="#" id="mobile-nav" class="visible-phone visible-tablet">
+					<div class="mobile-nav-select">
+					<select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
+						<option value="">Menu...</option>
+						<option value="https://pandaplayshd.com">Home</option>
+						<option value="about">About</option>
+						<option value="specs">PC Specs</option>
+						<option value="points">Points</option>
+						<option value="rules">Rules</option>
+						<option value="schedule">Schedule</option>
+						<option value="social">Social</option>
+						<option value="software">Software</option>
+						<option value="tips">Tips</option>
+					</select>
+					</div>
+			</form>
 
-    <header class="hidden-phone hidden-tablet">
-		<div class="container clearfix">
-			<h1 id="logo">
-				<a href="https://www.twitch.tv/PandaPlaysHD" target="_blank"><img class="headerlogo nodrag" src="img/logo-j_skulloz.png"></a>
-				<a href="https://www.twitch.tv/PandaPlaysHD" target="_blank" class="twitchLink">PandaPlaysHD</a>
-			</h1>
-			<nav>
-				<a href="//pandaplayshd.com">Home</a>
-				<a href="about">About</a>
-				<a href="business">Business</a>
-				<a class="selected">Downloads</a>
-				<a href="specs">PC Specs</a>
-				<a href="points">Points</a>
-				<a href="rules">Rules</a>
-				<a href="schedule">Schedule</a>
-				<a href="social">Social</a>
-				<a href="software">Software</a>
-				<a href="tips">Tips</a>
-				
-				
-			</nav>
-		</div>
-	</header><!-- /header -->
+			<header class="hidden-phone hidden-tablet">
+				<div class="container clearfix">
+					<h1 id="logo">
+						<a href="https://www.twitch.tv/PandaPlaysHD" target="_blank"><img class="headerlogo nodrag" src="img/logo-j_skulloz.png"></a>
+						<a href="https://www.twitch.tv/PandaPlaysHD" target="_blank" class="twitchLink">PandaPlaysHD</a>
+					</h1>
+					<nav>
+						<a href="//pandaplayshd.com">Home</a>
+						<a href="about">About</a>
+						<a href="business">Business</a>
+						<a class="selected">Downloads</a>
+						<a href="specs">PC Specs</a>
+						<a href="points">Points</a>
+						<a href="rules">Rules</a>
+						<a href="schedule">Schedule</a>
+						<a href="social">Social</a>
+						<a href="software">Software</a>
+						<a href="tips">Tips</a>
+					</nav>
+				</div>
+			</header><!-- /header -->
         </div>
         
       </div>
@@ -87,270 +86,157 @@
     <div class="row">
             <h2 style="text-align: center;" class="hidden-phone">Downloads</h2>
 			<div style="text-align: center;" class="hidden-tablet">
-			<span style="text-align: center; padding-top: 10px;" class="fontcenterl hidden-phone">Looking for the programs Panda uses to stream? Try the <a href="software">Software</a> page.</span>
+				<span style="text-align: center; padding-top: 10px;" class="fontcenterl hidden-phone">Looking for the programs Panda uses to stream? Try the <a href="software">Software</a> page.</span>
 			</div>
 			
 			<div style="text-align: center;" class="hidden-desktop">
-			<span style="text-align: center; padding-top: 10px;" class="fontcenter hidden-phone">Looking for the programs Panda uses to stream? Try the <a href="software">Software</a> page.</span>
+				<span style="text-align: center; padding-top: 10px;" class="fontcenter hidden-phone">Looking for the programs Panda uses to stream? Try the <a href="software">Software</a> page.</span>
 			</div>
 			
-			<!-- DESKTOP VERSION -->
-			<style>
-			#expand-box {padding-bottom: 30px}
-			</style>
-			<!--
+			<!-- DESKTOP/TABLET HYBRID VERSION -->
+			
+			
+			<!-- TEMPLATE
 			
 			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleftl">Dynamic Duo Pack:</span> 
-			<span class="fontrightl"><a href="http://www.mediafire.com/download/8q468d4fswediq1/%21Dynamic+Duo+By+Brakeless.zip" target="_blank">Download</a></span>
-			</div>
+				<div id="expand-box-header">
+					<span class="dlName">Texture Pack Name:</span> 
+					<span class="dlLink"><a href="https://urlhere.com" target="_blank">Download</a></span>
+				</div>
 			</div>
 			
-			-->
+			-->	
 			
-			<div class="hidden-phone hidden-tablet" style="width: 800px; position: relative; top: 0; bottom: 0; left: 0; right: 0; margin: auto; margin-top: 75px">
+			<div class="downloadsList">
 			<div style="text-align: center">
 			<p class="fontcenterl">Texture Packs</p>
 			</div>
 			<hr />
+			<!------------------------------------------------------------------------------------------------------------------------->
 			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleftl">ImDiamond Blue &amp; White Pack</span> 
-			<span class="fontrightl"><a href="http://www.mediafire.com/file/cj0omnjotjikqvz/ImDiamond+Blue%26WhitePack.zip" target="_blank">Download</a></span>
-			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleftl">Dynamic Duo Pack:</span> 
-			<span class="fontrightl"><a href="http://www.mediafire.com/download/8q468d4fswediq1/%21Dynamic+Duo+By+Brakeless.zip" target="_blank">Download</a></span>
-			</div>
+				<div id="expand-box-header">
+					<span class="dlName">1.8 Halloween AciDicBliTzz</span> 
+					<span class="dlLink"><a href="http://www.mediafire.com/file/ddgeukzhq3i886k/1.8+Halloween+AciDicBliTzz+Short+Sword+Pack+By+TBNRnorton+or+NortonPlayz+-+Minecraft.zip" target="_blank">Download</a></span>
+				</div>
 			</div>
 			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleftl">Purple Pack:</span> 
-			<span class="fontrightl"><a href="http://www.mediafire.com/download/h9fy5xa51976yc3/Purple+Pack+-EXTRACT-.zip" target="_blank">Download</a></span>
-			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleftl">Cholos Blue & White Mash-Up Pack:</span> 
-			<span class="fontrightl"><a href="http://www.mediafire.com/download/pdt3drjok8brhp9/%21%C2%A7b%C2%A7lCho%C2%A7f%C2%A7llo%27s+%21%C2%A7b%C2%A7lBlue+%C2%A7f%C2%A7l%26+White.zip" target="_blank">Download</a></span>
-			</div>
+				<div id="expand-box-header">
+					<span class="dlName">ImDiamond Blue &amp; White Pack</span> 
+					<span class="dlLink"><a href="http://www.mediafire.com/file/cj0omnjotjikqvz/ImDiamond+Blue%26WhitePack.zip" target="_blank">Download</a></span>
+				</div>
 			</div>
 			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleftl">Huahwi Infinite 16x Edit:</span> 
-			<span class="fontrightl"><a href="http://www.mediafire.com/download/ygzcb7fmih7c9dk/Huahwis+InFinite+16x+Edit+%28EXTRACT+ALL+FILES%2C+MAIN+RESOURCE+PACK+INSIDE%29+%283%29%282%29.zip" target="_blank">Download</a></span>
-			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleftl">Dfield 200k Pack:</span> 
-			<span class="fontrightl"><a href="http://www.mediafire.com/download/wuccbblc6e3as44/%C2%A75%C2%A7lDfieldPack+200k.zip" target="_blank">Download</a></span>
-			</div>
+				<div id="expand-box-header">
+					<span class="dlName">Dynamic Duo Pack:</span> 
+					<span class="dlLink"><a href="http://www.mediafire.com/download/8q468d4fswediq1/%21Dynamic+Duo+By+Brakeless.zip" target="_blank">Download</a></span>
+				</div>
 			</div>
 			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleftl">Panda's Green Pure-Edge Edit:</span> 
-			<span class="fontrightl"><a href="https://www.dropbox.com/s/btk10mbhmw0nw3h/Pandas%20Green%20Pure-Edge%20Edit.zip?dl=1" target="_blank">Download</a></span>
-			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleftl">Panda's Faithful 64x64 Edit:</span> 
-			<span class="fontrightl"><a href="https://www.dropbox.com/s/fjaan0snp28cf36/Panda's%20Faithful%2064x64%20Edit.zip?dl=1" target="_blank">Download</a></span>
-			</div>
+				<div id="expand-box-header">
+					<span class="dlName">Purple Pack:</span> 
+					<span class="dlLink"><a href="http://www.mediafire.com/download/h9fy5xa51976yc3/Purple+Pack+-EXTRACT-.zip" target="_blank">Download</a></span>
+				</div>
 			</div>
 			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleftl">Scav10k:</span> 
-			<span class="fontrightl"><a href="http://www.mediafire.com/download/xk6nc8d62r1me2i/%2110k+%C2%A7bF%C2%A73a%C2%A71d%C2%A70e+%C2%A7fPack+by+Scav.zip" target="_blank">Download</a></span>
-			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleftl">Scav7k:</span> 
-			<span class="fontrightl"><a href="http://www.mediafire.com/download/oo9dvclcmv8dxr0/%23+Scav7k.zip" target="_blank">Download</a></span>
-			</div>
+				<div id="expand-box-header">
+					<span class="dlName">Cholos Blue & White Mash-Up Pack:</span> 
+					<span class="dlLink"><a href="http://www.mediafire.com/download/pdt3drjok8brhp9/%21%C2%A7b%C2%A7lCho%C2%A7f%C2%A7llo%27s+%21%C2%A7b%C2%A7lBlue+%C2%A7f%C2%A7l%26+White.zip" target="_blank">Download</a></span>
+				</div>
 			</div>
 			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleftl">Panda Pack [Purple Edition]:</span> 
-			<span class="fontrightl"><a href="https://www.dropbox.com/s/herxtwq0lpkt8vu/Panda's%20UHC%20Pack%20Purple.zip?dl=1" target="_blank">Download</a></span>
-			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleftl">Kingdom Craft Tools Pack:</span> 
-			<span class="fontrightl"><a href="https://www.dropbox.com/s/k12c9g8dw1pnjor/Kingdom%20Craft%20Tools.zip?dl=1" target="_blank">Download</a></span>
-			</div>
+				<div id="expand-box-header">
+					<span class="dlName">Huahwi Infinite 16x Edit:</span> 
+					<span class="dlLink"><a href="http://www.mediafire.com/download/ygzcb7fmih7c9dk/Huahwis+InFinite+16x+Edit+%28EXTRACT+ALL+FILES%2C+MAIN+RESOURCE+PACK+INSIDE%29+%283%29%282%29.zip" target="_blank">Download</a></span>
+				</div>
 			</div>
 			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleftl">Panda Pack #1:</span> 
-			<span class="fontrightl"><a href="https://www.dropbox.com/s/bvagneqirw8v5xs/Panda%20Pack%20%231.zip?dl=1" target="_blank">Download</a></span>
+				<div id="expand-box-header">
+					<span class="dlName">Dfield 200k Pack:</span> 
+					<span class="dlLink"><a href="http://www.mediafire.com/download/wuccbblc6e3as44/%C2%A75%C2%A7lDfieldPack+200k.zip" target="_blank">Download</a></span>
+				</div>
 			</div>
+			<div id="expand-box">
+				<div id="expand-box-header">
+					<span class="dlName">Panda's Green Pure-Edge Edit:</span> 
+					<span class="dlLink"><a href="https://www.dropbox.com/s/btk10mbhmw0nw3h/Pandas%20Green%20Pure-Edge%20Edit.zip?dl=1" target="_blank">Download</a></span>
+				</div>
+			</div>
+			<div id="expand-box">
+				<div id="expand-box-header">
+					<span class="dlName">Panda's Faithful 64x64 Edit:</span> 
+					<span class="dlLink"><a href="https://www.dropbox.com/s/fjaan0snp28cf36/Panda's%20Faithful%2064x64%20Edit.zip?dl=1" target="_blank">Download</a></span>
+				</div>
+			</div>
+			<div id="expand-box">
+				<div id="expand-box-header">
+					<span class="dlName">Scav10k:</span> 
+					<span class="dlLink"><a href="http://www.mediafire.com/download/xk6nc8d62r1me2i/%2110k+%C2%A7bF%C2%A73a%C2%A71d%C2%A70e+%C2%A7fPack+by+Scav.zip" target="_blank">Download</a></span>
+				</div>
+			</div>
+			<div id="expand-box">
+				<div id="expand-box-header">
+					<span class="dlName">Scav7k:</span> 
+					<span class="dlLink"><a href="http://www.mediafire.com/download/oo9dvclcmv8dxr0/%23+Scav7k.zip" target="_blank">Download</a></span>
+				</div>
+			</div>
+			<div id="expand-box">
+				<div id="expand-box-header">
+					<span class="dlName">Panda Pack [Purple Edition]:</span> 
+					<span class="dlLink"><a href="https://www.dropbox.com/s/herxtwq0lpkt8vu/Panda's%20UHC%20Pack%20Purple.zip?dl=1" target="_blank">Download</a></span>
+				</div>
+			</div>
+			<div id="expand-box">
+				<div id="expand-box-header">
+					<span class="dlName">Kingdom Craft Tools Pack:</span> 
+					<span class="dlLink"><a href="https://www.dropbox.com/s/k12c9g8dw1pnjor/Kingdom%20Craft%20Tools.zip?dl=1" target="_blank">Download</a></span>
+				</div>
+			</div>
+			<div id="expand-box">
+				<div id="expand-box-header">
+					<span class="dlName">Panda Pack #1:</span> 
+					<span class="dlLink"><a href="https://www.dropbox.com/s/bvagneqirw8v5xs/Panda%20Pack%20%231.zip?dl=1" target="_blank">Download</a></span>
+				</div>
 			</div>
 			<div style="text-align: center">
-			<p class="fontcenterl">Mods</p>
+				<p class="fontcenterl">Mods</p>
 			</div>
 			<hr />
 			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleftl">LabyMod:</span> 
-			<span class="fontrightl"><a href="http://www.labymod.net/downloads" target="_blank">Download</a></span>
-			</div>
+				<div id="expand-box-header">
+					<span class="dlName">LabyMod:</span> 
+					<span class="dlLink"><a href="http://www.labymod.net/downloads" target="_blank">Download</a></span>
+				</div>
 			</div>
 			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleftl">OptiFine Mod:</span> 
-			<span class="fontrightl"><a href="http://optifine.net/downloads" target="_blank">Download</a></span>
-			</div>
+				<div id="expand-box-header">
+					<span class="dlName">OptiFine Mod:</span> 
+					<span class="dlLink"><a href="http://optifine.net/downloads" target="_blank">Download</a></span>
+				</div>
 			</div>
 			<div style="text-align: center">
-			<p class="fontcenterl">Skins</p>
+				<p class="fontcenterl">Skins</p>
 			</div>
 			<hr />
 			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleftl">PandaPlaysHD Minecraft Skin:</span> 
-			<span class="fontrightl"><a href="https://pandaplayshd.com/dl/minecraft-skin.png" target="_blank" download>Download</a></span>
-			</div>
+				<div id="expand-box-header">
+					<span class="dlName">PandaPlaysHD Minecraft Skin:</span> 
+					<span class="dlLink"><a href="https://pandaplayshd.com/dl/minecraft-skin.png" target="_blank" download>Download</a></span>
+				</div>
 			</div>	
 		</div>
 		
-		<!-- TABLET VERSION -->
-			<style>
-			#expand-box {padding-bottom: 30px}
-			</style>
-			<div class="hidden-phone visible-tablet" style="width: 550px; position: relative; top: 0; bottom: 0; left: 0; right: 0; margin: auto; margin-top: 75px">
-			<div style="text-align: center">
-			<p class="fontcenter">Texture Packs</p>
-			</div>
-			<hr />
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleftl">ImDiamond Blue &amp; White Pack</span> 
-			<span class="fontrightl"><a href="http://www.mediafire.com/file/cj0omnjotjikqvz/ImDiamond+Blue%26WhitePack.zip" target="_blank">Download</a></span>
-			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleft">Dynamic Duo Pack:</span> 
-			<span class="fontright"><a href="http://www.mediafire.com/download/8q468d4fswediq1/%21Dynamic+Duo+By+Brakeless.zip" target="_blank">Download</a></span>
-			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleft">Purple Pack:</span> 
-			<span class="fontright"><a href="http://www.mediafire.com/download/h9fy5xa51976yc3/Purple+Pack+-EXTRACT-.zip" target="_blank">Download</a></span>
-			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleft">Cholos Blue & White Mash-Up Pack:</span> 
-			<span class="fontright"><a href="http://www.mediafire.com/download/pdt3drjok8brhp9/%21%C2%A7b%C2%A7lCho%C2%A7f%C2%A7llo%27s+%21%C2%A7b%C2%A7lBlue+%C2%A7f%C2%A7l%26+White.zip" target="_blank">Download</a></span>
-			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleft">Huahwi Infinite 16x Edit:</span> 
-			<span class="fontright"><a href="http://www.mediafire.com/download/ygzcb7fmih7c9dk/Huahwis+InFinite+16x+Edit+%28EXTRACT+ALL+FILES%2C+MAIN+RESOURCE+PACK+INSIDE%29+%283%29%282%29.zip" target="_blank">Download</a></span>
-			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleft">Dfield 200k Pack:</span> 
-			<span class="fontright"><a href="http://www.mediafire.com/download/wuccbblc6e3as44/%C2%A75%C2%A7lDfieldPack+200k.zip" target="_blank">Download</a></span>
-			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleft">Panda's Green Pure-Edge Edit:</span> 
-			<span class="fontright"><a href="https://www.dropbox.com/s/btk10mbhmw0nw3h/Pandas%20Green%20Pure-Edge%20Edit.zip?dl=1" target="_blank">Download</a></span>
-			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleft">Panda's Faithful 64x64 Edit:</span> 
-			<span class="fontright"><a href="https://www.dropbox.com/s/fjaan0snp28cf36/Panda's%20Faithful%2064x64%20Edit.zip?dl=1" target="_blank">Download</a></span>
-			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleft">Scav10k:</span> 
-			<span class="fontright"><a href="http://www.mediafire.com/download/xk6nc8d62r1me2i/%2110k+%C2%A7bF%C2%A73a%C2%A71d%C2%A70e+%C2%A7fPack+by+Scav.zip" target="_blank">Download</a></span>
-			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleft">Scav7k:</span> 
-			<span class="fontright"><a href="http://www.mediafire.com/download/oo9dvclcmv8dxr0/%23+Scav7k.zip" target="_blank">Download</a></span>
-			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleft">Panda Pack [Purple Edition]:</span> 
-			<span class="fontright"><a href="https://www.dropbox.com/s/herxtwq0lpkt8vu/Panda's%20UHC%20Pack%20Purple.zip?dl=1" target="_blank">Download</a></span>
-			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleft">Kingdom Craft Tools Pack:</span> 
-			<span class="fontright"><a href="https://www.dropbox.com/s/k12c9g8dw1pnjor/Kingdom%20Craft%20Tools.zip?dl=1" target="_blank">Download</a></span>
-			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleft">Panda Pack #1:</span> 
-			<span class="fontright"><a href="https://www.dropbox.com/s/bvagneqirw8v5xs/Panda%20Pack%20%231.zip?dl=1" target="_blank">Download</a></span>
-			</div>
-			</div>
-			<div style="text-align: center">
-			<p class="fontcenter">Mods</p>
-			</div>
-			<hr />
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleft">LabyMod:</span> 
-			<span class="fontright"><a href="http://www.labymod.net/downloads" target="_blank">Download</a></span>
-			</div>
-			</div>
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleft">OptiFine Mod:</span> 
-			<span class="fontright"><a href="http://optifine.net/downloads" target="_blank">Download</a></span>
-			</div>
-			</div>
-			<div style="text-align: center">
-			<p class="fontcenter">Skins</p>
-			</div>
-			<hr />
-			<div id="expand-box">
-			<div id="expand-box-header">
-			<span class="fontleft">PandaPlaysHD Minecraft Skin:</span> 
-			<span class="fontright"><a href="https://pandaplayshd.com/dl/minecraft-skin.png" target="_blank" download>Download</a></span>
-			</div>
-			</div>		
-		</div>
 		
 		<!-- MOBILE VERSION -->
-			<style>
-			#expand-box {padding-bottom: 30px}
-			</style>
 			<div class="visible-phone hidden-tablet" style="text-align: center;width: 250px; position: relative; top: 0; bottom: 0; left: 0; right: 0; margin: auto; margin-top: 75px">
-			<div style="text-align: center;">
-				<span class="fontcenters">Unfortunately, this page is not available on mobile devices.<br /><br /><a href="javascript:history.back()">&#8592; Go Back</a><br /><a href="https://pandaplayshd.com">&#8592; Go Home</a></span>
-			</div>
+				<div style="text-align: center;">
+					<span class="fontcenters"><i>Unavailable on mobile</i><br /><br /><a href="javascript:history.back()">&#8592; Go Back</a><br /><a href="https://pandaplayshd.com">&#8592; Go Home</a></span>
+				</div>
 			</div>	
 	</div> 
 	
 	</div> <!-- end content -->
 	
     </div> <!-- End Container -->
-		<!--hitcounter -->
-
 
 	<div class="footer-container hidden-phone"><!-- Begin Footer -->
     	<div class="container">

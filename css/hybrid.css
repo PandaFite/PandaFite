@@ -1,0 +1,433 @@
+.hybridCenter {
+	float: center;
+	font-family: Oswald, sans-serif;
+	font-weight: normal;
+	font-size: 26px;
+	line-height: 32px;
+}
+
+.hybridLeft {
+	float: left;
+	font-family: Oswald, sans-serif;
+	font-weight: normal;
+	font-size: 26px;
+	line-height: 32px;
+}
+
+.hybridRight {
+	float: right;
+	font-family: Oswald, sans-serif;
+	font-weight: normal;
+	font-size: 26px;
+	line-height: 32px;
+}
+
+div.downloadsList {
+	width: 800px;
+	position: relative; 
+	top: 0; 
+	bottom: 0; 
+	left: 0; 
+	right: 0; 
+	margin: auto; 
+	margin-top: 75px
+}		
+
+.pointsList {
+	text-align: center; 
+	width: 800px; 
+	position: relative; 
+	top: 0; 
+	bottom: 0; 
+	left: 0; 
+	right: 0; 
+	margin: auto; 
+	margin-top: 75px;
+}
+
+.rulesList {
+	width: 800px; 
+	position: relative; 
+	top: 0;
+	bottom: 0; 
+	left: 0; 
+	right: 0;
+	margin: auto; 
+	margin-top: 75px;
+}
+
+.tipsPage, .aboutPage {
+	width: 800px; 
+	position: relative; 
+	top: 0; 
+	bottom: 0; 
+	left: 0; 
+	right: 0;
+	margin: auto; 
+	margin-top: 75px;
+}
+
+.businessPage {
+	width: 800px; 
+	position: relative; 
+	top: 0; 
+	bottom: 0; 
+	left: 0; 
+	right: 0;
+	margin: auto; 
+	margin-top: 75px;
+	text-align: center;
+}
+
+.streamLabs {
+	width: 200px;
+	height: 34px;
+}
+
+.scheduleTable {
+	margin-top: 30px;
+	width: 65%;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: solid;
+}
+
+
+.scheduleTable caption {
+	caption-side: bottom;
+	font-family: Oswald, sans-serif;
+	font-size: 14px;
+	letter-spacing: 0.01em;
+	margin-top: 5px;
+}
+
+.scheduleTable tbody tr td, th {
+	float: center;
+	font-family: Oswald, sans-serif;
+	font-weight: normal;
+	font-size: 22px;
+	line-height: 28px;
+	text-align: center;
+	
+}
+
+.scheduleTable thead tr th {
+	float: center;
+	font-family: Oswald, sans-serif;
+	font-weight: normal;
+	font-size: 22px;
+	margin-top: 20px;
+	vertical-align: middle;
+}
+
+col.dayColumn {
+	width: 300px;
+}
+
+col.timesColumn {
+	width: 600px;
+}
+
+.dlName {
+	float: left;
+	font-family: Oswald, sans-serif;
+	font-weight: normal;
+	font-size: 26px;
+	line-height: 32px;
+}
+.dlLink {
+	float: right;
+	font-family: Oswald, sans-serif;
+	font-weight: normal;
+	font-size: 26px;
+	line-height: 32px;
+}
+
+.aboutQ {
+	float: left;
+	font-family: Oswald, sans-serif;
+	font-weight: normal;
+	font-size: 26px;
+	line-height: 32px;
+}
+
+.aboutA {
+	float: right;
+	font-family: Oswald, sans-serif;
+	font-weight: normal;
+	font-size: 26px;
+	line-height: 32px;
+}
+
+.strmRule {
+	float: left;
+	font-family: Oswald, sans-serif;
+	font-weight: normal;
+	font-size: 26px;
+	line-height: 32px;
+}
+
+.pb25 {
+	padding-bottom: 25px;
+}
+
+.pt20 {
+	padding-top: 20px;
+}
+
+.tacenter {
+	text-align: center;
+}
+
+/* TABLET */
+@media (min-width: 768px) and (max-width: 1200px) {
+	
+.hybridCenter {
+	font-family: Oswald, sans-serif;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 30px;
+	
+}
+
+.hybridLeft {
+	float: left;
+	font-family: Oswald, sans-serif;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.hybridRight {
+	float: right;
+	font-family: Oswald, sans-serif;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 30px;
+}
+	
+div.downloadsList {
+	width: 550px; position: relative; top: 0; bottom: 0; left: 0; right: 0; margin: auto; margin-top: 75px;
+}
+
+.pointsList {
+	text-align: center; 
+	width: 550px; 
+	position: relative; 
+	top: 0; 
+	bottom: 0; 
+	left: 0; 
+	right: 0; 
+	margin: auto; 
+	margin-top: 75px;
+}
+
+.rulesList {
+	width: 550px;
+	position: relative; 
+	top: 0; 
+	bottom: 0; 
+	left: 0; 
+	right: 0;
+	margin: auto;
+	margin-top: 75px;
+}
+
+.tipsPage, .aboutPage {
+	width: 550px; 
+	position: relative;
+	top: 0; 
+	bottom: 0; 
+	left: 0;
+	right: 0; 
+	margin: auto; 
+	margin-top: 75px;
+}
+
+.businessPage {
+	width: 550px; 
+	position: relative;
+	top: 0; 
+	bottom: 0; 
+	left: 0;
+	right: 0; 
+	margin: auto; 
+	margin-top: 75px;
+	text-align: center;
+}
+
+.scheduleTable {
+	width: 75%;
+}
+
+.scheduleTable tbody tr td {
+	font-family: Oswald, sans-serif;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 26px;
+}
+
+.strmRule {
+	float: left;
+	font-family: Oswald, sans-serif;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.dlName {
+	float: left;
+	font-family: Oswald, sans-serif;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.dlLink {
+	float: right;
+	font-family: Oswald, sans-serif;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.aboutQ {
+	float: left;
+	font-family: Oswald, sans-serif;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.aboutA {
+	float: right;
+	font-family: Oswald, sans-serif;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 30px;
+}
+
+}
+/* END TABLET */
+
+/* MOBILE */
+@media (max-width: 767px) {
+div.downloadsList {
+	display: none;
+}
+
+.hybridCenter {
+	float: center;
+	font-family: Oswald, sans-serif;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 26px;
+}
+
+.hybridLeft {
+	float: left;
+	font-family: Oswald, sans-serif;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 26px;
+}
+
+.hybridRight {
+	float: right;
+	font-family: Oswald, sans-serif;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 26px;
+}
+
+.pointsList {
+	text-align: center; 
+	width: 250px; 
+	position: absolute; 
+	top: 0; 
+	bottom: 0; 
+	left: 0; 
+	right: 0;
+	margin: auto; 
+	margin-top: 300px;
+}
+
+.tipsPage, .aboutPage {
+	width: 80%; 
+	position: relative;
+	top: 0; 
+	bottom: 0; 
+	left: 0; 
+	right: 0; 
+	margin: auto; 
+	margin-top: 75px;
+}
+
+.businessPage {
+	width: 80%; 
+	position: relative;
+	top: 0; 
+	bottom: 0; 
+	left: 0; 
+	right: 0; 
+	margin: auto; 
+	margin-top: 75px;
+	text-align: center;
+}
+
+.gwLogo {
+	width: 163px;
+	height: 45px;
+}
+
+.gwBenefits {
+	display: none;
+}
+
+.aboutQ, .aboutA {
+	float: center;
+	font-family: Oswald, sans-serif;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 26px;
+}
+
+.strmRule {
+	float: center;
+	font-family: Oswald, sans-serif;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 26px;
+}
+
+.scheduleTable {
+	width: 90%;
+}
+
+.scheduleTable tbody tr td {
+	font-family: Oswald, sans-serif;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+}
+/* END MOBILE */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
