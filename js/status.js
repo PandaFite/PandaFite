@@ -32,11 +32,6 @@ $.ajax({
 		document.getElementById('vod-thumbnail').style.visibility = "hidden";
 		document.getElementById('player').src = "https://player.twitch.tv/?channel=" + data.hosts[0].target_login +"&muted";
 		}
-		
-		showChat = function() {
-		document.getElementById('streamChat').innerHTML = "<iframe id='chatframe' frameborder='0' margin='0' scrolling='no' align='left' src='https://www.twitch.tv/"+ data.hosts[0].target_login + "/chat' height='430' width='585'></iframe>";
-		}
-		
 		function getHostInfo() {
 		$.ajax({
 		 type: 'GET',
