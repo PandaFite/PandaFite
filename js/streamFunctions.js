@@ -1,6 +1,7 @@
 var username = "pandaplayshd";
 
 var pressPlay;
+var showChat;
 
 var uptime;
 
@@ -64,7 +65,12 @@ function onlineFrame()
 		}, 500);
 		}
 		
-	document.getElementById('chatframe').src = "https://twitch.tv/" + username + "/chat";
+		
+	showChat = function() {
+		document.getElementById('streamChat').innerHTML = "<iframe id='chatframe' frameborder='0' margin='0' scrolling='no' align='left' src='https://www.twitch.tv/pandaplayshd/chat' height='430' width='585'></iframe>";
+		}
+		
+	document.getElementById('streamChat').innerHTML = "<a href='#' onclick='showChat(); return false;'><img src='img/chatPlaceHolder.jpg' /></a>"
 }
 
 function streamOffline()
