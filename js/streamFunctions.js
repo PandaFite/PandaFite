@@ -159,3 +159,96 @@ function streamOffline()
 	});
 	document.getElementById('chatframe').src = "https://discordapp.com/widget?id=221059861457141770&theme=light";
 }
+
+function streamOfflineFallback()
+{
+	$.ajax({
+	 type: 'GET',
+	 url: 'https://api.twitch.tv/kraken/channels/' + username + '/videos?broadcasts=true',
+	 headers: {
+	   'Client-ID': 'f2cmg4s30fnzmq7zbcx8rcsfxdc1san'
+	 },
+	 success: function(data) {
+	   console.log(data);
+	   
+	   	if (data._total == 0)
+		{
+			document.getElementById('title').textContent = "Error 404 - no stream data found";
+			document.getElementById('vod-thumbnail').src = "https://static-cdn.jtvnw.net/ttv-static/404_preview-1280x720.jpg";
+			document.getElementById('button-play-link').style.visibility = "hidden";
+		}
+	   	 
+		 var thumbRaw;
+		if (data.videos[0].thumbnails[2] == null)
+		{
+		thumbRaw = data.videos[0].thumbnails[0].url;
+		}
+		else {thumbRaw = data.videos[0].thumbnails[2].url;}
+	   
+		var str2 = thumbRaw.split("-");
+		var noRes = str2[0] + "-" + str2[1];
+		var thumbHD = noRes + "-1280x720.jpg"
+	   document.getElementById('vod-thumbnail').src = thumbHD;
+	   
+	   
+	   
+		var str = data.videos[0].created_at;
+		var res = str.split("-");
+		var day = res[2].split("T");
+		var fullDate = res[1] + "/" + day[0] + "/" + res[0];
+		
+		var timeFull = day[1].split("Z");
+		var time = timeFull[0].split(":");
+		var hour = time[0];
+		
+		
+		if (time[0] == 0)
+		{
+			hour = 5;
+		}
+		else if (time[0] >= 1 && time[0] <= 7)
+		{
+			hour = time[0] + 5;
+		}
+		else if (time[0] >= 8 && time[0] <= 19)
+		{
+			hour = time[0] - 7
+		}
+		else if (time[0] >= 20 && time [0] <= 24)
+		{
+			hour = time[0] - 19;
+		}
+		
+		
+		
+		var minute = time[1];
+		var timeOfDay = "AM"
+		
+		if (time[0] >= 8 && time[0] <= 19)
+		{
+			timeOfDay = " AM PST";
+		}	
+		else
+		{
+			timeOfDay = " PM PST";
+		}	
+
+		document.getElementById('title').innerHTML = "<a href='https://gist.githubusercontent.com/matt3541/14aeb77786b67e74fcb96f16eac21869/raw/0722adf9e8372184ed6bad0331cb7cb3e988101b/gistfile1.txt' target='_blank'>(Host API error 1)</a> Most recent broadcast (" + fullDate + " at " + hour + ":" + minute + timeOfDay + "):";
+		document.getElementById('streaminfo').textContent = " " + data.videos[0].title;
+		
+		pressPlay = function() {
+		document.getElementById('button-play-link').style.visibility = "hidden";
+		document.getElementById('player').src = "https://player.twitch.tv/?video=" + data.videos[0]._id;
+		setTimeout(function() {
+		document.getElementById('vod-thumbnail').style.visibility = "hidden";
+		}, 500);
+		}
+
+		
+		
+		
+		
+	 }
+	});
+	document.getElementById('chatframe').src = "https://discordapp.com/widget?id=221059861457141770&theme=light";
+}

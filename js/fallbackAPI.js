@@ -3,12 +3,15 @@ function fallbackAPI ()
 
 $.ajax({
 	 type: 'GET',
-	 url: 'https://crossorigin.me/https://tmi.twitch.tv/hosts?include_logins=1&host=53010272',
+	 url: 'https://cors-anywhere.herokuapp.com/https://tmi.twitch.tv/hosts?include_logins=1&host=53010272',
+	  headers: {
+	'origin': 'pandaplayshd'
+	},
 	 success: function(data) {
 	   console.log(data);
 	   if (data.hosts[0].target_login == null)
 	   {
-			streamOffline();
+			streamOfflineFallback();
 	   }
 	   else
 	   {
@@ -29,7 +32,7 @@ $.ajax({
 		 },
 		 success: function(data) {
 		   console.log(data);
-		   document.getElementById('title').textContent =   "(Main API appears to be down, using fallback) Panda is currently hosting " + data.stream.channel.display_name + ": " + data.stream.channel.status;
+		   document.getElementById('title').innerHTML =   "<a href='https://gist.githubusercontent.com/matt3541/14aeb77786b67e74fcb96f16eac21869/raw/0722adf9e8372184ed6bad0331cb7cb3e988101b/gistfile1.txt' target='_blank'>(Host API error 1)</a> Panda is currently hosting " + data.stream.channel.display_name + ": " + data.stream.channel.status;
 		   if (data.stream.game == "Creative")
 		   {
 			   document.getElementById('streaminfo').textContent = " | Being " + data.stream.game + " for " + data.stream.viewers.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " viewers and " + data.stream.channel.followers.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " followers";
@@ -47,6 +50,9 @@ $.ajax({
 		setInterval(getHostInfo,10000);
 		
 	   }
+	 },
+	 error: function(data) {
+		document.getElementById('title').textContent = "Host API failed.";
 	 }
 	});
 }

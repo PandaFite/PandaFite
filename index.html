@@ -27,13 +27,30 @@
 <script src="js/jquery.prettyPhoto.js"></script>
 <script src="js/jquery.flexslider.js"></script>
 <script src="js/jquery.custom.js"></script>
-<script src="js/fallbackAPI.js"></script>
-<script src="js/streamFunctions.js?revision=09-22-2016"></script>
-<script src="js/status.js?revision=10-13-16-2"></script>
+<script src="js/fallbackAPI.js?revision=10-16-2016"></script>
+<script src="js/streamFunctions.js?revision=10-16-2016"></script>
+<script src="js/status.js?revision=10-13-16-3"></script>
 <script src="js/responsiveMenu.js?revision=7-5-2016"></script>
+<style type="text/css">
+div.loader {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+div.loader img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+</style>
 </head>
 
 <body class="home">
+<div class="loader" id="loader"><img src="img/loader.svg" class="nodrag" /></div>
 	<div class="color-bar-1 visible-tablet visible-phone"></div>
     <div class="color-bar-2 color-bg visible-tablet visible-phone"></div>
 	<div id="wrapper">
@@ -190,6 +207,15 @@
 	<div class="visible-phone hidden-tablet" style="bottom: 0; position: fixed; width: 100%">
 	<div class="color-bar-2 color-bg"></div>
 	<div class="color-bar-1"></div>
-	</div>	
+	</div>
+<script type="text/javascript">
+document.getElementById('content').style.visibility = "hidden";
+setTimeout( function() {
+$(window).ready(function() {
+    $('#loader').hide();
+	document.getElementById('content').style.visibility = "visible";
+});
+}, 2000);
+</script>	
 </body>
 </html>
