@@ -209,11 +209,11 @@ div.loader img {
 	<div class="color-bar-1"></div>
 	</div>
 <script type="text/javascript">
-document.getElementById('content').style.visibility = "hidden";
+document.getElementById('content').style.display = "none";
 setTimeout( function() {
 $(window).ready(function() {
+	$('#content').fadeIn(2000);
     $('#loader').fadeOut("slow");
-	document.getElementById('content').style.visibility = "visible";
 });
 }, 2000);
 </script>	
