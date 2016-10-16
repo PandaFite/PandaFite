@@ -212,7 +212,7 @@ div.loader img {
 document.getElementById('content').style.visibility = "hidden";
 setTimeout( function() {
 $(window).ready(function() {
-    $('#loader').hide();
+    $('#loader').fadeOut("slow");
 	document.getElementById('content').style.visibility = "visible";
 });
 }, 2000);
