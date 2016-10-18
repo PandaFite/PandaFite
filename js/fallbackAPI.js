@@ -3,7 +3,7 @@ function fallbackAPI ()
 
 $.ajax({
 	 type: 'GET',
-	 url: 'https://cors-anywhere.herokuapp.com/https://tmi.twitch.tv/hosts?include_logins=1&host=53010272',
+	 url: 'https://jsonp.afeld.me/?url=https%3A%2F%2Ftmi.twitch.tv%2Fhosts%3Finclude_logins%3D1%26host%3D53010272',
 	  headers: {
 	'origin': 'pandaplayshd'
 	},
