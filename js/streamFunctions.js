@@ -64,7 +64,7 @@ function onlineFrame()
 		}, 500);
 		}
 		
-	document.getElementById('chatDiv').innerHTML = "<input type='image' src='img/chatcover.png' class='nodrag' height='430' width='535' onclick='unhideChat()' />";
+	document.getElementById('chatDiv').innerHTML = "<input type='image' src='img/chatcover.png' class='nodrag' style='height: 430px; width: 535px; display: inline-block;' onclick='unhideChat()' />";
 }
 
 function streamOffline()
