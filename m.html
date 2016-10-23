@@ -19,9 +19,28 @@
 <script src="js/jquery.flexslider.js"></script>
 <script src="js/jquery.custom.js"></script>
 <script src="js/responsiveMenu.js?revision=7-5-2016"></script>
+<style type="text/css">
+div.loader {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+div.loader img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+</style>
 </head>
 
 <body class="home">
+<div class="loader" id="loader"><img src="img/loader.svg" class="nodrag" /></div>
+	<div class="color-bar-1 visible-tablet visible-phone"></div>
+    <div class="color-bar-2 color-bg visible-tablet visible-phone"></div>
 	<div id="wrapper">
     
     <div class="container">
@@ -47,31 +66,31 @@
 					<option value="tips">Tips</option>
                 </select>
                 </div>
-                </form>
+        </form>
 
-    <header class="hidden-phone hidden-tablet">
-		<div class="container clearfix">
-			<h1 id="logo">
-				<a href="https://www.twitch.tv/PandaPlaysHD" target="_blank"><img class="headerlogo nodrag" src="img/logo-j_skulloz.png"></a>
-				<a href="https://www.twitch.tv/PandaPlaysHD" target="_blank" class="twitchLink">PandaPlaysHD</a>
-			</h1>
-			<nav>
-				<a class="selected">Home</a>
-				<a href="about">About</a>
-				<a href="business">Business</a>
-				<a href="downloads">Downloads</a>
-				<a href="specs">PC Specs</a>
-				<a href="points">Points</a>
-				<a href="rules">Rules</a>
-				<a href="schedule">Schedule</a>
-				<a href="social">Social</a>
-				<a href="software">Software</a>
-				<a href="tips">Tips</a>
-				
-				
-			</nav>
-		</div>
-	</header><!-- /header -->
+		<header class="hidden-phone hidden-tablet">
+			<div class="container clearfix">
+				<h1 id="logo">
+					<a href="https://www.twitch.tv/PandaPlaysHD" target="_blank"><img class="headerlogo nodrag" src="img/logo-j_skulloz.png"></a>
+					<a href="https://www.twitch.tv/PandaPlaysHD" target="_blank" class="twitchLink">PandaPlaysHD</a>
+				</h1>
+				<nav>
+					<a class="selected">Home</a>
+					<a href="about">About</a>
+					<a href="business">Business</a>
+					<a href="downloads">Downloads</a>
+					<a href="specs">PC Specs</a>
+					<a href="points">Points</a>
+					<a href="rules">Rules</a>
+					<a href="schedule">Schedule</a>
+					<a href="social">Social</a>
+					<a href="software">Software</a>
+					<a href="tips">Tips</a>
+					
+					
+				</nav>
+			</div>
+		</header><!-- /header -->
         </div>
         
       </div>
@@ -138,6 +157,15 @@
 	<div class="visible-phone hidden-tablet" style="bottom: 0; position: fixed; width: 100%">
 	<div class="color-bar-2 color-bg"></div>
 	<div class="color-bar-1"></div>
-	</div>	
+	</div>
+<script type="text/javascript">
+document.getElementById('content').style.display = "none";
+setTimeout( function() {
+$(window).ready(function() {
+	$('#content').fadeIn(2000);
+    $('#loader').fadeOut("slow");
+});
+}, 2000);
+</script>	
 </body>
 </html>
