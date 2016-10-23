@@ -7,16 +7,16 @@
   }
 </script>
 <title>PandaPlaysHD</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"></link>
-<link rel="stylesheet" href="css/bootstrap.css">
-<link rel="stylesheet" href="css/bootstrap-responsive.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+<link rel="stylesheet" href="css/bootstrap.css" />
+<link rel="stylesheet" href="css/bootstrap-responsive.css" />
 <link rel="stylesheet" href="css/prettyPhoto.css" />
 <link rel="stylesheet" href="css/flexslider.css" />
-<link rel="stylesheet" href="css/custom-styles.css?revision=09-29-2016">
-<link rel="stylesheet" href="css/menu.css?revision=07-23-2016">
-<link rel="shortcut icon" href="https://pandaplayshd.com/img/favicon.ico?v=3_24_16">
+<link rel="stylesheet" href="css/custom-styles.css?revision=09-29-2016" />
+<link rel="stylesheet" href="css/menu.css?revision=07-23-2016" />
+<link rel="shortcut icon" href="https://pandaplayshd.com/img/favicon.ico?v=3_24_16" />
 <script src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/classie/1.0.1/classie.min.js"></script>
 <script src="js/bootstrap.js"></script>
@@ -42,11 +42,25 @@ div.loader img {
 	bottom: 0;
 	margin: auto;
 }
+.videobox {
+	position: relative; 
+}
+			
+.videobox span {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 4;
+	background: url(img/button-play.png) no-repeat center center;
+}
 </style>
 </head>
 
 <body class="home">
-<div class="loader" id="loader"><img src="img/loader.svg" class="nodrag" /></div>
+<div class="loader" id="loader"><img src="img/loader.svg" class="nodrag" alt="loading..." /></div>
 	<div class="color-bar-1 visible-tablet visible-phone"></div>
     <div class="color-bar-2 color-bg visible-tablet visible-phone"></div>
 	<div id="wrapper">
@@ -79,7 +93,7 @@ div.loader img {
     <header class="hidden-phone hidden-tablet">
 		<div class="container clearfix">
 			<h1 id="logo">
-				<a href="https://www.twitch.tv/PandaPlaysHD" target="_blank"><img class="headerlogo nodrag" src="img/logo-j_skulloz.png"></a>
+				<a href="https://www.twitch.tv/PandaPlaysHD" target="_blank"><img class="headerlogo nodrag" src="img/logo-j_skulloz.png" alt="logo"></a>
 				<a href="https://www.twitch.tv/PandaPlaysHD" target="_blank" class="twitchLink">PandaPlaysHD</a>
 			</h1>
 			<nav>
@@ -113,35 +127,21 @@ div.loader img {
 			<span id="streaminfo" style="text-shadow: none;color: grey; text-transform: none;"></span>
 			<span id="uptime" style="text-shadow: none;color: grey; text-transform: none;"></span>
 			</h5>
-			<style type="text/css">
-			.videobox { position: relative; }
-			
-			.videobox span {
-			  display: block;
-			  position: absolute;
-			  top: 0;
-			  left: 0;
-			  bottom: 0;
-			  right: 0;
-			  z-index: 4;
-			  background: url(img/button-play.png) no-repeat center center;
-			}
-			</style>
 			<div class="videobox">
-			<img id="vod-thumbnail" class="nodrag" style="position:absolute;z-index:3;" src="" height="659" width="1170"/>
+			<img id="vod-thumbnail" class="nodrag" style="position:absolute;z-index:3;" height="659" width="1170" alt="thumbnail" />
 			<a id="button-play-link" href="#" onclick="pressPlay(); return false;"><span class="button-play"></span></a>
-            <iframe style="z-index:2;" id="player" class="twitch-player" height="659" width="1170" frameborder="0" src="" allowfullscreen></iframe>
+            <iframe style="z-index:2; border: none; overflow: hidden;" id="player" class="twitch-player" height="659" width="1170" allowfullscreen></iframe>
 			</div>
 			
 			<a class="twitter-timeline" data-width="585" data-height="430" data-link-color="#017eff" href="https://twitter.com/PandaPlaysHD"></a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 			
-			<iframe id="chatframe" frameborder="0" margin="0" scrolling="no" align="left" src="https://www.twitch.tv/" + username + "/chat" style="display: inline-block; vertical-align: top; height: 430px; width: 585px;"></iframe>	
+			<iframe id="chatframe" align="left" style="display: inline-block; vertical-align: top; height: 430px; width: 585px; border: none; overflow: hidden;"></iframe>	
 		
 		<div style="margin-top:50px;">
 		<h5 class="title-bg" style="text-align: center">  
 			<span id="yt-title" style="text-shadow: none; text-transform: none;">Most recent YouTube video:</span>
 		</h5>
-		<iframe id="yt-player" height="659" width="100%" frameborder="0" src="https://www.youtube.com/embed?listType=user_uploads&list=pandaplaysmchd" allowfullscreen></iframe>
+		<iframe style="z-index:2; border: none; overflow: hidden;" id="yt-player" height="659" width="1170"  src="https://www.youtube.com/embed?listType=user_uploads&list=pandaplaysmchd" allowfullscreen></iframe>
 		</div>
         </div>
 
@@ -156,11 +156,11 @@ div.loader img {
 		
 		
 		
-		<div class="span8 visible-tablet hidden-phone left: 0; right: 0;" width="100%">
+		<div class="span8 visible-tablet hidden-phone" >
 		<h1 style="text-align: center;">Welcome to PandaPlaysHD's website!</h1>
-		<center>
+		<div style="text-align: center;">
 		<a class="twitter-timeline" data-width="585" data-height="430" data-link-color="#017eff" href="https://twitter.com/PandaPlaysHD"></a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-		</center>
+		</div>
 		</div>
 		
 		
@@ -178,7 +178,7 @@ div.loader img {
 		
 		
 		
-		<div class="span8 hidden-tablet visible-phone left: 0; right: 0;" width="100%">
+		<div class="span8 hidden-tablet visible-phone" style="width: 100%;">
 		<h1 style="text-align: center;">Welcome to PandaPlaysHD's website!</h1>
 		<br>
 		<div style="text-align: center;">
