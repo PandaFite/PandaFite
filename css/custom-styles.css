@@ -161,7 +161,7 @@ a:visited {
 
 
 
-#expand-box {
+.expand-box {
     width: 100%;
     padding: 0;
     margin: 7px 0 0 0;
@@ -170,13 +170,13 @@ a:visited {
 	padding-bottom: 30px;
 	}
 
-#expand-box-header {
+.expand-box-header {
     margin: 0;
     color: #000000;
     padding: 0 0 3px 2px;
     overflow: auto;}
 
-#expand_box_sub_header { clear: both; }
+.expand_box_sub_header { clear: both; }
 .fontleftl {
 	float: left;
 	font-family: Oswald, sans-serif;
