@@ -64,7 +64,7 @@ function onlineFrame()
 		}, 500);
 		}
 		
-	document.getElementById('chatframe').src = "https://twitch.tv/" + username + "/chat";
+	document.getElementById('chatframe').src = "chat.html";
 }
 
 function streamOffline()
