@@ -34,17 +34,13 @@ div.loader {
 	width: 100%;
 	top: 0;
 	left: 0;
+	bottom: 0;
+	right: 0;
 	background-color: white;
 	z-index: 10;
-}
-
-div.loader img {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	margin: auto;
+	background-image: url(img/loader.svg);
+	background-repeat: no-repeat;
+	background-position: center;
 }
 .videobox {
 	position: relative; 
@@ -64,7 +60,7 @@ div.loader img {
 </head>
 
 <body class="home">
-<div class="loader" id="loader"><img src="img/loader.svg" class="nodrag" alt="loading..." /></div>
+<div class="loader" id="loader"></div>
 	<div class="color-bar-1 visible-tablet visible-phone"></div>
     <div class="color-bar-2 color-bg visible-tablet visible-phone"></div>
 	<div id="wrapper">
