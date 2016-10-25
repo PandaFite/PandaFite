@@ -87,12 +87,19 @@
     <div class="row"  style="text-align: center; zoom:120%;">
 
             <h2 style="text-align: center;">Followage</h2>
-			<input id="username" placeholder="Twitch Username" autofocus /><br />
-			<a id="followageButton" class="btn" style="margin-top: 5px;" onclick="getFollowage()">Check Followage</a>
+			<input type="text" id="username" placeholder="Twitch Username" autofocus /><br />
+			<input type="submit" id="followageButton" class="btn" style="margin-top: 5px;" onclick="buttonAction()" value="Check Followage" />
 			
 			<script type="text/javascript">
+			function buttonAction() {
+			if (document.getElementById('username').value != "") {
+			getFollowage();
+			}
+			else {alert("Please type your username!");}
+			}
+			
 			function getFollowage(){
-			document.getElementById('result').innerHTML = "<img src='img/loading-bar.gif' />";
+			document.getElementById('result').innerHTML = "<img src='img/loader_green.gif' class='nodrag' />";
 			username = document.getElementById('username').value;
 			
 			$.ajax({
@@ -129,7 +136,7 @@
 			
 			
 			document.getElementById('prefix').innerHTML = "<a href='https://www.twitch.tv/" + displayUsername + "' target='_blank'><img src='" + userLogo + "' height='30' width='30' class='nodrag' style='vertical-align: middle;' title='" + displayUsername + "' /></a> has been following Panda for";
-			document.getElementById('result').innerHTML = "<img src='img/loading-bar.gif' />";
+			document.getElementById('result').innerHTML = "<img src='img/loader_green.gif' class='nodrag' />";
 			
 			setTimeout(function() {
 			document.getElementById('result').textContent = data;
@@ -140,7 +147,7 @@
 			else
 			{
 			document.getElementById('prefix').textContent = "";
-			document.getElementById('result').innerHTML = "<img src='img/loading-bar.gif' class='nodrag' />";
+			document.getElementById('result').innerHTML = "<img src='img/loader_green.gif' class='nodrag' />";
 			
 			setTimeout(function() {
 			document.getElementById('result').textContent = "(error)";
@@ -159,11 +166,20 @@
 			$("#followageButton").click();
 			}
 			});
+			
+			setTimeout( function() {
+			$(window).ready(function() {
+				$('#resultarea').fadeIn("slow");
+			});
+			}, 3000);
 			</script>
-			<section style="margin-top:40px;">
+			
+			<div id="resultarea" style="display: none; margin-top: 40px;">
 			<h4 id="prefix"></h4>
+			</div>
+			<div>
 			<h1 id="result" style="text-transform: none;"></h1>
-			</section>
+			</div>
 			<noscript>
 			<span class="fontcenters"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i><br />This page will not function as it appears you have JavaScript disabled.</span>
 			</noscript>
