@@ -120,6 +120,42 @@ div.downloadsList {
 	vertical-align: middle;
 }
 
+.gwTable {
+	margin-top: 30px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: solid;
+}
+
+
+.gwTable caption {
+	caption-side: top;
+	font-family: Oswald, sans-serif;
+	font-size: 24px;
+	letter-spacing: 0.01em;
+	margin-bottom: 10px;
+}
+
+.gwTable tbody tr td, th {
+	float: center;
+	font-family: Oswald, sans-serif;
+	font-weight: normal;
+	font-size: 22px;
+	line-height: 28px;
+	text-align: center;
+	
+}
+
+.gwTable thead tr th {
+	float: center;
+	font-family: Oswald, sans-serif;
+	font-weight: normal;
+	font-size: 22px;
+	margin-top: 20px;
+	vertical-align: middle;
+}
+
 col.dayColumn {
 	width: 300px;
 }
