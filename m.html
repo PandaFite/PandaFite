@@ -21,9 +21,18 @@
 <script src="js/responsiveMenu.js?revision=7-5-2016"></script>
 <style type="text/css">
 div.loader {
-	position: relative;
+	position: fixed;
 	height: 100%;
 	width: 100%;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: white;
+	z-index: 10;
+	background-image: url(img/loader.svg);
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 div.loader img {
@@ -159,10 +168,8 @@ div.loader img {
 	<div class="color-bar-1"></div>
 	</div>
 <script type="text/javascript">
-document.getElementById('content').style.display = "none";
 setTimeout( function() {
 $(window).ready(function() {
-	$('#content').fadeIn(2000);
     $('#loader').fadeOut("slow");
 });
 }, 2000);
