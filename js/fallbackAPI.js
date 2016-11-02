@@ -15,14 +15,27 @@ $.ajax({
 	   }
 	   else
 	   {
-		document.getElementById('chatframe').src = "https://www.twitch.tv/" + data.hosts[0].target_login + "/chat";
+		//define pressChat function for this situation
+		pressChat = function() {
+			document.getElementById('chatcover').innerHTML = "<iframe id='chatframe' style='border: none; height: 430px; width: 585px;' src='https://www.twitch.tv/" + data.hosts[0].target_login + "/chat'></iframe>"
+		}	   
+		 
+		//set html for chat cover
+		document.getElementById('chatcover').innerHTML = "<a href='#' onclick='pressChat(); return false;' style='display: block; width: 585px; height: 430px;'><span style='display: block;height: 430px; width: 585px; display: block; text-align: center;'><span style='font-size: 26px; line-height: 430px;'>asfasd</span></span></a>";
+		
+		//set thumbnail to that of the hosted streamer
 		document.getElementById('vod-thumbnail').src = "https://static-cdn.jtvnw.net/previews-ttv/live_user_" + data.hosts[0].target_login + "-1280x720.jpg";
 		
+		//define pressPlay function for this situation
 		pressPlay = function() {
 		document.getElementById('button-play-link').style.visibility = "hidden";
-		document.getElementById('vod-thumbnail').style.visibility = "hidden";
 		document.getElementById('player').src = "https://player.twitch.tv/?channel=" + data.hosts[0].target_login +"&muted";
+		setTimeout(function() {
+		document.getElementById('vod-thumbnail').style.visibility = "hidden";
+		}, 500);
 		}
+		
+		//get title, viewers, game, etc from hosted streamer
 		function getHostInfo() {
 		$.ajax({
 		 type: 'GET',
@@ -32,7 +45,9 @@ $.ajax({
 		 },
 		 success: function(data) {
 		   console.log(data);
-		   document.getElementById('title').innerHTML =   "<a href='https://gist.githubusercontent.com/matt3541/14aeb77786b67e74fcb96f16eac21869/raw/0722adf9e8372184ed6bad0331cb7cb3e988101b/gistfile1.txt' target='_blank'>(Host API error 1)</a> Panda is currently hosting " + data.stream.channel.display_name + ": " + data.stream.channel.status;
+		   if (data.stream) {
+		   
+		   document.getElementById('title').textContent = "Panda is currently hosting " + data.stream.channel.display_name + ": " + data.stream.channel.status;
 		   if (data.stream.game == "Creative")
 		   {
 			   document.getElementById('streaminfo').textContent = " | Being " + data.stream.game + " for " + data.stream.viewers.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " viewers and " + data.stream.channel.followers.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " followers";
@@ -41,11 +56,14 @@ $.ajax({
 		   
 		   document.getElementById('streaminfo').textContent = " | Playing " + data.stream.game + " for " + data.stream.viewers.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " viewers and " + data.stream.channel.followers.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " followers";
 		   }
+		   }
+		   else {streamOffline();}
 		 }
 		});
 
 
 		}
+		//auto update 10s interval
 		getHostInfo();
 		setInterval(getHostInfo,10000);
 		

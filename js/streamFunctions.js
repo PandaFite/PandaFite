@@ -66,9 +66,9 @@ function onlineFrame()
 		}, 500);
 		}
 		
-	document.getElementById('chatcover').innerHTML = "<a href='#' onclick='pressChat(); return false;'><img src='img/chatcover.png' class='nodrag' style='height: 430px; width: 585px;' /></a>";
-	pressChat = function() {
+	document.getElementById('chatcover').innerHTML = "<a href='#' onclick='pressChat(); return false;' style='display: block; width: 585px; height: 430px;'><span style='display: block;height: 430px; width: 585px; display: block; text-align: center;'><span style='font-size: 26px; line-height: 430px;'>asfasd</span></span></a>";
 	
+	pressChat = function() {
 	document.getElementById('chatcover').innerHTML = "<iframe id='chatframe' style='border: none; height: 430px; width: 585px;' src='https://www.twitch.tv/" + username + "/chat'></iframe>"
 	}
 }
@@ -163,7 +163,8 @@ function streamOffline()
 		
 	 }
 	});
-	document.getElementById('chatcover').innerHTML = "<iframe src='https://discordapp.com/widget?id=221059861457141770&theme=light' style='border: none; height: 430; width: 585'></iframe>";
+	document.getElementById('chatcover').innerHTML = "<iframe src='https://discordapp.com/widget?id=221059861457141770&theme=light' style='border: none; height: 430px; width: 585px'></iframe>";
+	document.getElementById('chatcover').style.backgroundColor = "transparent";
 }
 
 function streamOfflineFallback()
@@ -256,5 +257,6 @@ function streamOfflineFallback()
 		
 	 }
 	});
-	document.getElementById('chatcover').innerHTML = "<iframe src='https://discordapp.com/widget?id=221059861457141770&theme=light' style='border: none; height: 430; width: 585'></iframe>";
+	document.getElementById('chatcover').innerHTML = "<iframe src='https://discordapp.com/widget?id=221059861457141770&theme=light' style='border: none; height: 430px; width: 585px'></iframe>";
+	document.getElementById('chatcover').style.backgroundColor = "transparent";
 }
