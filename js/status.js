@@ -24,13 +24,20 @@ $.ajax({
 	   }
 	   else
 	   {
-		document.getElementById('chatframe').src = "https://www.twitch.tv/" + data.hosts[0].target_login + "/chat";
+		pressChat = function() {
+			document.getElementById('chatcover').innerHTML = "<iframe id='chatframe' style='border: none; height: 430px; width: 585px;' src='https://www.twitch.tv/" + data.hosts[0].target_login + "/chat'></iframe>"
+		}
+		   
+		   
+		document.getElementById('chatcover').innerHTML = "<a href='#' onclick='pressChat(); return false;'><img src='img/chatcover.png' class='nodrag' style='height: 430px; width: 585px;' /></a>";
 		document.getElementById('vod-thumbnail').src = "https://static-cdn.jtvnw.net/previews-ttv/live_user_" + data.hosts[0].target_login + "-1280x720.jpg";
 		
 		pressPlay = function() {
 		document.getElementById('button-play-link').style.visibility = "hidden";
-		document.getElementById('vod-thumbnail').style.visibility = "hidden";
 		document.getElementById('player').src = "https://player.twitch.tv/?channel=" + data.hosts[0].target_login +"&muted";
+		setTimeout(function() {
+		document.getElementById('vod-thumbnail').style.visibility = "hidden";
+		}, 500);
 		}
 		function getHostInfo() {
 		$.ajax({

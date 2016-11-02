@@ -2,6 +2,8 @@ var username = "pandaplayshd";
 
 var pressPlay;
 
+var pressChat;
+
 var uptime;
 
 function displayTitle()
@@ -28,7 +30,7 @@ $.ajax({
  }
 });	
 		$.ajax({
-		url: "https://api.rtainc.co/twitch/uptime?channel=pandaplayshd",
+		url: 'https://api.rtainc.co/twitch/uptime?channel=' + username,
 		success: function (data) {
 			var name = data.split(' ');
 			var noComma = name[1].split(',');
@@ -64,7 +66,11 @@ function onlineFrame()
 		}, 500);
 		}
 		
-	document.getElementById('chatframe').src = "chat.html";
+	document.getElementById('chatcover').innerHTML = "<a href='#' onclick='pressChat(); return false;'><img src='img/chatcover.png' class='nodrag' style='height: 430px; width: 585px;' /></a>";
+	pressChat = function() {
+	
+	document.getElementById('chatcover').innerHTML = "<iframe id='chatframe' style='border: none; height: 430px; width: 585px;' src='https://www.twitch.tv/" + username + "/chat'></iframe>"
+	}
 }
 
 function streamOffline()
@@ -157,7 +163,7 @@ function streamOffline()
 		
 	 }
 	});
-	document.getElementById('chatframe').src = "https://discordapp.com/widget?id=221059861457141770&theme=light";
+	document.getElementById('chatcover').innerHTML = "<iframe src='https://discordapp.com/widget?id=221059861457141770&theme=light' style='border: none; height: 430; width: 585'></iframe>";
 }
 
 function streamOfflineFallback()
@@ -250,5 +256,5 @@ function streamOfflineFallback()
 		
 	 }
 	});
-	document.getElementById('chatframe').src = "https://discordapp.com/widget?id=221059861457141770&theme=light";
+	document.getElementById('chatcover').innerHTML = "<iframe src='https://discordapp.com/widget?id=221059861457141770&theme=light' style='border: none; height: 430; width: 585'></iframe>";
 }
