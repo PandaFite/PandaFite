@@ -87,17 +87,13 @@
     <div class="row"  style="text-align: center; zoom:120%;">
 
             <h2 style="text-align: center;">Followage</h2>
-			<input type="text" id="username" placeholder="Twitch Username" autofocus /><br />
-			<input type="submit" id="followageButton" class="btn" style="margin-top: 5px;" onclick="buttonAction()" value="Check Followage" />
+			
+			<form action="javascript:getFollowage()">
+			<input type="text" id="username" placeholder="Twitch Username" title="Usernames only consist of letters, numbers, or underscores." pattern="^[A-Za-z0-9_]+$" autofocus required /><br />
+			<input type="submit" id="followageButton" class="btn" style="margin-top: 5px;" value="Check Followage" />
+			</form>
 			
 			<script type="text/javascript">
-			function buttonAction() {
-			if (document.getElementById('username').value != "") {
-			getFollowage();
-			}
-			else {alert("Please type your username!");}
-			}
-			
 			function getFollowage(){
 			document.getElementById('result').innerHTML = "<img src='img/loader_green.gif' class='nodrag' />";
 			username = document.getElementById('username').value;
