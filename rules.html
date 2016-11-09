@@ -20,6 +20,12 @@
 <script src="js/jquery.flexslider.js"></script>
 <script src="js/jquery.custom.js"></script>
 <script src="js/responsiveMenu.js?revision=7-5-2016"></script>
+<script src="js/getRule.js"></script>
+<style>
+.highlighted {
+	background-color: yellow;
+}
+</style>
 </head>
 
 <body class="home">
@@ -91,33 +97,33 @@
 			<div class="rulesList hidden-phone">
 			<div class="expand-box">
 				<div class="expand-box-header">
-					<span class="strmRule"><b>#1: </b>Respect everyone watching the stream.</span> 
+					<span id="r1" class="strmRule"><b>#1: </b>Respect everyone watching the stream.</span> 
 				</div>
 			</div>
 			<div class="expand-box">
 				<div class="expand-box-header">
-					<span class="strmRule"><b>#2: </b>Refrain from talking about age.</span> 
+					<span id="r2" class="strmRule"><b>#2: </b>Refrain from talking about age.</span> 
 				</div>
 			</div>
 			<div class="expand-box">
 				<div class="expand-box-header">
-					<span class="strmRule"><b>#3: </b>Don't spam/advertise without permission.</span> 
+					<span id="r3" class="strmRule"><b>#3: </b>Don't spam/advertise without permission.</span> 
 				</div>
 			</div>
 			<div class="expand-box">
 				<div class="expand-box-header">
-					<span class="strmRule"><b>#4: </b>You may not post any links without permission (especially porn).</span> 
+					<span id="r4" class="strmRule"><b>#4: </b>You may not post any links without permission (especially porn).</span> 
 				</div>
 			</div>
 			<div class="expand-box">
 				<div class="expand-box-header">
-					<span class="strmRule"><b>#5: </b>You may not ask for mod. To apply for mod, click <a href="modapplication">here.</a>
+					<span id="r5" class="strmRule"><b>#5: </b>You may not ask for mod. To apply for mod, click <a href="modapplication">here.</a>
 					</span> 
 				</div>
 			</div>
 			<div class="expand-box">
 				<div class="expand-box-header">
-					<span class="strmRule"><b>#6: </b>No math! <img src="https://static-cdn.jtvnw.net/emoticons/v1/25/1.0" title="Kappa" alt="Kappa" class="nodrag" />
+					<span id="r6" class="strmRule"><b>#6: </b>No math! <img src="https://static-cdn.jtvnw.net/emoticons/v1/25/1.0" title="Kappa" alt="Kappa" class="nodrag" />
 					</span>
 				</div>
 			</div>
