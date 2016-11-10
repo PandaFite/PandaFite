@@ -114,22 +114,22 @@ function streamOffline()
 		var time = timeFull[0].split(":");
 		var hour = time[0];
 		
-		
+		//add one to all during daylight savings
 		if (time[0] == 0)
 		{
-			hour = 5;
+			hour = 4; //
 		}
 		else if (time[0] >= 1 && time[0] <= 7)
 		{
-			hour = time[0] + 5;
+			hour = time[0] + 4; //
 		}
 		else if (time[0] >= 8 && time[0] <= 19)
 		{
-			hour = time[0] - 7
+			hour = time[0] - 8 //
 		}
 		else if (time[0] >= 20 && time [0] <= 24)
 		{
-			hour = time[0] - 19;
+			hour = time[0] - 20; //
 		}
 		
 		
