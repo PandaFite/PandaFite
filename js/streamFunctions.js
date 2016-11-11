@@ -108,7 +108,13 @@ function streamOffline()
 		var str = data.videos[0].created_at;
 		var res = str.split("-");
 		var day = res[2].split("T");
-		var fullDate = res[1] + "/" + day[0] + "/" + res[0];
+		
+		//need below two during dst
+		var realDay = day[0] - 1;
+		var fullDate = res[1] + "/" + realDay + "/" + res[0];
+		
+		//use this otherwise
+		//var fullDate = res[1] + "/" + day[0] + "/" + res[0];
 		
 		var timeFull = day[1].split("Z");
 		var time = timeFull[0].split(":");
