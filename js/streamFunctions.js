@@ -105,54 +105,52 @@ function streamOffline()
 	   
 	   
 	   
-		var str = data.videos[0].created_at;
-		var res = str.split("-");
-		var day = res[2].split("T");
+		//var str = data.videos[0].created_at;
+		//var res = str.split("-");
+		//var day = res[2].split("T");
 		
-		//need below two during dst
-		var realDay = day[0] - 1;
-		var fullDate = res[1] + "/" + realDay + "/" + res[0];
-		
-		//use this otherwise
-		//var fullDate = res[1] + "/" + day[0] + "/" + res[0];
-		
-		var timeFull = day[1].split("Z");
-		var time = timeFull[0].split(":");
-		var hour = time[0];
-		
-		//add one to all during daylight savings
-		if (time[0] == 0)
-		{
-			hour = 4; //
-		}
-		else if (time[0] >= 1 && time[0] <= 7)
-		{
-			hour = time[0] + 4; //
-		}
-		else if (time[0] >= 8 && time[0] <= 19)
-		{
-			hour = time[0] - 8 //
-		}
-		else if (time[0] >= 20 && time [0] <= 24)
-		{
-			hour = time[0] - 20; //
-		}
-		
-		
-		
-		var minute = time[1];
-		var timeOfDay = "AM"
-		
-		if (time[0] >= 8 && time[0] <= 19)
-		{
-			timeOfDay = " AM PST";
-		}	
-		else
-		{
-			timeOfDay = " PM PST";
-		}	
 
-		document.getElementById('title').textContent = "Most recent broadcast (" + fullDate + " at " + hour + ":" + minute + timeOfDay + "):";
+		//var realDay = day[0] - 1;
+		//var fullDate = res[1] + "/" + realDay + "/" + res[0];
+
+		
+		//var timeFull = day[1].split("Z");
+		//var time = timeFull[0].split(":");
+		//var hour = time[0];
+		
+
+		//if (time[0] == 0)
+		//{
+		//	hour = 4; 
+		//}
+		//else if (time[0] >= 1 && time[0] <= 7)
+		//{
+		//	hour = time[0] + 4; 
+		//}
+		//else if (time[0] >= 8 && time[0] <= 19)
+		//{
+		//	hour = time[0] - 8 
+		//}
+		//else if (time[0] >= 20 && time [0] <= 24)
+		//{
+		//	hour = time[0] - 20; 
+		//}
+		
+		
+		
+		//var minute = time[1];
+		//var timeOfDay = "AM"
+		
+		//if (time[0] >= 8 && time[0] <= 19)
+		//{
+		//	timeOfDay = " AM PST";
+		//}	
+		//else
+		//{
+		//	timeOfDay = " PM PST";
+		//}	
+
+		document.getElementById('title').textContent = "Most recent broadcast:";
 		document.getElementById('streaminfo').textContent = " " + data.videos[0].title;
 		
 		pressPlay = function() {
@@ -205,48 +203,52 @@ function streamOfflineFallback()
 	   
 	   
 	   
-		var str = data.videos[0].created_at;
-		var res = str.split("-");
-		var day = res[2].split("T");
-		var fullDate = res[1] + "/" + day[0] + "/" + res[0];
+		//var str = data.videos[0].created_at;
+		//var res = str.split("-");
+		//var day = res[2].split("T");
 		
-		var timeFull = day[1].split("Z");
-		var time = timeFull[0].split(":");
-		var hour = time[0];
-		
-		
-		if (time[0] == 0)
-		{
-			hour = 5;
-		}
-		else if (time[0] >= 1 && time[0] <= 7)
-		{
-			hour = time[0] + 5;
-		}
-		else if (time[0] >= 8 && time[0] <= 19)
-		{
-			hour = time[0] - 7
-		}
-		else if (time[0] >= 20 && time [0] <= 24)
-		{
-			hour = time[0] - 19;
-		}
-		
-		
-		
-		var minute = time[1];
-		var timeOfDay = "AM"
-		
-		if (time[0] >= 8 && time[0] <= 19)
-		{
-			timeOfDay = " AM PST";
-		}	
-		else
-		{
-			timeOfDay = " PM PST";
-		}	
 
-		document.getElementById('title').innerHTML = "<a href='https://gist.githubusercontent.com/matt3541/14aeb77786b67e74fcb96f16eac21869/raw/0722adf9e8372184ed6bad0331cb7cb3e988101b/gistfile1.txt' target='_blank'>(Host API error 1)</a> Most recent broadcast (" + fullDate + " at " + hour + ":" + minute + timeOfDay + "):";
+		//var realDay = day[0] - 1;
+		//var fullDate = res[1] + "/" + realDay + "/" + res[0];
+
+		
+		//var timeFull = day[1].split("Z");
+		//var time = timeFull[0].split(":");
+		//var hour = time[0];
+		
+
+		//if (time[0] == 0)
+		//{
+		//	hour = 4; 
+		//}
+		//else if (time[0] >= 1 && time[0] <= 7)
+		//{
+		//	hour = time[0] + 4; 
+		//}
+		//else if (time[0] >= 8 && time[0] <= 19)
+		//{
+		//	hour = time[0] - 8 
+		//}
+		//else if (time[0] >= 20 && time [0] <= 24)
+		//{
+		//	hour = time[0] - 20; 
+		//}
+		
+		
+		
+		//var minute = time[1];
+		//var timeOfDay = "AM"
+		
+		//if (time[0] >= 8 && time[0] <= 19)
+		//{
+		//	timeOfDay = " AM PST";
+		//}	
+		//else
+		//{
+		//	timeOfDay = " PM PST";
+		//}	
+
+		document.getElementById('title').innerHTML = "<a href='https://gist.githubusercontent.com/matt3541/14aeb77786b67e74fcb96f16eac21869/raw/0722adf9e8372184ed6bad0331cb7cb3e988101b/gistfile1.txt' target='_blank'>(Host API error 1)</a> Most recent broadcast:";
 		document.getElementById('streaminfo').textContent = " " + data.videos[0].title;
 		
 		pressPlay = function() {
