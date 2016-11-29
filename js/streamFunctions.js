@@ -167,7 +167,7 @@ function streamOffline()
 		
 	 }
 	});
-	document.getElementById('chatcover').innerHTML = "<iframe src='https://discordapp.com/widget?id=221059861457141770&theme=light' style='border: none; height: 430px; width: 585px'></iframe>";
+	document.getElementById('chatcover').innerHTML = "<iframe src='https://discordapp.com/widget?id=221059861457141770&theme=dark' style='border: none; height: 430px; width: 585px'></iframe>";
 	document.getElementById('chatcover').style.backgroundColor = "transparent";
 }
 
@@ -265,6 +265,6 @@ function streamOfflineFallback()
 		
 	 }
 	});
-	document.getElementById('chatcover').innerHTML = "<iframe src='https://discordapp.com/widget?id=221059861457141770&theme=light' style='border: none; height: 430px; width: 585px'></iframe>";
+	document.getElementById('chatcover').innerHTML = "<iframe src='https://discordapp.com/widget?id=221059861457141770&theme=dark' style='border: none; height: 430px; width: 585px'></iframe>";
 	document.getElementById('chatcover').style.backgroundColor = "transparent";
 }
