@@ -92,7 +92,7 @@
 	<div class="hidden-tablet hidden-phone" style="margin-bottom:100px;"></div>
     <div class="row"  style="text-align: center; zoom:120%;">
 
-            <h2 style="text-align: center;">Followage</h2>
+            <h2 style="text-align: center; color: #d9d9d9;">Followage</h2>
 			
 			<form action="javascript:getFollowage()">
 			<input type="text" id="username" placeholder="Twitch Username" title="Usernames only consist of letters, numbers, or underscores." pattern="^[A-Za-z0-9_]+$" autofocus required /><br />
@@ -101,7 +101,7 @@
 			
 			<script type="text/javascript">
 			function getFollowage(){
-			document.getElementById('result').innerHTML = "<img src='img/loader_green.gif' class='nodrag' />";
+			document.getElementById('result').innerHTML = "<img src='img/loading-bar.gif' class='nodrag' />";
 			username = document.getElementById('username').value;
 			
 			$.ajax({
@@ -138,7 +138,7 @@
 			
 			
 			document.getElementById('prefix').innerHTML = "<a href='https://www.twitch.tv/" + displayUsername + "' target='_blank'><img src='" + userLogo + "' height='30' width='30' class='nodrag' style='vertical-align: middle;' title='" + displayUsername + "' /></a> has been following Panda for";
-			document.getElementById('result').innerHTML = "<img src='img/loader_green.gif' class='nodrag' />";
+			document.getElementById('result').innerHTML = "<img src='img/loading-bar.gif' class='nodrag' />";
 			
 			setTimeout(function() {
 			document.getElementById('result').textContent = data;
@@ -149,7 +149,7 @@
 			else
 			{
 			document.getElementById('prefix').textContent = "";
-			document.getElementById('result').innerHTML = "<img src='img/loader_green.gif' class='nodrag' />";
+			document.getElementById('result').innerHTML = "<img src='img/loading-bar.gif' class='nodrag' />";
 			
 			setTimeout(function() {
 			document.getElementById('result').textContent = "(error)";
@@ -252,11 +252,11 @@
 			}, 0);
 			</script>
 			
-			<div id="resultarea" style="display: none; margin-top: 40px;">
+			<div id="resultarea" style="display: none; margin-top: 40px; color: #d9d9d9;">
 			<h4 id="prefix"></h4>
 			</div>
 			<div>
-			<h1 id="result" style="text-transform: none;"></h1>
+			<h1 id="result" style="text-transform: none; color: #d9d9d9;"></h1>
 			</div>
 			<noscript>
 			<span class="fontcenters"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i><br />This page will not function as it appears you have JavaScript disabled.</span>

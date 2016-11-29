@@ -1,6 +1,10 @@
+h2, .hybridCenter, .hybridLeft, .hybridRight, .aboutQ, .aboutA, .dlName, .dlLink, .strmRule, .fontcenters {
+	color: #d9d9d9;
+	font-family: Oswald, sans-serif;
+}
+
 .hybridCenter {
 	float: center;
-	font-family: Oswald, sans-serif;
 	font-weight: normal;
 	font-size: 26px;
 	line-height: 32px;
@@ -8,7 +12,6 @@
 
 .hybridLeft {
 	float: left;
-	font-family: Oswald, sans-serif;
 	font-weight: normal;
 	font-size: 26px;
 	line-height: 32px;
@@ -16,7 +19,6 @@
 
 .hybridRight {
 	float: right;
-	font-family: Oswald, sans-serif;
 	font-weight: normal;
 	font-size: 26px;
 	line-height: 32px;
@@ -219,7 +221,6 @@ col.timesColumn {
 @media (min-width: 768px) and (max-width: 1200px) {
 	
 .hybridCenter {
-	font-family: Oswald, sans-serif;
 	font-weight: normal;
 	font-size: 24px;
 	line-height: 30px;
@@ -228,7 +229,6 @@ col.timesColumn {
 
 .hybridLeft {
 	float: left;
-	font-family: Oswald, sans-serif;
 	font-weight: normal;
 	font-size: 24px;
 	line-height: 30px;
@@ -236,7 +236,6 @@ col.timesColumn {
 
 .hybridRight {
 	float: right;
-	font-family: Oswald, sans-serif;
 	font-weight: normal;
 	font-size: 24px;
 	line-height: 30px;
@@ -354,7 +353,6 @@ div.downloadsList {
 
 .hybridCenter {
 	float: center;
-	font-family: Oswald, sans-serif;
 	font-weight: normal;
 	font-size: 20px;
 	line-height: 26px;
@@ -362,7 +360,6 @@ div.downloadsList {
 
 .hybridLeft {
 	float: left;
-	font-family: Oswald, sans-serif;
 	font-weight: normal;
 	font-size: 20px;
 	line-height: 26px;
@@ -370,7 +367,6 @@ div.downloadsList {
 
 .hybridRight {
 	float: right;
-	font-family: Oswald, sans-serif;
 	font-weight: normal;
 	font-size: 20px;
 	line-height: 26px;

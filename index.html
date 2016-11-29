@@ -31,6 +31,8 @@
 <style type="text/css">
 div.loader {
 	position: fixed;
+	margin: 0px;
+	padding: 0px;
 	height: 100%;
 	width: 100%;
 	top: 0;
@@ -39,7 +41,7 @@ div.loader {
 	right: 0;
 	background-color: white;
 	z-index: 10;
-	background-image: url(img/loader.svg);
+	background: url(img/loader.svg) no-repeat fixed center, url(img/blackbg.png);
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -120,18 +122,15 @@ div.loader {
       </div>
 	 <div id="content">
 	 
-	 <div class="alert alert-info alert-dismissable giveawayAlert" style="margin-bottom: -60px;">
-		<a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
-		<strong>Minecraft Account Giveaway!</strong> <a href="https://twitter.com/PandaPlaysHD/status/800845433345970176" target="_blank">Click here for details.</a>
-	</div>
+	 <!-- place an alert here if needed -->
      
     <div class="row headline" style="margin-top: 100px;"><!-- Begin Headline -->
         <div class="span8 hidden-phone hidden-tablet">
 		
 		
 			<h5 class="title-bg" style="text-align: center">  
-			<span id="title" style="text-shadow: none; text-transform: none;"></span>
-			<span id="streaminfo" style="text-shadow: none;color: grey; text-transform: none;"></span>
+			<span id="title" style="text-shadow: none; text-transform: none; color: #FFFFFF"></span>
+			<span id="streaminfo" style="text-shadow: none;color: lightgrey; text-transform: none;"></span>
 			<span id="uptime" style="text-shadow: none;color: grey; text-transform: none;"></span>
 			</h5>
 			<div class="videobox">
@@ -144,11 +143,12 @@ div.loader {
 			
 			</div>
 			
-			<a class="twitter-timeline" data-width="585" data-height="430" data-link-color="#017eff" href="https://twitter.com/PandaPlaysHD"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			<a class="twitter-timeline" data-width="585" data-height="430" data-theme="dark" data-link-color="#017eff" href="https://twitter.com/PandaPlaysHD"></a>
+			<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 		
 		<div style="margin-top:50px;">
 		<h5 class="title-bg" style="text-align: center">  
-			<span id="yt-title" style="text-shadow: none; text-transform: none;">Most recent YouTube video:</span>
+			<span id="yt-title" style="text-shadow: none; text-transform: none; color: #FFFFFF">Most recent YouTube video:</span>
 		</h5>
 		<iframe style="z-index:2; border: none; overflow: hidden;" id="yt-player" height="659" width="1170"  src="https://www.youtube.com/embed?listType=user_uploads&list=pandaplaysmchd" allowfullscreen></iframe>
 		</div>
