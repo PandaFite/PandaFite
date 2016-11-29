@@ -3,6 +3,7 @@ html, body {
 	line-height:18px;
 	height: 100%;
 	font-family: Oswald, sans-serif;
+	background-color: #373737;
 	background-image: url(../img/blackbg.png);
 	background-repeat: repeat;
  }
