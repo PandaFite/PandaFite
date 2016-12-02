@@ -79,7 +79,7 @@ table tbody tr {
 	border-right: 0;
 }
 
-	table tbody tr:nth-child(2n + 1) {
+	table tbody tr:nth-child(2n + 2) {
 		background-color: rgba(177, 177, 177, 0.2);
 	}
 
@@ -93,7 +93,7 @@ table th {
 	padding: 0 0.75em 0.75em 0.75em;
 	text-align: left;
 	vertical-align: middle;
-	
+	background-color: rgba(177, 177, 177, 0.2);
 }
 
 table thead {
