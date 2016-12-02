@@ -3,27 +3,22 @@
 <head>
 <script type="text/javascript">
   if (screen.width <= 1200) {
-    window.location = "https://pandaplayshd.com/m";
+    window.location = "./m.html";
   }
 </script>
 <title>PandaPlaysHD</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
 <link rel="stylesheet" href="css/bootstrap.css" />
 <link rel="stylesheet" href="css/bootstrap-responsive.css" />
-<link rel="stylesheet" href="css/prettyPhoto.css" />
-<link rel="stylesheet" href="css/flexslider.css" />
-<link rel="stylesheet" href="css/custom-styles.css?revision=09-29-2016" />
-<link rel="stylesheet" href="css/menu.css?revision=07-23-2016" />
+<link rel="stylesheet" href="css/custom-styles.css?revision=12-1-2016" />
+<link rel="stylesheet" href="css/menu.css?revision=12-1-2016" />
 <link rel="stylesheet" href="css/alerts.css" />
 <link rel="shortcut icon" href="https://pandaplayshd.com/img/favicon.ico?v=3_24_16" />
 <script src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/classie/1.0.1/classie.min.js"></script>
 <script src="js/bootstrap.js"></script>
-<script src="js/jquery.prettyPhoto.js"></script>
-<script src="js/jquery.flexslider.js"></script>
-<script src="js/jquery.custom.js"></script>
 <script src="js/fallbackAPI.js?revision=11-2-2016-1"></script>
 <script src="js/streamFunctions.js?revision=11-11-2016"></script>
 <script src="js/status.js?revision=11-2-2016-1"></script>
@@ -31,6 +26,8 @@
 <style type="text/css">
 div.loader {
 	position: fixed;
+	margin: 0px;
+	padding: 0px;
 	height: 100%;
 	width: 100%;
 	top: 0;
@@ -39,7 +36,7 @@ div.loader {
 	right: 0;
 	background-color: white;
 	z-index: 10;
-	background-image: url(img/loader.svg);
+	background: url(img/loader.svg) no-repeat fixed center, #373737;
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -78,7 +75,7 @@ div.loader {
                 <div class="mobile-nav-select">
                 <select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
                     <option value="">Menu...</option>
-                    <option value="https://pandaplayshd.com">Home</option>
+                    <option value="./">Home</option>
                     <option value="about">About</option>
 					<option value="specs">PC Specs</option>
 					<option value="points">Points</option>
@@ -120,18 +117,15 @@ div.loader {
       </div>
 	 <div id="content">
 	 
-	 <div class="alert alert-info alert-dismissable giveawayAlert" style="margin-bottom: -60px;">
-		<a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
-		<strong>Minecraft Account Giveaway!</strong> <a href="https://twitter.com/PandaPlaysHD/status/800845433345970176" target="_blank">Click here for details.</a>
-	</div>
+	 <!-- place an alert here if needed -->
      
     <div class="row headline" style="margin-top: 100px;"><!-- Begin Headline -->
         <div class="span8 hidden-phone hidden-tablet">
 		
 		
 			<h5 class="title-bg" style="text-align: center">  
-			<span id="title" style="text-shadow: none; text-transform: none;"></span>
-			<span id="streaminfo" style="text-shadow: none;color: grey; text-transform: none;"></span>
+			<span id="title" style="text-shadow: none; text-transform: none; color: #FFFFFF"></span>
+			<span id="streaminfo" style="text-shadow: none;color: lightgrey; text-transform: none;"></span>
 			<span id="uptime" style="text-shadow: none;color: grey; text-transform: none;"></span>
 			</h5>
 			<div class="videobox">
@@ -144,11 +138,12 @@ div.loader {
 			
 			</div>
 			
-			<a class="twitter-timeline" data-width="585" data-height="430" data-link-color="#017eff" href="https://twitter.com/PandaPlaysHD"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			<a class="twitter-timeline" data-width="585" data-height="430" data-theme="dark" data-link-color="#017eff" href="https://twitter.com/PandaPlaysHD"></a>
+			<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 		
 		<div style="margin-top:50px;">
 		<h5 class="title-bg" style="text-align: center">  
-			<span id="yt-title" style="text-shadow: none; text-transform: none;">Most recent YouTube video:</span>
+			<span id="yt-title" style="text-shadow: none; text-transform: none; color: #FFFFFF">Most recent YouTube video:</span>
 		</h5>
 		<iframe style="z-index:2; border: none; overflow: hidden;" id="yt-player" height="659" width="1170"  src="https://www.youtube.com/embed?listType=user_uploads&list=pandaplaysmchd" allowfullscreen></iframe>
 		</div>
@@ -166,9 +161,9 @@ div.loader {
 		
 		
 		<div class="span8 visible-tablet hidden-phone" >
-		<h1 style="text-align: center;">Welcome to PandaPlaysHD's website!</h1>
+		<h1 style="text-align: center; color: #d9d9d9">Welcome to PandaPlaysHD's website!</h1>
 		<div style="text-align: center;">
-		<a class="twitter-timeline" data-width="585" data-height="430" data-link-color="#017eff" href="https://twitter.com/PandaPlaysHD"></a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+		<a class="twitter-timeline" data-width="585" data-height="430" data-link-color="#017eff" data-theme="dark" href="https://twitter.com/PandaPlaysHD"></a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 		</div>
 		</div>
 		
@@ -187,7 +182,7 @@ div.loader {
 		
 		
 		
-		<div class="span8 hidden-tablet visible-phone" style="width: 100%;">
+		<div class="span8 hidden-tablet visible-phone" style="width: 100%; color: #d9d9d9">
 		<h1 style="text-align: center;">Welcome to PandaPlaysHD's website!</h1>
 		<br>
 		<div style="text-align: center;">

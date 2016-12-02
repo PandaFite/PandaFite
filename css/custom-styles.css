@@ -2,11 +2,13 @@ html, body {
 	font-size:12px; 
 	line-height:18px;
 	height: 100%;
+	font-family: Oswald, sans-serif;
+	background-color: #373737;
+	background-image: url(../img/blackbg.png);
+	background-repeat: repeat;
  }
 <<<<<<< HEAD
-body {background: #FFFF00;}
 =======
-body {background: #FFF00;}
 >>>>>>> origin/gh-pages
 
 .main-container {
@@ -16,8 +18,8 @@ body {background: #FFF00;}
 }
 hr {
 height: 1px;
-color: #123455;
-background-color: #123455;
+color: #d9d9d9;
+background-color: #d9d9d9;
 border: none;
 }
 @media (max-width: 767px) {
@@ -32,7 +34,7 @@ h1, h2, h3, h4 , h5, h6 {
 	text-transform:uppercase; 
 }	
 h1.title-bg, h2.title-bg, h3.title-bg, h4.title-bg , h5.title-bg, h6.title-bg {
-	background:#dddddd; 
+	background-color: #555555; 
 	padding:10px 5px;
 	margin: 0px 0px 10px 0px;
 }
@@ -59,6 +61,7 @@ textarea {
 table {
 		border-collapse: collapse;
 		border-spacing: 0;
+		color: #d9d9d9;
 }
 .table-wrapper {
 		-webkit-overflow-scrolling: touch;
@@ -76,7 +79,7 @@ table tbody tr {
 	border-right: 0;
 }
 
-	table tbody tr:nth-child(2n + 1) {
+	table tbody tr:nth-child(2n + 2) {
 		background-color: rgba(177, 177, 177, 0.2);
 	}
 
@@ -90,7 +93,7 @@ table th {
 	padding: 0 0.75em 0.75em 0.75em;
 	text-align: left;
 	vertical-align: middle;
-	
+	background-color: rgba(177, 177, 177, 0.2);
 }
 
 table thead {
@@ -423,20 +426,21 @@ select:active, select:hover {
 / Footer
 **************************************/
 	#wrapper {
-	min-height:100%;
-	position:relative;
+	min-height: 100%;
+	position: relative;
 }
  #content {
-	 padding-bottom:120px;
+	 padding-bottom: 120px;
 }
 
 
 
 
 .footer-container {
-	
+	letter-spacing: 0.6px;
+	font-weight: lighter;
 	width:100%;
-	background:#333;
+	background:#555555;
 	clear: both;
  	position: absolute;
     bottom: 0;
@@ -447,7 +451,7 @@ select:active, select:hover {
 }
 .footer-row { margin-top: 0px;}
 .footer-col {color:#ababab; font-size: 11px;}
-.footer-col a {color:#dcdcdc; font-weight: bold;}
+.footer-col a {color:#dcdcdc;}
 .footer-col a.hyperlink:hover {color:#017eff; text-decoration: none;}
 
 .footer-col a.twitch:hover {
@@ -504,7 +508,7 @@ ul.img-feed li {
 
 
 /**** Sub Footer ****/
-.footer-sub {background: #1f1f1f; padding: 10px 0px;}
+.footer-sub {background: #313131; padding: 10px 0px;}
 .footer-sub div div span {padding: 0px 20px;}
 
 
@@ -557,7 +561,7 @@ a.accordion-toggle{background: #f5f5f5;}
     list-style-type: none;
 }
 #page-content {
-    background: #ddf;
+
 
 	* {
 	margin: 0;

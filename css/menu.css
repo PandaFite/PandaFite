@@ -6,12 +6,12 @@ header {
     top: 0;
     left: 0;
     z-index: 999;
-    background-color: #333;
+    background-color: #555555;
     -webkit-transition: height 0.3s;
     -moz-transition: height 0.3s;
     -ms-transition: height 0.3s;
     -o-transition: height 0.3s;
-    transition: height 0.3s;
+    transition: height 0.3s
 }
 header h1#logo {
     display: inline-block;
@@ -33,10 +33,11 @@ header nav {
     float: right;
 }
 header nav a {
+	letter-spacing: 0.8px;
     line-height: 85px;
-    margin-left: 14px;
+    margin-left: 16px;
     color: white;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 16px;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -68,14 +69,25 @@ header.smaller h1#logo {
 header img{
 	height: 70px;
 	width: 70px;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
 header.smaller img{
 	height: 40px;
 	width: 40px;
 	margin-right: 10px;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
 header.smaller nav a {
     line-height: 50px;
+	font-size: 14px;
 }
 
 @media all and (max-width: 660px) {
