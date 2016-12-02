@@ -69,11 +69,21 @@ header.smaller h1#logo {
 header img{
 	height: 70px;
 	width: 70px;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
 header.smaller img{
 	height: 40px;
 	width: 40px;
 	margin-right: 10px;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
 header.smaller nav a {
     line-height: 50px;
