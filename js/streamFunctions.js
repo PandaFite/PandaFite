@@ -1,3 +1,8 @@
+/*
+	streamFunctions.js
+	Copyright (c) mattunderscore.co
+	All rights reserved
+*/
 var username = "pandaplayshd";
 
 var pressPlay;
@@ -57,7 +62,7 @@ $.ajax({
 
 function onlineFrame()
 {
-	document.getElementById('vod-thumbnail').src = "https://static-cdn.jtvnw.net/previews-ttv/live_user_" + username + "-1280x720.jpg";
+	document.getElementById('vod-thumbnail').src = "https://static-cdn.jtvnw.net/previews-ttv/live_user_" + username + "-1170x659.jpg";
 	pressPlay = function() {
 		document.getElementById('button-play-link').style.visibility = "hidden";
 		document.getElementById('player').src = "https://player.twitch.tv/?channel=" + username +"&muted";
@@ -87,7 +92,7 @@ function streamOffline()
 	   	if (data._total == 0)
 		{
 			document.getElementById('title').textContent = "Error 404 - no stream data found";
-			document.getElementById('vod-thumbnail').src = "https://static-cdn.jtvnw.net/ttv-static/404_preview-1280x720.jpg";
+			document.getElementById('vod-thumbnail').src = "https://static-cdn.jtvnw.net/ttv-static/404_preview-1170x659.jpg";
 			document.getElementById('button-play-link').style.visibility = "hidden";
 		}
 	   	 
@@ -100,7 +105,7 @@ function streamOffline()
 	   
 		var str2 = thumbRaw.split("-");
 		var noRes = str2[0] + "-" + str2[1];
-		var thumbHD = noRes + "-1280x720.jpg"
+		var thumbHD = noRes + "-1170x659.jpg"
 	   document.getElementById('vod-thumbnail').src = thumbHD;
 	   
 	   
@@ -185,7 +190,7 @@ function streamOfflineFallback()
 	   	if (data._total == 0)
 		{
 			document.getElementById('title').textContent = "Error 404 - no stream data found";
-			document.getElementById('vod-thumbnail').src = "https://static-cdn.jtvnw.net/ttv-static/404_preview-1280x720.jpg";
+			document.getElementById('vod-thumbnail').src = "https://static-cdn.jtvnw.net/ttv-static/404_preview-1170x659.jpg";
 			document.getElementById('button-play-link').style.visibility = "hidden";
 		}
 	   	 
@@ -198,7 +203,7 @@ function streamOfflineFallback()
 	   
 		var str2 = thumbRaw.split("-");
 		var noRes = str2[0] + "-" + str2[1];
-		var thumbHD = noRes + "-1280x720.jpg"
+		var thumbHD = noRes + "-1170x659.jpg"
 	   document.getElementById('vod-thumbnail').src = thumbHD;
 	   
 	   
