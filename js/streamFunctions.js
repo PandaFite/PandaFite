@@ -78,6 +78,23 @@ function onlineFrame()
 	}
 }
 
+function ytDisplay() {
+	$.ajax({
+		 type: 'GET',
+		 url: 'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=UU9_eMg0RM31CFHIoFOd4Log&maxResults=1&key=AIzaSyDRGoNzXk7wVpE2lCXG9SS7wPMZhmFSEhI',
+		 success: function(data) {
+			console.log(data);
+			document.getElementById('yt-title').textContent = "Recent Video: " + data.items[0].snippet.title;
+			document.getElementById('yt-player').src = "https://www.youtube.com/embed/" + data.items[0].snippet.resourceId.videoId;
+			
+			
+		 }, //end success
+		 error: function () {
+		}
+		});	// end ajax
+
+}
+
 function streamOffline()
 {
 	$.ajax({
