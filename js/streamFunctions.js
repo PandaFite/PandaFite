@@ -64,11 +64,12 @@ function onlineFrame()
 {
 	document.getElementById('vod-thumbnail').src = "https://static-cdn.jtvnw.net/previews-ttv/live_user_" + username + "-1170x659.jpg";
 	pressPlay = function() {
-		document.getElementById('button-play-link').style.visibility = "hidden";
+		document.getElementById('button-play-span').style.background = "url(img/loading-ring.svg) no-repeat center center";
 		document.getElementById('player').src = "https://player.twitch.tv/?channel=" + username +"&muted";
 		setTimeout(function() {
 		document.getElementById('vod-thumbnail').style.visibility = "hidden";
-		}, 500);
+		document.getElementById('button-play-link').style.visibility = "hidden";
+		}, 2500);	
 		}
 		
 	document.getElementById('chatcover').innerHTML = "<a href='#' onclick='pressChat(); return false;' style='display: block; width: 585px; height: 430px;'><span style='display: block;height: 430px; width: 585px; display: block; text-align: center;'><span style='font-size: 26px; line-height: 430px;'>Click to view chat</span></span></a>";
@@ -176,110 +177,14 @@ function streamOffline()
 		document.getElementById('streaminfo').textContent = " " + data.videos[0].title;
 		
 		pressPlay = function() {
-		document.getElementById('button-play-link').style.visibility = "hidden";
+		document.getElementById('button-play-span').style.background = "url(img/loading-ring.svg) no-repeat center center";
 		document.getElementById('player').src = "https://player.twitch.tv/?video=" + data.videos[0]._id;
 		setTimeout(function() {
 		document.getElementById('vod-thumbnail').style.visibility = "hidden";
-		}, 500);
-		}
-
-		
-		
-		
-		
-	 }
-	});
-	document.getElementById('chatcover').innerHTML = "<iframe src='https://discordapp.com/widget?id=221059861457141770&theme=dark' style='border: none; height: 430px; width: 585px'></iframe>";
-	document.getElementById('chatcover').style.backgroundColor = "transparent";
-}
-
-function streamOfflineFallback()
-{
-	$.ajax({
-	 type: 'GET',
-	 url: 'https://api.twitch.tv/kraken/channels/' + username + '/videos?broadcasts=true',
-	 headers: {
-	   'Client-ID': 'f2cmg4s30fnzmq7zbcx8rcsfxdc1san'
-	 },
-	 success: function(data) {
-	   console.log(data);
-	   
-	   	if (data._total == 0)
-		{
-			document.getElementById('title').textContent = "Error 404 - no stream data found";
-			document.getElementById('vod-thumbnail').src = "https://static-cdn.jtvnw.net/ttv-static/404_preview-1170x659.jpg";
-			document.getElementById('button-play-link').style.visibility = "hidden";
-		}
-	   	 
-		 var thumbRaw;
-		if (data.videos[0].thumbnails[2] == null)
-		{
-		thumbRaw = data.videos[0].thumbnails[0].url;
-		}
-		else {thumbRaw = data.videos[0].thumbnails[2].url;}
-	   
-		var str2 = thumbRaw.split("-");
-		var noRes = str2[0] + "-" + str2[1];
-		var thumbHD = noRes + "-1170x659.jpg"
-	   document.getElementById('vod-thumbnail').src = thumbHD;
-	   
-	   
-	   
-		//var str = data.videos[0].created_at;
-		//var res = str.split("-");
-		//var day = res[2].split("T");
-		
-
-		//var realDay = day[0] - 1;
-		//var fullDate = res[1] + "/" + realDay + "/" + res[0];
-
-		
-		//var timeFull = day[1].split("Z");
-		//var time = timeFull[0].split(":");
-		//var hour = time[0];
-		
-
-		//if (time[0] == 0)
-		//{
-		//	hour = 4; 
-		//}
-		//else if (time[0] >= 1 && time[0] <= 7)
-		//{
-		//	hour = time[0] + 4; 
-		//}
-		//else if (time[0] >= 8 && time[0] <= 19)
-		//{
-		//	hour = time[0] - 8 
-		//}
-		//else if (time[0] >= 20 && time [0] <= 24)
-		//{
-		//	hour = time[0] - 20; 
-		//}
-		
-		
-		
-		//var minute = time[1];
-		//var timeOfDay = "AM"
-		
-		//if (time[0] >= 8 && time[0] <= 19)
-		//{
-		//	timeOfDay = " AM PST";
-		//}	
-		//else
-		//{
-		//	timeOfDay = " PM PST";
-		//}	
-
-		document.getElementById('title').innerHTML = "<a href='https://gist.githubusercontent.com/matt3541/14aeb77786b67e74fcb96f16eac21869/raw/0722adf9e8372184ed6bad0331cb7cb3e988101b/gistfile1.txt' target='_blank'>(Host API error 1)</a> Most recent broadcast:";
-		document.getElementById('streaminfo').textContent = " " + data.videos[0].title;
-		
-		pressPlay = function() {
 		document.getElementById('button-play-link').style.visibility = "hidden";
-		document.getElementById('player').src = "https://player.twitch.tv/?video=" + data.videos[0]._id;
-		setTimeout(function() {
-		document.getElementById('vod-thumbnail').style.visibility = "hidden";
-		}, 500);
-		}
+		}, 2500);
+		
+		} //end pressPlay
 
 		
 		

@@ -43,11 +43,13 @@ $.ajax({
 		
 		//define pressPlay function for this situation
 		pressPlay = function() {
-		document.getElementById('button-play-link').style.visibility = "hidden";
+		document.getElementById('button-play-span').style.background = "url(img/loading-ring.svg) no-repeat center center";
 		document.getElementById('player').src = "https://player.twitch.tv/?channel=" + data.hosts[0].target_login +"&muted";
 		setTimeout(function() {
 		document.getElementById('vod-thumbnail').style.visibility = "hidden";
-		}, 500);
+		document.getElementById('button-play-link').style.visibility = "hidden";
+		}, 2500);
+		
 		}
 		
 		//get title, viewers, game, etc from hosted streamer
@@ -86,7 +88,6 @@ $.ajax({
 	 },
 	 error: function(data)
 	 {
-		 fallbackAPI();
 	 }
 	});
    }
