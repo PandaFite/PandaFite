@@ -126,8 +126,13 @@ function streamOffline()
 			}
 		}
 		else {
+			try {
 			thumbRaw = data.videos[0].thumbnails[2].url;
 			formatThumbnail();
+			}
+			catch(err) {
+				 document.getElementById('vod-thumbnail').src = "https://static-cdn.jtvnw.net/ttv-static/404_preview-1170x659.jpg";
+			}
 		}
 		
 	   function formatThumbnail() {
