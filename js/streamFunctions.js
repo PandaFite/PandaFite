@@ -115,16 +115,27 @@ function streamOffline()
 		}
 	   	 
 		 var thumbRaw;
-		if (data.videos[0].thumbnails[2] == null)
+		if (data.videos[0].thumbnails == null)
 		{
-		thumbRaw = data.videos[0].thumbnails[0].url;
+			try {
+				thumbRaw = data.videos[0].thumbnails[0].url;
+				formatThumbnail();
+			}
+			catch(err) {
+				 document.getElementById('vod-thumbnail').src = "https://static-cdn.jtvnw.net/ttv-static/404_preview-1170x659.jpg";
+			}
 		}
-		else {thumbRaw = data.videos[0].thumbnails[2].url;}
-	   
+		else {
+			thumbRaw = data.videos[0].thumbnails[2].url;
+			formatThumbnail();
+		}
+		
+	   function formatThumbnail() {
 		var str2 = thumbRaw.split("-");
 		var noRes = str2[0] + "-" + str2[1];
 		var thumbHD = noRes + "-1170x659.jpg"
 	   document.getElementById('vod-thumbnail').src = thumbHD;
+	   }
 	   
 	   
 	   
