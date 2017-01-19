@@ -211,3 +211,9 @@ function streamOffline()
 	document.getElementById('chatcover').innerHTML = "<iframe src='https://discordapp.com/widget?id=221059861457141770&theme=dark' style='border: none; height: 430px; width: 585px'></iframe>";
 	document.getElementById('chatcover').style.backgroundColor = "transparent";
 }
+
+function playerError() {
+	document.getElementById('vod-thumbnail').src = "https://static-cdn.jtvnw.net/ttv-static/404_preview-800x450.jpg";
+	document.getElementById('title').textContent = "Error loading video";
+	document.getElementById('button-play-link').style.visibility = "hidden";
+}
