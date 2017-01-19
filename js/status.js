@@ -86,10 +86,14 @@ $.ajax({
 		
 	   }
 	 },
-	 error: function(data)
+	 error: function()
 	 {
+		 playerError();
 	 }
 	});
    }
+ },
+ error: function() {
+	 playerError();
  }
 });
