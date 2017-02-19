@@ -72,11 +72,31 @@ function onlineFrame()
 		}, 2500);	
 		}
 		
-	document.getElementById('chatcover').innerHTML = "<a href='#' onclick='pressChat(); return false;' style='display: block; width: 585px; height: 430px;'><span style='display: block;height: 430px; width: 585px; display: block; text-align: center;'><span style='font-size: 26px; line-height: 430px;'>Click to view chat</span></span></a>";
+	//document.getElementById('chatcover').innerHTML = "<a href='#' onclick='pressChat(); return false;' style='display: block; width: 585px; height: 430px;'><span style='display: block;height: 430px; width: 585px; display: block; text-align: center;'><span style='font-size: 26px; line-height: 430px;'>Click to view chat</span></span></a>";
 	
 	pressChat = function() {
 	document.getElementById('chatcover').innerHTML = "<iframe id='chatframe' style='border: none; height: 430px; width: 585px;' src='https://www.twitch.tv/" + username + "/chat'></iframe>"
 	}
+
+	
+	timer();
+}
+
+var count = 8;
+var counter = setInterval(timer, 1000); //1000 will  run it every 1 second
+var stopTimer;
+function timer() {
+    if (stopTimer != 1) {
+        count = count - 1;
+        if (count <= 0) {
+            clearInterval(counter);
+            pressChat();
+            stopTimer = 1;
+            return;
+        }
+
+        document.getElementById("chatcover").innerHTML = "<a href='#' onclick='return false;' style='display: block; width: 585px; height: 430px;'><span style='display: block;height: 430px; width: 585px; display: block; text-align: center;'><span style='font-size: 26px; line-height: 430px;'>Chat loading in " + count + "&hellip;</span></span></a>";
+    }
 }
 
 function ytDisplay() {
