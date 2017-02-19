@@ -118,6 +118,7 @@ function ytDisplay() {
 
 function streamOffline()
 {
+    stopTimer = 1;
 	$.ajax({
 	 type: 'GET',
 	 url: 'https://api.twitch.tv/kraken/channels/' + username + '/videos?broadcasts=true',
