@@ -1,245 +1,272 @@
-<!DOCTYPE html>
-<html>
-<head>
-<script type="text/javascript">
-  if (screen.width <= 1200) {
-    window.location = "./m";
-  }
-</script>
-<title>PandaPlaysHD</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
-<link rel="stylesheet" href="css/bootstrap.css" />
-<link rel="stylesheet" href="css/bootstrap-responsive.css" />
-<link rel="stylesheet" href="css/custom-styles.css?revision=12-1-2016" />
-<link rel="stylesheet" href="css/menu.css?revision=12-1-2016" />
-<link rel="stylesheet" href="css/alerts.css" />
-<link rel="shortcut icon" href="https://pandaplayshd.com/img/favicon.ico?v=3_24_16" />
-<script src="js/jquery-3.1.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/classie/1.0.1/classie.min.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/streamFunctions.js?revision=2-19-2017"></script>
-<script src="js/status.js?revision=2-19-2017"></script>
-<script src="js/responsiveMenu.js?revision=7-5-2016"></script>
-<style type="text/css">
-div.loader {
-	position: fixed;
-	margin: 0px;
-	padding: 0px;
-	height: 100%;
-	width: 100%;
-	top: 0;
-    left: 0;
-	bottom: 0;
-	right: 0;
-	background-color: white;
-	z-index: 10;
-	background: url(img/loader.svg) no-repeat fixed center, #373737;
-	background-repeat: no-repeat;
-	background-position: center;
-}
-.videobox {
-	position: relative; 
-}
-			
-.videobox span {
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	z-index: 4;
-	background: url(img/button-play.png) no-repeat center center;
-}
-</style>
-</head>
+﻿<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>PandaPlaysHD</title>
+		<meta charset="utf-8" />
+        <link rel="shortcut icon" href="img/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="css/main.css?3" />
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+        <style type="text/css">
+        div.loader {
+	        position: absolute;
+	        margin: 0px;
+	        padding: 0px;
+	        height: 100%;
+	        width: 100%;
+	        top: 0;
+            left: 0;
+	        bottom: 0;
+	        right: 0;
+	        background-color: white;
+	        z-index: 10;
+	        background: url(img/loader.svg) no-repeat fixed center, #373737;
+	        background-repeat: no-repeat;
+	        background-position: center;
+        }
+        .videobox { position: relative; }
+		
+		.videobox span {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+            width: 800px;
+            height: 450px;
+			z-index: 4;
+			background: url(img/button-play.png) no-repeat center center;
+		}
+        </style>
+	</head>
+	<body class="single">
+        <div class="loader" id="loader"></div>
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-<body class="home">
-<div class="loader" id="loader"></div>
-	<div class="color-bar-1 visible-tablet visible-phone"></div>
-    <div class="color-bar-2 color-bg visible-tablet visible-phone"></div>
-	<div id="wrapper">
-    
-    <div class="container">
-    
-      <div class="row header"><!-- Begin Header -->
-		
-        <div class="span7 navigation">
-		
-		 <!-- mobile nav -->
-		
-		<form action="#" id="mobile-nav" class="visible-phone visible-tablet">
-                <div class="mobile-nav-select">
-                <select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
-                    <option value="">Menu...</option>
-                    <option value="./">Home</option>
-                    <option value="about">About</option>
-					<option value="specs">PC Specs</option>
-					<option value="points">Points</option>
-					<option value="rules">Rules</option>
-                    <option value="schedule">Schedule</option>
-					<option value="social">Social</option>
-					<option value="software">Software</option>
-					<option value="tips">Tips</option>
-                </select>
-                </div>
-        </form>
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="./"><img src="img/logo.png" class="logoImg" />PandaPlaysHD</a></h1>
+						<nav class="links">
+							<ul>
+								<li><a href="about">About</a></li>
+                                <li>
+                                    <a href="business/">Business</a>
 
-    <header class="hidden-phone hidden-tablet">
-		<div class="container clearfix">
-			<h1 id="logo">
-				<a href="https://www.twitch.tv/PandaPlaysHD" target="_blank"><img class="headerlogo nodrag" src="img/logo-j_skulloz.png" alt="logo" /></a>
-				<a href="https://www.twitch.tv/PandaPlaysHD" target="_blank" class="twitchLink">PandaPlaysHD</a>
-			</h1>
-	
-	
-			<nav>
-				<a class="selected">Home</a>
-				<a href="about">About</a>
-				<a href="business">Business</a>
-				<a href="downloads">Downloads</a>
-				<a href="specs">PC Specs</a>
-				<a href="points">Points</a>
-				<a href="rules">Rules</a>
-				<a href="schedule">Schedule</a>
-				<a href="social">Social</a>
-				<a href="software">Software</a>
-				<a href="tips">Tips</a>
-			</nav>
-		</div>
-		
-	</header><!-- /header -->
-        </div>
-        
-      </div>
-	 <div id="content">
-	 
-	 <!-- place an alert here if needed -->
-     
-    <div class="row headline" style="margin-top: 100px;"><!-- Begin Headline -->
-        <div class="span8 hidden-phone hidden-tablet">
-		
-		
-			<h5 class="title-bg" style="text-align: center">  
-			<span id="title" style="text-shadow: none; text-transform: none; color: #FFFFFF"></span>
-			<span id="streaminfo" style="text-shadow: none;color: lightgrey; text-transform: none;"></span>
-			<span id="uptime" style="text-shadow: none;color: grey; text-transform: none;"></span>
-			</h5>
-			<div class="videobox">
-			<img id="vod-thumbnail" src="#" class="nodrag" style="position:absolute;z-index:3;" height="659" width="1170" alt="thumbnail" />
-			<a id="button-play-link" href="#" onclick="pressPlay(); return false;"><span id="button-play-span" class="button-play"></span></a>
-            <iframe style="z-index:2; border: none; overflow: hidden;" id="player" class="twitch-player" height="659" width="1170" allowfullscreen></iframe>
+                                    <ul>
+                                        <li class="liExempt"></li>
+                                        <br />
+                                        <li><a href="business/server">Minecraft Server</a></li>
+                                        <br />
+                                        <li><a href="business/sponsor">Sponsorship</a></li>
+                                    </ul>
+                                </li>
+								<li><a href="downloads">Downloads</a></li>
+								<li><a href="specs">Specs</a></li>
+								<li><a href="points">Points</a></li>
+								<li><a href="rules">Rules</a></li>
+								<li><a href="schedule">Schedule</a></li>
+								<li><a href="social">Social</a></li>
+								<li><a href="tips">Tips</a></li>
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<section id="menu">
+
+							<section>
+								<h3>Menu</h3>
+							</section>
+
+						<!-- Links -->
+                        <section>
+                            <ul class="links">
+                                <li>
+                                    <a href="about">
+                                        <h3>About</h3>
+                                        <p>About Panda</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="business/">
+                                        <h3>Business</h3>
+                                        <p>Business Inquiries</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="downloads">
+                                        <h3>Downloads</h3>
+                                        <p>Skins &amp; Resource Packs</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="specs">
+                                        <h3>Specs</h3>
+                                        <p>Computer Information</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="points">
+                                        <h3>Points</h3>
+                                        <p>Chat Points System</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="rules">
+                                        <h3>Rules</h3>
+                                        <p>Stream Chat Rules</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="schedule">
+                                        <h3>Schedule</h3>
+                                        <p>Stream Times</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="social">
+                                        <h3>Social</h3>
+                                        <p>Panda's Social Media</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="tips">
+                                        <h3>Tips</h3>
+                                        <p>Support Panda</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </section>
+
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2>PandaPlaysHD</h2>
+									</div>
+									<!--<div class="meta">
+										<time class="published" datetime="2015-11-01">November 1, 2015</time>
+										<a href="#" class="author"><span class="name">Jane Doe</span><img src="img/avatar.jpg" alt="" /></a>
+									</div>-->
+								</header>
+
+								<div class="featured">
+                                    <span id="title" style="margin-left: 2px;">title</span><br />
+                                    <span id="streaminfo" style="margin-left: 2px; font-size: 0.8em;">playin minefrac</span>
+                                    <br />
+
+                                    <div class="videobox">
+                                        <img id="vod-thumbnail" class="nodrag" style="position: absolute; z-index: 3; height: 450px; width: 800px;" src="#" />
+                                        <a id="button-play-link" href="#" onclick="pressPlay(); return false;"><span id="button-play-span" class="button-play"></span></a>
+                                        <iframe id="player" class="player" style="height: 450px; width: 800px;" src="" frameborder="0" allowfullscreen></iframe><iframe id="chat" style="height: 450px; width: 350px;" frameborder="0" scrolling="no" src=""></iframe><iframe id="dcord" style="height: 450px; width: 350px;" frameborder="0" scrolling="no" src="https://discordapp.com/widget?id=221059861457141770&theme=dark"></iframe>
+
+                                        <style type="text/css">
+                                            a#serviceButton:hover {
+                                                color: white !important;
+                                            }
+                                        </style>
+                                        <script type="text/javascript">
+                                            window.onload = function () {
+                                                document.getElementById('dcord').style.display = "none";
+                                            }
+
+                                            function discord() {
+                                                document.getElementById('serviceButton').onclick = twitch;
+                                                document.getElementById('serviceButton').innerHTML = "<i class='fa fa-twitch' style='vertical-align: top; font-size: 0.8em; margin: 2px;'></i>";
+                                                document.getElementById('dcord').style.display = "inline";
+                                                document.getElementById('chat').style.display = "none";
+                                                return false;
+                                            }
+
+                                            function twitch() {
+                                                document.getElementById('serviceButton').onclick = discord;
+                                                document.getElementById('serviceButton').innerHTML = "<img src='img/discord.svg' style='width: 20px; height: 20px; vertical-align: top' />";
+                                                document.getElementById('chat').style.display = "inline";
+                                                document.getElementById('dcord').style.display = "none";
+                                                return false;
+                                            }
+                                        </script>
+
+                                        <a id="serviceButton" href="#" onclick="discord();" style="vertical-align: top; border-bottom: none;"><img src='img/discord.svg' style='width: 20px; height: 20px; vertical-align: top' /></a>
+
+                                    </div>
+
+                                    <a href="twitch://open?stream=pandaplayshd" id="openApp" class="big openAppButton" style="color: white !important; background-color: #6441A4; margin-top: 1.5em;"><i class="fa fa-twitch" style="font-size: 2em; vertical-align: middle;"></i> Open App</a>
+                                    <br />
+                                    <a id="webVersion" href="https://www.twitch.tv/pandaplayshd">Continue to web version</a>
+                                </div>
+
+								<hr />
+                                <span id="yt-title" style="margin-left: 2px;">title</span><br />
+                                <iframe id="yt-player" class="player" style="height: 450px; width: 800px;" src="" frameborder="0" allowfullscreen></iframe>
+
+                                <a class="twitter-timeline" data-width="800" data-height="450" data-theme="dark" href="https://twitter.com/PandaPlaysHD">Tweets by PandaPlaysHD</a>
+                                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<ul class="icons">
+                            <li><a href="https://www.twitch.tv/pandaplayshd" class="fa-twitch"><span class="label">Twitch</span></a></li>
+							<li><a href="https://twitter.com/pandaplayshd" class="fa-twitter"><span class="label">Twitter</span></a></li>
+                            <li><a href="https://www.youtube.com/user/pandaplaysmchd" class="fa-youtube-play"><span class="label">YouTube</span></a></li>
+							<li><a href="https://instagram.com/pandaplayshd" class="fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://www.snapchat.com/add/PandaPlaysHD" class="fa-snapchat"><span class="label">Snapchat</span></a></li>
+							<li><a href="mailto:contact@pandaplayshd.com" class="fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<p class="copyright">Copyright &copy; PandaPlaysHD 2015-2017. Developed by: <a href="https://mattunderscore.us">mattunderscore</a>. Designed by: <a href="http://html5up.net">HTML5 UP</a>.</p>
+					</section>
+
 			</div>
-			
-			<div id="chatcover" style="display: block; float: left; height: 430px; width: 585px; background-color: #1E1E1E;">
-			
-			</div>
-			<div style="background-color: #1D2124; border-radius: 6px;">
-			<a class="twitter-timeline" data-width="585" data-height="430" data-theme="dark" data-link-color="#017eff" data-chrome="transparent" href="https://twitter.com/PandaPlaysHD"></a>
-			<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-			</div>
-		
-		<div style="margin-top:50px;">
-		<h5 class="title-bg" style="text-align: center">  
-			<span id="yt-title" style="text-shadow: none; text-transform: none; color: #FFFFFF">Recent Video:</span>
-		</h5>
-		<iframe style="z-index:2; border: none; overflow: hidden;" id="yt-player" height="659" width="1170" allowfullscreen></iframe>
-		</div>
-        </div>
 
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		<div class="span8 visible-tablet hidden-phone" >
-		<h1 style="text-align: center; color: #d9d9d9">Welcome to PandaPlaysHD's website!</h1>
-		<div style="text-align: center;">
-		<a class="twitter-timeline" data-width="585" data-height="430" data-link-color="#017eff" data-theme="dark" href="https://twitter.com/PandaPlaysHD"></a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-		</div>
-		</div>
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		<div class="span8 hidden-tablet visible-phone" style="width: 100%; color: #d9d9d9">
-		<h1 style="text-align: center;">Welcome to PandaPlaysHD's website!</h1>
-		<br>
-		<div style="text-align: center;">
-		<span class="fontcenterl">Use the menu to  navigate.</span>
-		</div>
-		</div>
-    </div><!-- End Headline -->
-	
-	</div><!-- end content -->
-	
-	</div> <!-- End Container -->
+		<!-- Scripts -->
+			<script src="js/jquery.min.js"></script>
+			<script src="js/skel.min.js"></script>
+			<script src="js/util.js"></script>
+			<!--[if lte IE 8]><script src="js/ie/respond.min.js"></script><![endif]-->
+			<script src="js/main.js"></script>
+            <script src="js/jquery-3.1.0.min.js" type="text/javascript"></script>
+            <script src="js/streamFunctions.js" type="text/javascript"></script>
+            <script src="js/status.js" type="text/javascript"></script>
+            <script type="text/javascript">
+            setTimeout( function() {
+                $(window).ready(function () {
+                    $('#loader').fadeOut("slow");
+                });
+            }, 2000);
 
+            setTimeout(function () {
+                $(document).ready(function () {
+                    $('iframe#chat').attr('src', chatSrc);
+                });         
+            }, 2150);
 
-
-
-		
-
-    <div class="footer-container hidden-phone"><!-- Begin Footer -->
-    	<div class="container">
-        	<div class="row footer-row">
-            </div>
-
-            <div class="row"><!-- Begin Sub Footer -->
-                <div class="spanFooter footer-col footer-sub">
-                    <div class="row no-margin">
-                        <div class="span6"><span class="left">Copyright &copy; PandaPlaysHD 2015-2017. All rights reserved.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Developed and maintained by <a href="https://mattunderscore.us" target="_blank" class="hyperlink">mattunderscore</a></span></div>
-                        <div class="span6">
-                            <span class="right">
-							<a href="https://www.twitch.tv/pandaplayshd" class="twitch"><i class="fa fa-twitch" aria-hidden="true"></i></a>
-							<a href="https://twitter.com/pandaplayshd" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-							<a href="https://www.youtube.com/user/pandaplaysmchd" class="youtube"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-							<a href="https://www.instagram.com/PandaPlaysHD" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-							<a href="https://www.snapchat.com/add/PandaPlaysHD" class="snapchat"><i class="fa fa-snapchat" aria-hidden="true"></i></a>
-							&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-							<a href="https://github.com/PandaPlaysHD/PandaPlaysHD/issues" class="hyperlink">Report an Issue</a>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- End Sub Footer -->
-
-        </div>
-    </div><!-- End Footer --> 
-	
-	</div>
-	
-		
-	<div class="visible-phone hidden-tablet" style="bottom: 0; position: fixed; width: 100%">
-	<div class="color-bar-2 color-bg"></div>
-	<div class="color-bar-1"></div>
-	</div>
-<script type="text/javascript">
-setTimeout( function() {
-$(window).ready(function() {
-    $('#loader').fadeOut("slow");
-});
-}, 2000);
-</script>	
-</body>
+            setTimeout(function () {
+                $(document).ready(function () {
+                    $('iframe#dcord').attr('src', 'https://discordapp.com/widget?id=221059861457141770&theme=dark');
+                });
+            }, 2400);
+            
+            </script>
+	</body>
 </html>
