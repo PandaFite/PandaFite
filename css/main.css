@@ -240,6 +240,16 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
+    .downloads section {
+        font-size: 1.5em;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+        @media(max-width: 768px) {
+            .downloads section {
+                padding: 0 !important;
+            }
+        }
     .spanRight a {
         border-bottom: dotted 1px rgba(160, 160, 160, 0.65);
     }
@@ -255,7 +265,7 @@
     li ul li {
         display: block;
         font-size: 0.8em;
-        background-color: grey;
+        background-color: #212121;
         height: 100%;
         width: 100%;
         border-radius: 0.2em;
@@ -1658,7 +1668,7 @@
 	}
 
 	body {
-		background-color: #161616;
+		background-color: #212121;
 	    background-image: url(../img/blackbg.png);
 	    background-repeat: repeat;
 	}
@@ -1743,11 +1753,18 @@
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #2ebaae !important;
+			color: #20385f !important;
 		}
 
+        li a:hover, h1 a:hover {
+            color: white !important;
+        }
+        #footer a:hover {
+            color: white !important;
+        }
+
 			a:hover:before {
-				color: #2ebaae !important;
+				color: #fff !important;
 			}
 
 	strong, b {
@@ -2276,8 +2293,8 @@
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #2ebaae;
-			box-shadow: 0 0 0 1px #2ebaae;
+			border-color: #20385f;
+			box-shadow: 0 0 0 1px #20385f;
 		}
 
 	input[type="radio"] + label:before {
@@ -2446,6 +2463,9 @@
 			list-style: none;
 			padding-left: 0;
 		}
+        .icons a:hover {
+            color: white !important;
+        }
 
 			ul.icons li {
 				display: inline-block;
@@ -2723,10 +2743,16 @@
 		margin: 0 0 2em 0;
 		width: 100%;
 		text-align: center;
+        border-radius: 0.25em;
 	}
 	caption {
 		font-size: 0.6em;
 		caption-side: bottom;
+	}
+    .tips caption {
+		font-size: 1em;
+		caption-side: top;
+        margin-bottom: 1em;
 	}
 
 		table tbody tr {
@@ -2734,6 +2760,18 @@
 			border-left: 0;
 			border-right: 0;
 		}
+        tbody tr:first-of-type td:first-of-type {
+	        border-radius: 0.25em 0 0 0;
+        }
+        tbody tr:first-of-type td:last-of-type {
+	        border-radius: 0 0.25em 0 0;
+        }
+        tbody tr:last-of-type td:first-of-type {
+            border-radius: 0 0 0 0.25em;
+        }
+        tbody tr:last-of-type td:last-of-type {
+            border-radius: 0 0 0.25em 0;
+        }
 
 			table tbody tr:nth-child(2n + 1) {
 				background-color: rgba(255, 255, 255, 0.075);
@@ -2743,12 +2781,15 @@
 			padding: 0.75em 0.75em;
 		}
 
-		table th {
+        table td
+
+		table th, table th a {
 			color: #ffffff !important;
 			font-size: 0.9em;
 			font-weight: 300;
 			padding: 0 0.75em 0.75em 0.75em;
 			text-align: left;
+            border: none;
 		}
 
 		table thead {
@@ -3748,7 +3789,7 @@
 					}
 
 					#menu .links > li a:hover h3 {
-						color: #2ebaae;
+						color: #20385f;
 					}
 
 				#menu .links > li:first-child {
