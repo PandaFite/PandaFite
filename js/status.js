@@ -27,8 +27,10 @@ $.ajax({
 	   }
 	   else
 	   {
-           // will put host stuff here later
-	       streamOffline();
+		   document.getElementById('title').textContent = "Panda is currently hosting " + data.token;
+		   document.getElementById('streaminfo').textContent = data.name;
+           document.getElementById('player').src = "https://beam.pro/embed/player/" + data.token;
+			chatSrc = "https://beam.pro/embed/chat/" + data.token;
 	   }
 	 },
 	 error: function()

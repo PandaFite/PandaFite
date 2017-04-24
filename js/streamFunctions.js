@@ -65,9 +65,9 @@ function streamOffline()
 		else {
 			// document.getElementById('title').textContent = "Most recent broadcast:";
 			document.getElementById('title').textContent = "Currently offline";
-			document.getElementById('streaminfo').textContent = " " + data[data.length - 1].name;
+			document.getElementById('streaminfo').textContent = data[data.length - 1].name;
 			// fix this with proper embed link for vod
-			document.getElementById('player').src = "https://beam.pro/embed/player/pandaplayshd";
+			document.getElementById('player').src = "https://placehold.it/800x450?text=Vod+support+coming+soon";
 		}	
 	 }
 	});
