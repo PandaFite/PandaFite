@@ -30,7 +30,7 @@ $.ajax({
 	   else
 	   {
 		   document.getElementById('title').textContent = "Panda is currently hosting " + data.token;
-		   document.getElementById('streaminfo').textContent = data.name;
+		   document.getElementById('streaminfo').textContent = data.name +  " - Playing " + data.type.name + " for " + data.viewersCurrent.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") +  " viewers and " + data.numFollowers.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " followers";
            document.getElementById('player').src = "https://beam.pro/embed/player/" + data.token;
 			chatSrc = "https://beam.pro/embed/chat/" + data.token;
 	   }
