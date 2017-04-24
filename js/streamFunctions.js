@@ -4,7 +4,7 @@
  * Proprietary and confidential
  */
 var username = "pandaplayshd";
-var userId = "91014";
+var userId = "64596";
 var chatSrc;
 var pressPlay;
 
