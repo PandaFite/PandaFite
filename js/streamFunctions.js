@@ -77,3 +77,9 @@ function playerError() {
 	document.getElementById('title').textContent = "Error loading video";
 	document.getElementById('player').src = "https://beam.pro/embed/player/" + username;
 }
+
+window.onload = function() {
+	if (window.innerWidth < 768) {
+		document.getElementById("player").remove();
+	}
+}
