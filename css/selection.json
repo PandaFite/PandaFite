@@ -1,0 +1,129 @@
+{
+  "IcoMoonType": "selection",
+  "icons": [
+    {
+      "icon": {
+        "paths": [
+          "M373.407 650.593c87.393 87.393 149.186 190.676 182.731 301.021 209.214-20.303 374.29-185.379 394.593-394.593-110.345-34.428-213.628-96.221-301.021-182.731l-276.303 276.303z",
+          "M650.593 373.407v0c-87.393-87.393-149.186-190.676-182.731-301.021-209.214 20.303-374.29 185.379-394.593 394.593 110.345 34.428 213.628 96.221 301.021 182.731v0l276.303-276.303z",
+          "M649.314 374.682c75.842 75.842 75.842 198.806 0 274.647s-198.806 75.842-274.647-0c-75.842-75.842-75.842-198.806 0-274.647s198.806-75.842 274.647-0z",
+          "M466.979 73.269c71.503 229.517 253.352 412.248 483.752 483.752 28.248-278.952-205.683-512-483.752-483.752z",
+          "M557.021 950.731c-71.503-229.517-253.352-412.248-483.752-483.752-28.248 278.952 205.683 512 483.752 483.752z"
+        ],
+        "attrs": [
+          {
+            "fill": "rgb(129, 80, 239)"
+          },
+          {
+            "fill": "rgb(77, 144, 244)"
+          },
+          {
+            "fill": "rgb(47, 47, 93)"
+          },
+          {
+            "fill": "rgb(255, 255, 255)"
+          },
+          {
+            "fill": "rgb(255, 255, 255)"
+          }
+        ],
+        "isMulticolor": true,
+        "isMulticolor2": false,
+        "grid": 0,
+        "tags": [
+          "beam"
+        ],
+        "colorPermutations": {
+          "12980239125525525514747931771442441": [
+            {
+              "f": 1
+            },
+            {
+              "f": 2
+            },
+            {
+              "f": 0
+            },
+            {
+              "f": 3
+            },
+            {
+              "f": 3
+            }
+          ]
+        }
+      },
+      "attrs": [
+        {
+          "fill": "rgb(129, 80, 239)"
+        },
+        {
+          "fill": "rgb(77, 144, 244)"
+        },
+        {
+          "fill": "rgb(47, 47, 93)"
+        },
+        {
+          "fill": "rgb(255, 255, 255)"
+        },
+        {
+          "fill": "rgb(255, 255, 255)"
+        }
+      ],
+      "properties": {
+        "order": 4,
+        "id": 0,
+        "name": "beam",
+        "prevSize": 32,
+        "code": 59648,
+        "codes": [
+          59648,
+          59649,
+          59650,
+          59651,
+          59652
+        ]
+      },
+      "setIdx": 0,
+      "setId": 3,
+      "iconIdx": 0
+    }
+  ],
+  "height": 1024,
+  "metadata": {
+    "name": "icomoon"
+  },
+  "preferences": {
+    "showGlyphs": true,
+    "showQuickUse": true,
+    "showQuickUse2": true,
+    "showSVGs": true,
+    "fontPref": {
+      "prefix": "icon-",
+      "metadata": {
+        "fontFamily": "icomoon"
+      },
+      "metrics": {
+        "emSize": 1024,
+        "baseline": 6.25,
+        "whitespace": 50
+      },
+      "embed": false,
+      "autoHost": true
+    },
+    "imagePref": {
+      "prefix": "icon-",
+      "png": true,
+      "useClassSelector": true,
+      "color": 0,
+      "bgColor": 16777215,
+      "classSelector": ".icon"
+    },
+    "historySize": 100,
+    "showCodes": true,
+    "gridSize": 16,
+    "quickUsageToken": {
+      "UntitledProject": "ZjNjM2Y5ODJhYWQ4ZjMwNjVkNzlhOTZiNDZhNTgxMzUjMSMxNDg5ODk1OTk0IyMj"
+    }
+  }
+}

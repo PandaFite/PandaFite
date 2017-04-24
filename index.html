@@ -28,19 +28,6 @@
 	        background-position: center;
         }
         .videobox { position: relative; }
-		
-		.videobox span {
-			display: block;
-			position: absolute;
-			top: 0;
-			left: 0;
-			bottom: 0;
-			right: 0;
-            width: 800px;
-            height: 450px;
-			z-index: 4;
-			background: url(img/button-play.png) no-repeat center center;
-		}
         </style>
 	</head>
 	<body class="single">
@@ -50,7 +37,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<h1><a href="./"><img src="img/logo.png" class="logoImg" />PandaPlaysHD</a></h1>
+						<h1><a href="https://beam.pro/pandaplayshd"><img src="img/logo.png" class="logoImg" />PandaPlaysHD</a></h1>
 						<nav class="links">
 							<ul>
 								<li><a href="about">About</a></li>
@@ -169,49 +156,17 @@
 								</header>
 
 								<div class="featured">
-                                    <span id="title" style="margin-left: 2px;">title</span><br />
-                                    <span id="streaminfo" style="margin-left: 2px; font-size: 0.8em;">playin minefrac</span>
+                                    <span id="title" style="margin-left: 2px;"></span><br />
+                                    <span id="streaminfo" style="margin-left: 2px; font-size: 0.8em;"></span>
                                     <br />
 
                                     <div class="videobox">
-                                        <img id="vod-thumbnail" class="nodrag" style="position: absolute; z-index: 3; height: 450px; width: 800px;" src="#" />
-                                        <a id="button-play-link" href="#" onclick="pressPlay(); return false;"><span id="button-play-span" class="button-play"></span></a>
-                                        <iframe id="player" class="player" style="height: 450px; width: 800px;" src="" frameborder="0" allowfullscreen></iframe><iframe id="chat" style="height: 450px; width: 350px;" frameborder="0" scrolling="no" src=""></iframe><iframe id="dcord" style="height: 450px; width: 350px;" frameborder="0" scrolling="no" src="https://discordapp.com/widget?id=221059861457141770&theme=dark"></iframe>
-
-                                        <style type="text/css">
-                                            a#serviceButton:hover {
-                                                color: white !important;
-                                            }
-                                        </style>
-                                        <script type="text/javascript">
-                                            window.onload = function () {
-                                                document.getElementById('dcord').style.display = "none";
-                                            }
-
-                                            function discord() {
-                                                document.getElementById('serviceButton').onclick = twitch;
-                                                document.getElementById('serviceButton').innerHTML = "<i class='fa fa-twitch' style='vertical-align: top; font-size: 0.8em; margin: 2px;'></i>";
-                                                document.getElementById('dcord').style.display = "inline";
-                                                document.getElementById('chat').style.display = "none";
-                                                return false;
-                                            }
-
-                                            function twitch() {
-                                                document.getElementById('serviceButton').onclick = discord;
-                                                document.getElementById('serviceButton').innerHTML = "<img src='img/discord.svg' style='width: 20px; height: 20px; vertical-align: top' />";
-                                                document.getElementById('chat').style.display = "inline";
-                                                document.getElementById('dcord').style.display = "none";
-                                                return false;
-                                            }
-                                        </script>
-
-                                        <a id="serviceButton" href="#" onclick="discord();" style="vertical-align: top; border-bottom: none;"><img src='img/discord.svg' style='width: 20px; height: 20px; vertical-align: top' /></a>
-
+                                        <iframe id="player" class="player" style="height: 450px; width: 800px;" src="" frameborder="0" allowfullscreen></iframe><iframe id="chat" style="height: 450px; width: 350px;" frameborder="0" scrolling="no" src="https://beam.pro/embed/chat/pandaplayshd"></iframe>
                                     </div>
 
-                                    <a href="twitch://open?stream=pandaplayshd" id="openApp" class="big openAppButton" style="color: white !important; background-color: #6441A4; margin-top: 1.5em;"><i class="fa fa-twitch" style="font-size: 2em; vertical-align: middle;"></i> Open App</a>
+                                    <a href="beam://" id="openApp" class="big openAppButton" style="color: white !important; background-color: #20385f; margin-top: 1.5em; border: none"><img src="img/beam.svg" style="width: 1em; height: 1em; vertical-align: middle;" /></i> Open App</a>
                                     <br />
-                                    <a id="webVersion" href="https://www.twitch.tv/pandaplayshd">Continue to web version</a>
+                                    <a id="webVersion" href="https://beam.pro/pandaplayshd">Continue to web version</a>
                                 </div>
 
 								<hr />
@@ -227,7 +182,6 @@
 				<!-- Footer -->
 					<section id="footer">
 						<ul class="icons">
-                            <li><a href="https://www.twitch.tv/pandaplayshd" class="fa-twitch"><span class="label">Twitch</span></a></li>
 							<li><a href="https://twitter.com/pandaplayshd" class="fa-twitter"><span class="label">Twitter</span></a></li>
                             <li><a href="https://www.youtube.com/user/pandaplaysmchd" class="fa-youtube-play"><span class="label">YouTube</span></a></li>
 							<li><a href="https://instagram.com/pandaplayshd" class="fa-instagram"><span class="label">Instagram</span></a></li>
