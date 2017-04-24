@@ -3,6 +3,8 @@
  * Unauthorized copying of this file, via any medium is strictly prohibited
  * Proprietary and confidential
  */
+window.onload = function() {
+ 
 ytDisplay();
 $.ajax({
  type: 'GET',
@@ -44,3 +46,5 @@ $.ajax({
 	 playerError();
  }
 });
+
+}
