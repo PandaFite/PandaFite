@@ -179,8 +179,8 @@
 			   console.log(data);
 					displayUsername = data.display_name;
 					document.getElementById('username').value = data.display_name;
-					if (!data.logo) {
-					
+					if (!data.logo || data.logo == undefined) {
+						userLogo = "https://static-cdn.jtvnw.net/jtv_user_pictures/xarth/404_user_70x70.png";
 					}
 					else{
 					userLogo = data.logo;
