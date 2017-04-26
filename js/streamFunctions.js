@@ -4,7 +4,7 @@
  * Proprietary and confidential
  */
 var username = "pandaplayshd";
-var userId = "64596";
+var userId = "53010272";
 var chatSrc;
 var pressPlay;
 
@@ -14,11 +14,14 @@ function displayTitle()
 			
 		$.ajax({
 		 type: 'GET',
-		 url: 'https://beam.pro/api/v1/channels/' + username,
+		 url: 'https://api.twitch.tv/kraken/streams/' + username,
+		 headers: {
+		   'Client-ID': 'f2cmg4s30fnzmq7zbcx8rcsfxdc1san'
+		 },
 		 success: function(data) {
 		   console.log(data);
-		   document.getElementById('title').textContent = "LIVE: " + data.name;	
-		   document.getElementById('streaminfo').textContent = "Playing " + data.type.name + " for " + data.viewersCurrent.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " viewers and " + data.numFollowers.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " followers";
+		   document.getElementById('title').textContent = "LIVE: " + data.stream.channel.status;	
+		   document.getElementById('streaminfo').textContent = "Playing " + data.stream.game + " for " + data.stream.viewers.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " viewers and " + data.stream.channel.followers.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " followers";
 		 }
 		});	
 	} // end getInfo
@@ -29,8 +32,16 @@ function displayTitle()
 
 function onlineFrame()
 {
-    document.getElementById('player').src = "https://beam.pro/embed/player/" + username;
-	chatSrc = "https://beam.pro/embed/chat/" + username;
+	document.getElementById('vod-thumbnail').src = "https://static-cdn.jtvnw.net/previews-ttv/live_user_" + username + "-1170x659.jpg";
+	pressPlay = function() {
+		document.getElementById('button-play-span').style.background = "url(img/loading-ring.svg) no-repeat center center";
+		document.getElementById('player').src = "https://player.twitch.tv/?channel=" + username +"&muted";
+		setTimeout(function() {
+		document.getElementById('vod-thumbnail').style.visibility = "hidden";
+		document.getElementById('button-play-link').style.visibility = "hidden";
+		}, 2500);	
+		}
+	chatSrc = "https://www.twitch.tv/" + username + "/chat";
 }
 
 function ytDisplay() {
@@ -54,32 +65,71 @@ function streamOffline()
 {
 	$.ajax({
 	 type: 'GET',
-	 url: 'https://beam.pro/api/v1/channels/' + userId + '/recordings',
+	 url: 'https://api.twitch.tv/kraken/channels/' + username + '/videos?broadcasts=true',
+	 headers: {
+	   'Client-ID': 'f2cmg4s30fnzmq7zbcx8rcsfxdc1san'
+	 },
 	 success: function(data) {
 	   console.log(data);
 	   
-	   	if (data[data.length - 1] == undefined) {
-			document.getElementById('player').src = "https://beam.pro/embed/player/" + username;
-			document.getElementById('title').textContent = "Offline, no vods found";
+	   	if (data._total == 0)
+		{
+			document.getElementById('title').textContent = "Error 404 - no stream data found";
+			document.getElementById('vod-thumbnail').src = "https://static-cdn.jtvnw.net/ttv-static/404_preview-1170x659.jpg";
+			document.getElementById('button-play-link').style.visibility = "hidden";
+		}
+	   	 
+		 var thumbRaw;
+		if (data.videos[0].thumbnails == null)
+		{
+			try {
+				thumbRaw = data.videos[0].thumbnails[0].url;
+				formatThumbnail();
+			}
+			catch(err) {
+				 document.getElementById('vod-thumbnail').src = "https://static-cdn.jtvnw.net/ttv-static/404_preview-1170x659.jpg";
+			}
 		}
 		else {
-			// document.getElementById('title').textContent = "Most recent broadcast:";
-			document.getElementById('title').textContent = "Currently offline";
-			document.getElementById('streaminfo').textContent = data[data.length - 1].name;
-			// fix this with proper embed link for vod
-			document.getElementById('player').src = "https://placehold.it/800x450?text=Vod+support+coming+soon";
-		}	
+			try {
+			thumbRaw = data.videos[0].thumbnails[2].url;
+			formatThumbnail();
+			}
+			catch(err) {
+				 document.getElementById('vod-thumbnail').src = "https://static-cdn.jtvnw.net/ttv-static/404_preview-1170x659.jpg";
+			}
+		}
+		
+	   function formatThumbnail() {
+		var str2 = thumbRaw.split("-");
+		var noRes = str2[0] + "-" + str2[1];
+		var thumbHD = noRes + "-1170x659.jpg"
+	   document.getElementById('vod-thumbnail').src = thumbHD;
+	   }
+		document.getElementById('title').textContent = "Most recent broadcast:";
+		document.getElementById('streaminfo').textContent = " " + data.videos[0].title;
+		
+		pressPlay = function() {
+		document.getElementById('button-play-span').style.background = "url(img/loading-ring.svg) no-repeat center center";
+		document.getElementById('player').src = "https://player.twitch.tv/?video=" + data.videos[0]._id;
+		setTimeout(function() {
+		document.getElementById('vod-thumbnail').style.visibility = "hidden";
+		document.getElementById('button-play-link').style.visibility = "hidden";
+		}, 2500);
+		
+		} //end pressPlay
+
+		
+		
+		
+		
 	 }
 	});
+	chatSrc = "https://www.twitch.tv/" + username + "/chat";
 }
 
 function playerError() {
+	document.getElementById('vod-thumbnail').src = "https://static-cdn.jtvnw.net/ttv-static/404_preview-800x450.jpg";
 	document.getElementById('title').textContent = "Error loading video";
-	document.getElementById('player').src = "https://beam.pro/embed/player/" + username;
-}
-
-window.onload = function() {
-	if (window.innerWidth < 768) {
-		document.getElementById("player").remove();
-	}
+	document.getElementById('button-play-link').style.visibility = "hidden";
 }
