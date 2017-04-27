@@ -41,9 +41,6 @@
 			z-index: 4;
 			background: url(img/button-play.png) no-repeat center center;
 		}
-		a#serviceButton:hover {
-			color: white !important;
-		}
         </style>
 	</head>
 	<body class="single">
@@ -179,31 +176,7 @@
                                     <div class="videobox">
                                         <img alt="" id="vod-thumbnail" class="nodrag" style="position: absolute; z-index: 3; height: 450px; width: 800px;" src="#" />
                                         <a id="button-play-link" href="#" onclick="pressPlay(); return false;"><span id="button-play-span" class="button-play"></span></a>
-                                        <iframe id="player" class="player" style="height: 450px; width: 800px;" src="" frameborder="0" allowfullscreen></iframe><iframe id="chat" style="height: 450px; width: 350px;" frameborder="0" scrolling="no" src=""></iframe><iframe id="dcord" style="height: 450px; width: 350px;" frameborder="0" scrolling="no" src="https://discordapp.com/widget?id=221059861457141770&theme=dark"></iframe>
-                                        <script type="text/javascript">
-                                            window.onload = function () {
-                                                twitch();
-                                            }
-
-                                            function discord() {
-                                                document.getElementById('serviceButton').onclick = twitch;
-                                                document.getElementById('serviceButton').innerHTML = "<i class='fa fa-twitch' style='vertical-align: top; font-size: 0.8em; margin: 2px;'></i>";
-                                                document.getElementById('dcord').style.display = "inline";
-                                                document.getElementById('chat').style.display = "none";
-                                                return false;
-                                            }
-
-                                            function twitch() {
-												document.getElementById('serviceButton').onclick = discord;
-                                                document.getElementById('serviceButton').innerHTML = "<img alt='' src='img/discord.svg' style='width: 20px; height: 20px; vertical-align: top' />";                                            
-                                                document.getElementById('chat').style.display = "inline";
-                                                document.getElementById('dcord').style.display = "none";
-                                                return false;
-                                            }
-                                        </script>
-
-                                        <a id="serviceButton" href="#" onclick="discord();" style="vertical-align: top; border-bottom: none;"><img src='img/discord.svg' style='width: 20px; height: 20px; vertical-align: top' /></a>
-
+                                        <iframe id="player" class="player" style="height: 450px; width: 800px;" src="" frameborder="0" allowfullscreen></iframe><iframe id="chat" style="height: 450px; width: 350px;" frameborder="0" scrolling="no" src=""></iframe>
                                     </div>
 
                                     <a href="twitch://open?stream=pandaplayshd" id="openApp" class="big openAppButton" style="color: white !important; background-color: #6441A4; margin-top: 1.5em;"><i class="fa fa-twitch" style="font-size: 2em; vertical-align: middle;"></i> Open App</a>
@@ -214,6 +187,7 @@
 								<hr />
                                 <span id="yt-title" style="margin-left: 2px;">title</span><br />
                                 <iframe id="yt-player" class="player" style="height: 450px; width: 800px;" src="" frameborder="0" allowfullscreen></iframe>
+								<iframe id="dcord" style="height: 450px; width: 350px;" frameborder="0" scrolling="no" src="https://discordapp.com/widget?id=221059861457141770&theme=dark"></iframe>
 
                                 <a class="twitter-timeline" data-width="800" data-height="450" data-theme="dark" href="https://twitter.com/PandaPlaysHD">Tweets by PandaPlaysHD</a>
                                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
