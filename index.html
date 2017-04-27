@@ -6,7 +6,7 @@
         <link rel="shortcut icon" href="img/favicon.ico" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="css/main.css?3" />
+		<link rel="stylesheet" href="css/main.css" />
         <link rel="stylesheet" href="css/font-awesome.min.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
@@ -182,7 +182,7 @@
                                         <iframe id="player" class="player" style="height: 450px; width: 800px;" src="" frameborder="0" allowfullscreen></iframe><iframe id="chat" style="height: 450px; width: 350px;" frameborder="0" scrolling="no" src=""></iframe><iframe id="dcord" style="height: 450px; width: 350px;" frameborder="0" scrolling="no" src="https://discordapp.com/widget?id=221059861457141770&theme=dark"></iframe>
                                         <script type="text/javascript">
                                             window.onload = function () {
-                                                document.getElementById('dcord').style.display = "none";
+                                                twitch();
                                             }
 
                                             function discord() {
@@ -194,8 +194,8 @@
                                             }
 
                                             function twitch() {
-                                                document.getElementById('serviceButton').innerHTML = "<img alt='' src='img/discord.svg' style='width: 20px; height: 20px; vertical-align: top' />";
-if                                                document.getElementById('serviceButton').onclick = discord;
+												document.getElementById('serviceButton').onclick = discord;
+                                                document.getElementById('serviceButton').innerHTML = "<img alt='' src='img/discord.svg' style='width: 20px; height: 20px; vertical-align: top' />";                                            
                                                 document.getElementById('chat').style.display = "inline";
                                                 document.getElementById('dcord').style.display = "none";
                                                 return false;

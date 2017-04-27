@@ -61,7 +61,6 @@ $.ajax({
 		   document.getElementById('title').textContent = "Panda is currently hosting " + data.stream.channel.display_name;  
 		   document.getElementById('streaminfo').textContent = data.stream.channel.status;
 		   chatSrc = "https://www.twitch.tv/" + data.stream.channel.name + "/chat";
-		   timer();
 		   }
 		   else {streamOffline();}
 		 }
