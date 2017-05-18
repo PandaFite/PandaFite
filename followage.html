@@ -147,7 +147,7 @@
                                             <input type="text" id="username" placeholder="Twitch Username" style="font-size: 14px; color: white; width: 180px; margin: auto;" autofocus> 
 											<input id="followageButton" class="button" type="button" onclick="buttonClick()" style="display: block; margin-left: auto; margin-right: auto; font-size: 10px; margin-top: 5px; width: 180px;" value="Check Followage" />
 											<p id="prefix" style="font-size: 1em; text-align: center"></p>
-											<p id="result" style="font-size: 2em; text-align: center"></p>
+											<p id="result" style="font-size: 2em; text-align: center;"></p>
                                         </section>
 										<script type="text/javascript">
 			var username;
@@ -166,7 +166,7 @@
 			function getFollowage(u){
 
 			$.ajax({
-			url: "https://api.rtainc.co/twitch/channels/PandaPlaysHD/followers/" + u + "?format=[2]",
+			url: "https://cors-anywhere.herokuapp.com/https://mcgamesdot.net/followage.php?channel=pandaplayshd&user=" + u,
 			success: function (data) {
 			
 			var displayUsername;
@@ -199,12 +199,26 @@
 			document.getElementById('result').innerHTML = "<img src='img/loading-bar.gif' class='nodrag' />";	
 			setTimeout(function() {
 			document.getElementById('prefix').innerHTML = 
-			"<a href='https://www.twitch.tv/" + displayUsername + "' target='_blank'><img src='" + userLogo + "' height='30' width='30' class='nodrag' style='vertical-align: middle;' title='" + displayUsername + "' /></a> has been following Panda for";
+			"<a href='https://www.twitch.tv/" + displayUsername + "' target='_blank'><img src='" + userLogo + "' height='30' width='30' class='nodrag' style='vertical-align: middle;' title='" + displayUsername + "' /></a> " + displayUsername + " has been following Panda for";
 			}, 500);	
 			
 			
+			var dataSplit = data.split(", ");
+			var dataLength = dataSplit.length;
+			
 			setTimeout(function() {
-			document.getElementById('result').textContent = data;
+				if (dataLength == 1) {
+					document.getElementById('result').textContent = dataSplit[0];
+				}
+				else if (dataLength > 1) {
+					document.getElementById('result').textContent = dataSplit[0] + ", " + dataSplit[1];
+
+				}
+				
+				else {
+					document.getElementById('result').textContent = "(error)";
+				}
+			
 			}, 2000);
 			}
 			else 
