@@ -1,2 +1,0 @@
-Blue: #20385f
-Dark Grey: #212121
