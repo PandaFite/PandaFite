@@ -6,10 +6,20 @@
         <link rel="shortcut icon" href="img/favicon.ico" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/main.css?revision=12-21-2017-0" />
         <link rel="stylesheet" href="css/font-awesome.min.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+
+		<!-- css specific to this page and the functionality of the loader -->
+		<style type="text/css">
+		article.post {
+			display: none;
+		}
+		body {
+			overflow: hidden;
+		}
+		</style>
 
 		<!-- get rid of some loader things so the page can still be viewed without JS -->
 		<noscript>
@@ -27,7 +37,7 @@
 		</noscript>
 	</head>
 	<body id="body" class="single">
-        <div class="loader" id="loader"></div>
+		<div class="loader" id="loader"></div>
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -206,8 +216,8 @@
 			<!--[if lte IE 8]><script src="js/ie/respond.min.js"></script><![endif]-->
 			<script src="js/main.js"></script>
             <script src="js/jquery-3.1.0.min.js" type="text/javascript"></script>
-            <script src="js/streamFunctions.js" type="text/javascript"></script>
-            <script src="js/status.js" type="text/javascript"></script>
+            <script src="js/streamFunctions.js?revision=12-21-2017-0" type="text/javascript"></script>
+            <script src="js/status.js?revision=12-21-2017-0" type="text/javascript"></script>
             <script type="text/javascript">
 
 			$(window).ready(function () {

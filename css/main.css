@@ -24,7 +24,6 @@
 
 	body {
 		line-height: 1;
-		overflow: hidden;
 	}
 
 	ol, ul {
@@ -70,10 +69,6 @@
 		background: url(../img/loader.svg?1) no-repeat fixed center, #20485f;
 		background-repeat: no-repeat;
 		background-position: center;
-	}
-
-	article.post {
-		display: none;
 	}
 
 	.videobox { position: relative; }
