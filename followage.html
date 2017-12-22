@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE HTML>
 <html lang="en">
 	<head>
-		<title>Followage - PandaPlaysHD</title>
+		<title>Followage - PandaFite</title>
 		<meta charset="utf-8" />
         <link rel="shortcut icon" href="img/favicon.ico" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,7 +19,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<h1><a href="https://pandaplayshd.ml"><img src="img/logo.png" class="logoImg" alt="" />PandaPlaysHD</a></h1>
+						<h1><a href="https://pandaplayshd.ml"><img src="img/logo.png" class="logoImg" alt="" />PandaFite</a></h1>
 						<nav class="links">
 							<ul>
 								<li><a href="about">About</a></li>
@@ -144,34 +144,34 @@
 											<noscript>
 											<p style="color: red; font-size: 1.2em; text-align: center"><i class="fa fa-exclamation-triangle"></i> This page will not work as JavaScript is currently disabled.</p>
 											</noscript>
-                                            <input type="text" id="username" placeholder="Twitch Username" style="font-size: 14px; color: white; width: 180px; margin: auto;" autofocus> 
+                                            <input type="text" id="username" placeholder="Twitch Username" style="font-size: 14px; color: white; width: 180px; margin: auto;" autofocus>
 											<input id="followageButton" class="button" type="button" onclick="buttonClick()" style="display: block; margin-left: auto; margin-right: auto; font-size: 10px; margin-top: 5px; width: 180px;" value="Check Followage" />
 											<p id="prefix" style="font-size: 1em; text-align: center"></p>
 											<p id="result" style="font-size: 2em; text-align: center;"></p>
                                         </section>
 										<script type="text/javascript">
 			var username;
-			
+
 			function buttonClick() {
 				username = document.getElementById('username').value;
 				if (username) {
 					getFollowage(username);
 					document.getElementById('result').innerHTML = "<img src='img/loading-bar.gif' class='nodrag' />";
-				}				
-			}						
-										
+				}
+			}
+
 			var usr = getAllUrlParams().u;
 			if (usr) getFollowage(usr);
-			
+
 			function getFollowage(u){
 
 			$.ajax({
-			url: "https://cors-anywhere.herokuapp.com/https://mcgamesdot.net/followage.php?channel=pandaplayshd&user=" + u,
+			url: "https://cors-anywhere.herokuapp.com/https://mcgamesdot.net/followage.php?channel=pandafite&user=" + u,
 			success: function (data) {
-			
+
 			var displayUsername;
 			var userLogo;
-			
+
 			$.ajax({
 			 type: 'GET',
 			 url: 'https://api.twitch.tv/kraken/channels/' + u,
@@ -195,17 +195,17 @@
 					});
 			if (u != "")
 			{
-				
-			document.getElementById('result').innerHTML = "<img src='img/loading-bar.gif' class='nodrag' />";	
+
+			document.getElementById('result').innerHTML = "<img src='img/loading-bar.gif' class='nodrag' />";
 			setTimeout(function() {
-			document.getElementById('prefix').innerHTML = 
+			document.getElementById('prefix').innerHTML =
 			"<a href='https://www.twitch.tv/" + displayUsername + "' target='_blank'><img src='" + userLogo + "' height='30' width='30' class='nodrag' style='vertical-align: middle;' title='" + displayUsername + "' /></a> " + displayUsername + " has been following Panda for";
-			}, 500);	
-			
-			
+			}, 500);
+
+
 			var dataSplit = data.split(", ");
 			var dataLength = dataSplit.length;
-			
+
 			setTimeout(function() {
 				if (dataLength == 1) {
 					document.getElementById('result').textContent = dataSplit[0];
@@ -214,47 +214,47 @@
 					document.getElementById('result').textContent = dataSplit[0] + ", " + dataSplit[1];
 
 				}
-				
+
 				else {
 					document.getElementById('result').textContent = "(error)";
 				}
-			
+
 			}, 2000);
 			}
-			else 
+			else
 			{
 			document.getElementById('prefix').textContent = "";
 			document.getElementById('result').innerHTML = "<img src='img/loading-bar.gif' class='nodrag' />";
-			
+
 			setTimeout(function() {
 			document.getElementById('result').textContent = "(error)";
 			}, 2000);
-			
+
 			}
-			
-			
-			
+
+
+
 			},
 			dataType: "html",
 			error: function (data) {
 			document.getElementById('prefix').textContent = "";
 			document.getElementById('result').innerHTML = "<img src='img/loading-bar.gif' class='nodrag' />";
-			
+
 			setTimeout(function() {
 			document.getElementById('result').textContent = "(error)";
 			}, 2000);}
 			});
 			}
-			
+
 			$("#username").keyup(function(event){
 			if(event.keyCode == 13){
 			$("#followageButton").click();
 			}
 			});
-			
-			
-			
-			
+
+
+
+
 			function getAllUrlParams(url) {
 
 			  // get query string from url (optional) or window
@@ -316,23 +316,23 @@
 
 			  return obj;
 			}
-			
+
 			setTimeout ( function () {
 			var user = getAllUrlParams().u;
 			var chan = getAllUrlParams().c;
-			
+
 			if (user) {
 			document.getElementById('username').value = user;
 			}
-			
+
 			if (chan) {
 			document.getElementById('channelName').value = chan;
 			}
-			
+
 			if (chan && user) {
 			getFollowage();
 			}
-			
+
 			}, 0);
 
 			</script>
@@ -345,14 +345,14 @@
 				<!-- Footer -->
 					<section id="footer">
                         <ul class="icons">
-							<li><a href="https://www.twitch.tv/pandaplayshd" class="fa-twitch"><span class="label">Twitch</span></a></li>
-                            <li><a href="https://twitter.com/pandaplayshd" class="fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.twitch.tv/pandafite" class="fa-twitch"><span class="label">Twitch</span></a></li>
+                            <li><a href="https://twitter.com/pandafite" class="fa-twitter"><span class="label">Twitter</span></a></li>
                             <li><a href="https://www.youtube.com/user/pandaplaysmchd" class="fa-youtube-play"><span class="label">YouTube</span></a></li>
-                            <li><a href="https://instagram.com/pandaplayshd" class="fa-instagram"><span class="label">Instagram</span></a></li>
+                            <li><a href="https://instagram.com/pandafite" class="fa-instagram"><span class="label">Instagram</span></a></li>
                             <li><a href="https://www.snapchat.com/add/PandaPlaysHD" class="fa-snapchat"><span class="label">Snapchat</span></a></li>
                             <li><a href="mailto:contact@pandaplayshd.ml" class="fa-envelope"><span class="label">Email</span></a></li>
                         </ul>
-						<p class="copyright">Copyright &copy; PandaPlaysHD 2015-2017. Developed by: <a href="https://mattjones.one">Matt Jones</a>. Designed by: <a href="http://html5up.net">HTML5 UP</a>.</p>
+						<p class="copyright">Copyright &copy; PandaFite 2015-2017. Developed by: <a href="https://mattjones.one">Matt Jones</a>. Designed by: <a href="http://html5up.net">HTML5 UP</a>.</p>
 					</section>
 
 			</div>

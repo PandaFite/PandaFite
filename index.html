@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE HTML>
 <html lang="en">
 	<head>
-		<title>PandaPlaysHD</title>
+		<title>PandaFite</title>
 		<meta charset="utf-8" />
         <link rel="shortcut icon" href="img/favicon.ico" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -10,47 +10,30 @@
         <link rel="stylesheet" href="css/font-awesome.min.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
-        <style type="text/css">
-        div.loader {
-	        position: absolute;
-	        margin: 0px;
-	        padding: 0px;
-	        height: 100%;
-	        width: 100%;
-	        top: 0;
-            left: 0;
-	        bottom: 0;
-	        right: 0;
-	        background-color: white;
-	        z-index: 10;
-	        background: url(img/loader.svg?1) no-repeat fixed center, #20385f;
-	        background-repeat: no-repeat;
-	        background-position: center;
-        }
-        .videobox { position: relative; }
-		
-		.videobox span {
-			display: block;
-			position: absolute;
-			top: 0;
-			left: 0;
-			bottom: 0;
-			right: 0;
-            width: 800px;
-            height: 450px;
-			z-index: 4;
-			background: url(img/button-play.png) no-repeat center center;
-		}
-        </style>
+
+		<!-- get rid of some loader things so the page can still be viewed without JS -->
+		<noscript>
+			<style type="text/css">
+				html, body {
+					overflow: inherit;
+				}
+				#loader {
+					display: none;
+				}
+				article.post {
+					display: block;
+				}
+			</style>
+		</noscript>
 	</head>
-	<body class="single">
+	<body id="body" class="single">
         <div class="loader" id="loader"></div>
 		<!-- Wrapper -->
 			<div id="wrapper">
 
 				<!-- Header -->
 					<header id="header">
-						<h1><a href="https://pandaplayshd.ml"><img src="img/logo.png" class="logoImg" alt="" />PandaPlaysHD</a></h1>
+						<h1><a href="https://pandaplayshd.ml"><img src="img/logo.png" class="logoImg" alt="" />PandaFite</a></h1>
 						<nav class="links">
 							<ul>
 								<li><a href="about">About</a></li>
@@ -160,7 +143,7 @@
 							<article class="post">
 								<header>
 									<div class="title">
-										<h2>PandaPlaysHD</h2>
+										<h2>PandaFite</h2>
 									</div>
 									<!--<div class="meta">
 										<time class="published" datetime="2015-11-01">November 1, 2015</time>
@@ -169,6 +152,12 @@
 								</header>
 
 								<div class="featured">
+									<!-- JavaScript disabled warning -->
+									<noscript>
+										<p>It appears you have disabled JavaScript, which this page requires to function.</p>
+										<p>You may experience decreased functionality on other pages.</p>
+									</noscript>
+
                                     <span id="title" style="margin-left: 2px;"></span><br />
                                     <span id="streaminfo" style="margin-left: 2px; font-size: 0.8em;"></span>
                                     <br />
@@ -179,18 +168,18 @@
                                         <iframe id="player" class="player" style="height: 450px; width: 800px;" src="" frameborder="0" allowfullscreen></iframe><iframe id="chat" style="height: 450px; width: 350px;" frameborder="0" scrolling="no" src=""></iframe>
                                     </div>
 
-                                    <a href="twitch://open?stream=pandaplayshd" id="openApp" class="big openAppButton" style="color: white !important; background-color: #6441A4; margin-top: 1.5em;"><i class="fa fa-twitch" style="font-size: 2em; vertical-align: middle;"></i> Open App</a>
+                                    <a href="twitch://open?stream=pandafite" id="openApp" class="big openAppButton" style="color: white !important; background-color: #6441A4; margin-top: 1.5em;"><i class="fa fa-twitch" style="font-size: 2em; vertical-align: middle;"></i> Open App</a>
                                     <br />
-                                    <a id="webVersion" href="https://www.twitch.tv/pandaplayshd">Continue to web version</a>
+                                    <a id="webVersion" href="https://www.twitch.tv/pandafite">Continue to web version</a>
                                 </div>
 
 								<hr />
-                                <span id="yt-title" style="margin-left: 2px;">title</span><br />
+                                <span id="yt-title" style="margin-left: 2px;"></span><br />
                                 <iframe id="yt-player" class="player" style="height: 450px; width: 800px;" src="" frameborder="0" allowfullscreen></iframe>
 								<iframe id="dcord" style="height: 450px; width: 350px;" frameborder="0" scrolling="no" src="https://discordapp.com/widget?id=221059861457141770&theme=dark"></iframe>
 
-                                <a class="twitter-timeline" data-width="800" data-height="450" data-theme="dark" href="https://twitter.com/PandaPlaysHD">Tweets by PandaPlaysHD</a>
-                                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+								<a class="twitter-timeline" href="https://twitter.com/PandaFite?ref_src=twsrc%5Etfw" data-width="800" data-height="450" data-theme="dark"></a>
+								<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 							</article>
 
 					</div>
@@ -198,14 +187,14 @@
 				<!-- Footer -->
 					<section id="footer">
 						<ul class="icons">
-                            <li><a href="https://www.twitch.tv/pandaplayshd" class="fa-twitch"><span class="label">Twitch</span></a></li>
-							<li><a href="https://twitter.com/pandaplayshd" class="fa-twitter"><span class="label">Twitter</span></a></li>
+                            <li><a href="https://www.twitch.tv/pandafite" class="fa-twitch"><span class="label">Twitch</span></a></li>
+							<li><a href="https://twitter.com/pandafite" class="fa-twitter"><span class="label">Twitter</span></a></li>
                             <li><a href="https://www.youtube.com/user/pandaplaysmchd" class="fa-youtube-play"><span class="label">YouTube</span></a></li>
-							<li><a href="https://instagram.com/pandaplayshd" class="fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://instagram.com/pandafite" class="fa-instagram"><span class="label">Instagram</span></a></li>
 							<li><a href="https://www.snapchat.com/add/PandaPlaysHD" class="fa-snapchat"><span class="label">Snapchat</span></a></li>
 							<li><a href="mailto:contact@pandaplayshd.ml" class="fa-envelope"><span class="label">Email</span></a></li>
 						</ul>
-						<p class="copyright">Copyright &copy; PandaPlaysHD 2015-2017. Developed by: <a href="https://mattjones.one">Matt Jones</a>. Designed by: <a href="http://html5up.net">HTML5 UP</a>.</p>
+						<p class="copyright">Copyright &copy; PandaFite 2015-2017. Developed by: <a href="https://mattjones.one">Matt Jones</a>. Designed by: <a href="http://html5up.net">HTML5 UP</a>.</p>
 					</section>
 
 			</div>
@@ -220,24 +209,19 @@
             <script src="js/streamFunctions.js" type="text/javascript"></script>
             <script src="js/status.js" type="text/javascript"></script>
             <script type="text/javascript">
-            setTimeout( function() {
-                $(window).ready(function () {
-                    $('#loader').fadeOut("slow");
-                });
-            }, 2000);
 
-            setTimeout(function () {
-                $(document).ready(function () {
-                    $('iframe#chat').attr('src', chatSrc);
-                });         
-            }, 2150);
+			$(window).ready(function () {
+				setTimeout(function() {
+					$('#loader').fadeOut("slow");
+					$("#body").css("overflow", "inherit");
+					$("article.post").css("display", "block");
+				}, 2000);
+				setTimeout(function() {
+					$('iframe#chat').attr('src', chatSrc);
+					$('iframe#dcord').attr('src', 'https://discordapp.com/widget?id=221059861457141770&theme=dark');
+				}, 2500);
+			});
 
-            setTimeout(function () {
-                $(document).ready(function () {
-                    $('iframe#dcord').attr('src', 'https://discordapp.com/widget?id=221059861457141770&theme=dark');
-                });
-            }, 2400);
-            
             </script>
 	</body>
 </html>
