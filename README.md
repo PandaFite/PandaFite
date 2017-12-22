@@ -1,2 +1,2 @@
-# pandaplayshd.com
-Source code for [PandaPlaysHD.com](http://pandaplayshd.com)
+# pandaplayshd.ml
+Source code for [PandaPlaysHD.ml](http://pandaplayshd.ml)
