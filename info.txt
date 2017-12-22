@@ -1,2 +1,5 @@
 Blue: #20385f
 Dark Grey: #212121
+
+-- New --
+Blue: #20485f
