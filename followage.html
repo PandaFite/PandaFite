@@ -13,7 +13,7 @@
 		<script src="js/jquery-3.1.0.min.js" type="text/javascript"></script>
 	</head>
 	<body class="single">
-        
+
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -166,72 +166,24 @@
 			function getFollowage(u){
 
 			$.ajax({
-			url: "https://cors-anywhere.herokuapp.com/https://mcgamesdot.net/followage.php?channel=pandafite&user=" + u,
+			url: "https://cors-anywhere.herokuapp.com/https://2g.be/twitch/following.php?user=" + u + "&channel=pandafite&format=ymwd",
 			success: function (data) {
 
-			var displayUsername;
-			var userLogo;
-
-			$.ajax({
-			 type: 'GET',
-			 url: 'https://api.twitch.tv/kraken/channels/' + u,
-			 headers: {
-			   'Client-ID': 'f2cmg4s30fnzmq7zbcx8rcsfxdc1san'
-			 },
-			 success: function(data) {
-			   console.log(data);
-					displayUsername = data.display_name;
-					document.getElementById('username').value = data.display_name;
-					if (!data.logo || data.logo == undefined) {
-						userLogo = "https://static-cdn.jtvnw.net/jtv_user_pictures/xarth/404_user_70x70.png";
-					}
-					else{
-					userLogo = data.logo;
-					}
-					 },
-					 error: function() {
-						userLogo = "https://static-cdn.jtvnw.net/jtv_user_pictures/xarth/404_user_70x70.png";
-					 }
-					});
-			if (u != "")
-			{
-
-			document.getElementById('result').innerHTML = "<img src='img/loading-bar.gif' class='nodrag' />";
-			setTimeout(function() {
-			document.getElementById('prefix').innerHTML =
-			"<a href='https://www.twitch.tv/" + displayUsername + "' target='_blank'><img src='" + userLogo + "' height='30' width='30' class='nodrag' style='vertical-align: middle;' title='" + displayUsername + "' /></a> " + displayUsername + " has been following Panda for";
-			}, 500);
-
-
-			var dataSplit = data.split(", ");
-			var dataLength = dataSplit.length;
-
-			setTimeout(function() {
-				if (dataLength == 1) {
-					document.getElementById('result').textContent = dataSplit[0];
-				}
-				else if (dataLength > 1) {
-					document.getElementById('result').textContent = dataSplit[0] + ", " + dataSplit[1];
-
-				}
-
-				else {
-					document.getElementById('result').textContent = "(error)";
-				}
-
-			}, 2000);
+			if (data.includes("pandafite for".toLowerCase())) {
+				document.getElementById('prefix').textContent = u + " has been following Panda for:";
+				document.getElementById('result').innerHTML = "<img src='img/loading-bar.gif' class='nodrag' />";
+				setTimeout(function() {
+					document.getElementById('result').textContent = data.split("pandafite for")[1];
+				}, 1000);
 			}
-			else
-			{
-			document.getElementById('prefix').textContent = "";
-			document.getElementById('result').innerHTML = "<img src='img/loading-bar.gif' class='nodrag' />";
+			else {
+				document.getElementById('prefix').textContent = "";
+				document.getElementById('result').innerHTML = "<img src='img/loading-bar.gif' class='nodrag' />";
 
-			setTimeout(function() {
-			document.getElementById('result').textContent = "(error)";
-			}, 2000);
-
+				setTimeout(function() {
+				document.getElementById('result').textContent = "(error)";
+				}, 2000);
 			}
-
 
 
 			},
