@@ -2,7 +2,7 @@
 	streamFunctions.js
 	Copyright (C) Matt Jones - All Rights Reserved
 */
-var username = "pandafite";
+var username = "pandaplayshd";
 var userId = "53010272";
 var chatSrc;
 
@@ -60,7 +60,7 @@ function streamOffline() {
 			}
 		} // end success
 	}); // end ajax
-	chatSrc = "https://www.twitch.tv/" + username + "/chat";
+	chatSrc = "https://twitch.tv/embed/" + username + "/chat";
 }
 
 function playerError() {
